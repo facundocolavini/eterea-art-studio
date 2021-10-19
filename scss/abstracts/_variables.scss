@@ -1,6 +1,16 @@
 //---------Variables---------//
 $fontFamily-1:'cinzel';
 $fontFamily-2:'montserrat';
+$fonts:(
+    regular-c:  'Cinzel Regular',
+    regular-m:  'Montserrat Regular',
+    bold-c:     'Cinzel Bold',
+    bold-m:     'Montserrat Bold',
+    thin-m:     'Montserrat Thin',
+    black-c:    'Cinzel Black'
+
+);
+
 $colors: (
     color-1: #AD896E,
     color-2: #F0ECEA,

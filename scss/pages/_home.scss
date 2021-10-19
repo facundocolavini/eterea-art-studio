@@ -1,8 +1,78 @@
 
-
-
-.title{
-    font-family: $fontFamily-1;
-    font-size: 20px;
+.cinzel-regular-h1{
+    font-family: map-get($fonts, regular-c);
+    color:map-get($colors, color-1);
+}
+.cinzel-regular-h2{
+    font-family: map-get($fonts, regular-c);
     color:map-get($colors, color-3);
+}
+.cinzel-regular-h4{
+    font-family: map-get($fonts, regular-c);
+    color:map-get($colors, color-4);
+}
+
+.cinzel-bold-h1{
+    font-family: map-get($fonts, bold-c);
+    color:map-get($colors, color-1);
+}
+.cinzel-bold-h2{
+    font-family: map-get($fonts, bold-c);
+    color:map-get($colors, color-3);
+}
+.cinzel-bold-h4{
+    font-family: map-get($fonts, bold-c);
+    color:map-get($colors, color-4);
+}
+
+.cinzel-black-h1{
+    font-family: map-get($fonts, black-c);
+    color:map-get($colors, color-1);
+}
+.cinzel-black-h2{
+    font-family: map-get($fonts, black-c);
+    color:map-get($colors, color-3);
+}
+.cinzel-black-h4{
+    font-family: map-get($fonts, black-c);
+    color:map-get($colors, color-4);
+}
+
+.montserrat-regular-h1{
+    font-family: map-get($fonts, regular-m);
+    color:map-get($colors, color-1);
+}
+.montserrat-regular-h2{
+    font-family: map-get($fonts, regular-m);
+    color:map-get($colors, color-3);
+}
+.montserrat-regular-h4{
+    font-family: map-get($fonts, regular-m);
+    color:map-get($colors, color-4);
+}
+
+.montserrat-bold-h1{
+    font-family: map-get($fonts, bold-m);
+    color:map-get($colors, color-1);
+}
+.montserrat-bold-h2{
+    font-family: map-get($fonts, bold-m);
+    color:map-get($colors, color-3);
+}
+.montserrat-bold-h4{
+    font-family: map-get($fonts, bold-m);
+    color:map-get($colors, color-4);
+}
+
+.montserrat-thin-h1{
+    font-family: map-get($fonts, thin-m);
+    color:map-get($colors, color-1);
+}
+.montserrat-thin-h2{
+    font-family: map-get($fonts, thin-m);
+    color:map-get($colors, color-3);
+}
+.montserrat-thin-h4{
+    font-family: map-get($fonts, thin-m);
+    color:map-get($colors, color-4);
 }
