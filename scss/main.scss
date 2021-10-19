@@ -1,11 +1,10 @@
-$colors: (
-    color-1: #AD896E,
-    color-2: #F0ECEA,
-    color-3: #B0A89E,
-    color-4: #A28C89,
-);
+//Abstracts
+@import 'abstracts/variables',
+        'abstracts/mixins',
+        'abstracts/functions';
 
+//Base 
+@import 'base/typography';
 
-body{
-    
-}
+//Pages
+@import 'pages/home';

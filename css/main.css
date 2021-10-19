@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url("../assets/fonts/Cinzel-Regular.ttf");
+}
+
+.title {
+  font-family: "cinzel";
+  font-size: 20px;
+  color: #B0A89E;
+}
+/*# sourceMappingURL=main.css.map */
