@@ -1,16 +1,120 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat-ExtraLight.ttf");
+  font-family: 'Montserrat Bold';
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
-  font-family: 'Cinzel';
+  font-family: 'Montserrat Regular';
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat Thin';
+  src: url("../assets/fonts/Montserrat-Thin.ttf");
+}
+
+@font-face {
+  font-family: 'Cinzel Regular';
   src: url("../assets/fonts/Cinzel-Regular.ttf");
 }
 
-.title {
-  font-family: "cinzel";
-  font-size: 20px;
+@font-face {
+  font-family: 'Cinzel Black';
+  src: url("../assets/fonts/Cinzel-Black.ttf");
+}
+
+@font-face {
+  font-family: 'Cinzel Bold';
+  src: url("../assets/fonts/Cinzel-Bold.ttf");
+}
+
+.cinzel-regular-h1 {
+  font-family: "Cinzel Regular";
+  color: #AD896E;
+}
+
+.cinzel-regular-h2 {
+  font-family: "Cinzel Regular";
   color: #B0A89E;
+}
+
+.cinzel-regular-h4 {
+  font-family: "Cinzel Regular";
+  color: #A28C89;
+}
+
+.cinzel-bold-h1 {
+  font-family: "Cinzel Bold";
+  color: #AD896E;
+}
+
+.cinzel-bold-h2 {
+  font-family: "Cinzel Bold";
+  color: #B0A89E;
+}
+
+.cinzel-bold-h4 {
+  font-family: "Cinzel Bold";
+  color: #A28C89;
+}
+
+.cinzel-black-h1 {
+  font-family: "Cinzel Black";
+  color: #AD896E;
+}
+
+.cinzel-black-h2 {
+  font-family: "Cinzel Black";
+  color: #B0A89E;
+}
+
+.cinzel-black-h4 {
+  font-family: "Cinzel Black";
+  color: #A28C89;
+}
+
+.montserrat-regular-h1 {
+  font-family: "Montserrat Regular";
+  color: #AD896E;
+}
+
+.montserrat-regular-h2 {
+  font-family: "Montserrat Regular";
+  color: #B0A89E;
+}
+
+.montserrat-regular-h4 {
+  font-family: "Montserrat Regular";
+  color: #A28C89;
+}
+
+.montserrat-bold-h1 {
+  font-family: "Montserrat Bold";
+  color: #AD896E;
+}
+
+.montserrat-bold-h2 {
+  font-family: "Montserrat Bold";
+  color: #B0A89E;
+}
+
+.montserrat-bold-h4 {
+  font-family: "Montserrat Bold";
+  color: #A28C89;
+}
+
+.montserrat-thin-h1 {
+  font-family: "Montserrat Thin";
+  color: #AD896E;
+}
+
+.montserrat-thin-h2 {
+  font-family: "Montserrat Thin";
+  color: #B0A89E;
+}
+
+.montserrat-thin-h4 {
+  font-family: "Montserrat Thin";
+  color: #A28C89;
 }
 /*# sourceMappingURL=main.css.map */
