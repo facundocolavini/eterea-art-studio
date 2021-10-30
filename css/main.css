@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Montserrat Bold';
-  src: url("../assets/fonts/Montserrat-Bold.ttf");
+  font-family: 'Montserrat-SemiBold';
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: 'Montserrat Thin';
-  src: url("../assets/fonts/Montserrat-Thin.ttf");
+  font-family: 'Montserrat Light';
+  src: url("../assets/fonts/Montserrat-Light.ttf");
 }
 
 @font-face {
@@ -28,93 +28,167 @@
   src: url("../assets/fonts/Cinzel-Bold.ttf");
 }
 
-.cinzel-regular-h1 {
-  font-family: "Cinzel Regular";
-  color: #AD896E;
+.navbar {
+  background: #B0A89E;
+  padding: 1em;
+  position: relative;
+  height: 3.125em;
+  margin: 0;
 }
 
-.cinzel-regular-h2 {
-  font-family: "Cinzel Regular";
-  color: #B0A89E;
+.navbar .logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 3.125em;
+  width: 3.125em;
 }
 
-.cinzel-regular-h4 {
-  font-family: "Cinzel Regular";
-  color: #A28C89;
+.navbar nav.menu-btn {
+  display: block;
+  -webkit-transition-timing-function: 3s all;
+          transition-timing-function: 3s all;
 }
 
-.cinzel-bold-h1 {
+.navbar nav .btn-menu-close {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.navbar nav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  right: 0;
+  top: 0;
+  height: 50%;
+  padding: 1em;
+  background: #3F3D3F;
+}
+
+.navbar .nav-menu {
+  margin-top: 5em;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  list-style-type: none;
+  padding: .5em;
+  font-size: 1.5em;
+  text-align: center;
   font-family: "Cinzel Bold";
-  color: #AD896E;
+  color: #F0ECEA;
 }
 
-.cinzel-bold-h2 {
+.navbar li a:hover {
+  -webkit-transition: .2s  ease-in-out;
+  transition: .2s  ease-in-out;
+  color: #7A583E;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .btn-menu-open, .btn-menu-close {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav .nav-menu {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar nav li {
+    padding: .1em .1em;
+  }
+  .navbar nav a {
+    font-size: 1em;
+    font-family: "Cinzel Bold";
+    -webkit-transition: .2s  ease-in-out;
+    transition: .2s  ease-in-out;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 10em 4em;
+  }
+}
+
+.hero {
+  background: #F0ECEA;
+  margin: 0;
+  text-align: center;
+  padding: 5em 2em;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  line-height: 1.6em;
+  margin-top: .2em;
+}
+
+.hero .title-hero {
   font-family: "Cinzel Bold";
-  color: #B0A89E;
+  font-size: "1.8em";
+  color: #7A583E;
 }
 
-.cinzel-bold-h4 {
-  font-family: "Cinzel Bold";
-  color: #A28C89;
-}
-
-.cinzel-black-h1 {
-  font-family: "Cinzel Black";
-  color: #AD896E;
-}
-
-.cinzel-black-h2 {
-  font-family: "Cinzel Black";
-  color: #B0A89E;
-}
-
-.cinzel-black-h4 {
-  font-family: "Cinzel Black";
-  color: #A28C89;
-}
-
-.montserrat-regular-h1 {
-  font-family: "Montserrat Regular";
-  color: #AD896E;
-}
-
-.montserrat-regular-h2 {
-  font-family: "Montserrat Regular";
-  color: #B0A89E;
-}
-
-.montserrat-regular-h4 {
-  font-family: "Montserrat Regular";
-  color: #A28C89;
-}
-
-.montserrat-bold-h1 {
-  font-family: "Montserrat Bold";
-  color: #AD896E;
-}
-
-.montserrat-bold-h2 {
-  font-family: "Montserrat Bold";
-  color: #B0A89E;
-}
-
-.montserrat-bold-h4 {
-  font-family: "Montserrat Bold";
-  color: #A28C89;
-}
-
-.montserrat-thin-h1 {
-  font-family: "Montserrat Thin";
-  color: #AD896E;
-}
-
-.montserrat-thin-h2 {
-  font-family: "Montserrat Thin";
-  color: #B0A89E;
-}
-
-.montserrat-thin-h4 {
-  font-family: "Montserrat Thin";
-  color: #A28C89;
+.hero .subhead {
+  font-family: "Montserrat-SemiBold";
+  font-size: "1em";
+  line-height: 1.6em;
+  letter-spacing: .2em;
 }
 /*# sourceMappingURL=main.css.map */

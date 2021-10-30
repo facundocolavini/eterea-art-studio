@@ -5,16 +5,37 @@ $fonts:(
     regular-c:  'Cinzel Regular',
     regular-m:  'Montserrat Regular',
     bold-c:     'Cinzel Bold',
-    bold-m:     'Montserrat Bold',
-    thin-m:     'Montserrat Thin',
+    sbold-m:     'Montserrat-SemiBold',
+    light-m:     'Montserrat Light',
     black-c:    'Cinzel Black'
 
 );
 
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+$font-size:(
+    h1:        '1.8em',
+    h2:        '1.5em',
+    h3:        '1.4em',
+    h4:        '1.3em',
+    h5:        '1.2em',
+    h6:        '1.1em',
+    p:         '1em',
+    small:     '0.875em',
+    xsmall:    '0.75em',
+    xxsmall:   '0.625em',
+    xxxsmall:  '0.5em'
+);
+
 $colors: (
-    color-1: #AD896E,
-    color-2: #F0ECEA,
+    color-1: #7A583E,
+    color-2: #3F3D3F,
     color-3: #B0A89E,
-    color-4: #A28C89,
+    color-4: #F0ECEA,
+    color-5: #805B6A,
 );
 

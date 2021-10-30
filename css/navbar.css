@@ -1,0 +1,12 @@
+.navbar {
+  background: color(color-3);
+  padding: 1em;
+}
+
+.nav-a {
+  text-decoration: none;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,108 @@
+.navbar{
+    background: color(color-3);
+    padding: 1em;
+    position: relative;
+    height: 3.125em;
+    margin:0;
+    .logo{
+        object-fit: contain;
+        height:3.125em;
+        width:3.125em;
+    }
+    nav.menu-btn{
+        display:block;
+        transition-timing-function: 3s all;
+    }
+    nav .btn-menu-close{
+        float:right;
+        margin: .5em;
+        cursor:pointer;
+    }
+    nav{
+        display:none;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        right: 0;
+        top:0;
+        height: 50%;
+        padding: 1em;
+        background: color(color-2);
+    }
+    .nav-menu{
+        margin-top: 5em;
+    }
+    li{
+        list-style-type: none;
+        a{
+            display: block;
+            text-decoration: none;
+            list-style-type: none;
+            padding: .5em;
+            font-size: 1.5em;
+            text-align: center;
+            font-family: fontsFamily(bold-c);
+            color:color(color-4);
+
+            &:hover{
+                transition: .2s  ease-in-out;
+                color:color(color-1);
+            }
+        }
+    }
+    .container{
+        display:flex;
+        padding: 0 2em;
+        justify-content: space-between;
+    }
+    .mobile-menu{
+        cursor: pointer;
+    }
+}
+section{
+    padding:5em 2em;
+}
+
+@include media-up(md){
+    .navbar{
+        position: sticky;
+    }
+    .btn-menu-open, .btn-menu-close{
+        display: none;
+    }
+    .navbar .container{
+        display:grid;
+        grid-template-columns: 180px auto;
+        justify-content: space-between;
+    }
+
+    .navbar nav{
+        display:flex;  
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        .nav-menu{
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        li {
+            padding: .1em .1em;
+        }
+        a{
+            font-size: 1em;
+            font-family: fontsFamily(bold-c);
+            transition: .2s  ease-in-out;
+        }
+    }
+}
+
+@include media-up(lg){
+    section{
+        padding: 10em 4em;
+    }
+
+}
