@@ -30,8 +30,11 @@
 
 .navbar {
   background: #B0A89E;
-  padding: 1em;
+  padding: 1em 2em;
   position: relative;
+  top: 0;
+  right: 0;
+  bottom: 1;
   height: 3.125em;
   margin: 0;
 }
@@ -96,24 +99,66 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 2em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 100%;
 }
 
 .navbar .mobile-menu {
   cursor: pointer;
 }
 
-section {
-  padding: 5em 2em;
+.navbar section {
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
+  /*     .navbar{
+        position: sticky;
+        z-index: 10;
+    }
+    .btn-menu-open, .btn-menu-close{
+        display: none;
+    }
+    .navbar .container{
+        display:grid;
+        grid-template-columns: 180px auto;
+        justify-content: space-between;
+    }
+
+    .navbar nav{
+        display:flex;  
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        .nav-menu{
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        li {
+            padding: .1em .1em;
+        }
+        a{
+            font-size: 1em;
+            font-family: fontsFamily(bold-c);
+            transition: .2s  ease-in-out;
+        }
+    } */
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 10em 4em;
+  }
   .navbar {
     position: -webkit-sticky;
     position: sticky;
+    z-index: 10;
   }
   .btn-menu-open, .btn-menu-close {
     display: none;
@@ -160,35 +205,212 @@ section {
   }
 }
 
-@media screen and (min-width: 992px) {
-  section {
-    padding: 10em 4em;
-  }
-}
-
 .hero {
+  padding: 1em 2em;
   background: #F0ECEA;
-  margin: 0;
-  text-align: center;
-  padding: 5em 2em;
 }
 
 .hero h1 {
-  font-size: 2.5em;
-  line-height: 1.6em;
-  margin-top: .2em;
+  font-size: "3.5rem";
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-.hero .title-hero {
+.hero .hero-title {
   font-family: "Cinzel Bold";
-  font-size: "1.8em";
+  font-size: "3.5rem";
   color: #7A583E;
+  line-height: 97px;
+  text-align: center;
 }
 
-.hero .subhead {
+.hero p {
+  font-size: "1.125rem";
   font-family: "Montserrat-SemiBold";
-  font-size: "1em";
-  line-height: 1.6em;
-  letter-spacing: .2em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3F3D3F;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero .hero-img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.intro {
+  padding: 1em 2em;
+  background: #F0ECEA;
+  display: block;
+}
+
+.intro .intro-box-1 {
+  border: 1px solid #7A583E;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.intro .intro-box-1 .intro-img {
+  position: relative;
+  right: 10px;
+  top: 20px;
+  max-width: 100%;
+}
+
+.intro .intro-box-2 {
+  display: block;
+  right: 0;
+  text-align: center;
+}
+
+.intro .intro-box-2 p {
+  font-size: 1.2rem;
+  color: #3F3D3F;
+  padding: 0 1rem;
+  line-height: 1.5;
+  font-family: "Montserrat Regular";
+}
+
+.intro .intro-btn {
+  font-family: "Montserrat Regular";
+  color: #F0ECEA;
+  width: 189px;
+  height: 65px;
+  background-color: #805B6A;
+  outline: none;
+  border: none;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.intro .intro-btn:hover {
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border: none;
+  color: #F0ECEA;
+  background-color: #52353f;
+  -webkit-filter: drop-shadow(0px 6px 4px rgba(0, 10, 0, 0.4));
+          filter: drop-shadow(0px 6px 4px rgba(0, 10, 0, 0.4));
+  outline: none;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*----Breakpoints Hero---- */
+@media screen and (min-width: 768px) {
+  body, html {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .hero {
+    padding: 5em 2em;
+  }
+  .hero .hero-img {
+    margin: 4em 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body, html {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  p {
+    margin: 0 0 3rem 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+  }
+  .hero .hero-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 8em auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .hero p {
+    font-size: "1.25rem";
+  }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "grid-description  grid-img" "grid-btn         grid-img ";
+    justify-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .grid-container .grid-description {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: grid-description;
+    text-align: left;
+  }
+  .grid-container .grid-description p {
+    padding: 0;
+  }
+  .grid-container .grid-img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: grid-img;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .grid-container .grid-btn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: grid-btn;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .intro-box-1 .intro-img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,28 +1,163 @@
 
 @import '../components/navbar';
-
-
+@import '../components/buttons';
 
 .hero{
-    background: color(color-4);
-    margin:0;
-    text-align: center;
-    padding:5em 2em;
-
+    padding:1em 2em;
+    background:color(color-4);
     h1{
-        font-size: 2.5em;
-        line-height: 1.6em;
-        margin-top: .2em;
-    }
-    .title-hero{
-        font-family:fontsFamily(bold-c);
         font-size: fontSize(h1);
-        color: color(color-1);        
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
     }
-    .subhead{
-        font-family:fontsFamily(sbold-m);
-        font-size: fontSize(p);
-        line-height: 1.6em;
-        letter-spacing: .2em;
+    .hero-title{
+        font-family: fontsFamily(bold-c);
+        font-size: fontSize(h1);
+        color:color(color-1);
+        line-height: 97px;
+        text-align: center;
+    }
+    p{
+        font-size:  fontSize(p);
+        font-family: fontsFamily(sbold-m);
+        font-weight: 400;
+        line-height: 1.5;
+        color:color(color-2);
+        text-align: center;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+    .hero-img{
+        display: block;
+        margin: 2rem auto;
+        max-width: 100%;
+        object-fit: contain;
     }
 }
+.intro{
+    padding:1em 2em;
+    background:color(color-4);
+    display:block;
+    .intro-box-1{
+        border: $border-light;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+        .intro-img{
+            position: relative;
+            right:10px;
+            top:20px;
+            max-width: 100%;
+
+        }
+    }
+    .intro-box-2{
+        display: block;
+        right: 0;
+        text-align: center;
+       
+        p{
+            font-size: 1.2rem;
+            color:color(color-2);
+            padding:0 1rem;
+            line-height: 1.5;
+            font-family: fontsFamily(regular-m);
+        }
+    }
+    .intro-btn{
+        @include genericBtn;
+      
+        &:hover{
+            @include hoverBtns;
+        }
+    }
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+/*----Breakpoints Hero---- */
+
+@include media-up(md){
+    body,html{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .hero{
+        padding: 5em 2em;
+       .hero-img{
+            margin: 4em 0;
+        }
+    }
+}
+@include media-up(lg){
+    body,html{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    p{
+        margin:0 0 3rem 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .hero {
+        .hero-img {
+            display: flex;
+            justify-content: center;
+            margin: 8em auto;
+            object-fit: contain;
+        }
+        p{
+            font-size: fontSize(h6);
+        }
+    }
+
+    .grid-container{
+        display:grid;
+        grid-gap:1rem;
+        grid-template-columns: 50% auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "grid-description  grid-img"
+            "grid-btn         grid-img ";
+    
+        justify-items: center;
+        align-items: start;
+        justify-content: space-between;
+        
+        .grid-description{
+            grid-area: grid-description;
+            text-align: left;
+            p{
+                padding: 0;
+            }
+        }
+        .grid-img{
+            grid-area: grid-img;
+            align-self: start;
+
+        }
+        .grid-btn{
+            grid-area: grid-btn;
+            justify-self: start;
+        }
+    }
+    .intro-box-1{
+        .intro-img{
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+
+}
+
