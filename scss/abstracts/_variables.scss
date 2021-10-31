@@ -1,6 +1,4 @@
 //---------Variables---------//
-$fontFamily-1:'cinzel';
-$fontFamily-2:'montserrat';
 $fonts:(
     regular-c:  'Cinzel Regular',
     regular-m:  'Montserrat Regular',
@@ -17,18 +15,19 @@ $breakpoints: (
     lg: 992px,
     xl: 1200px
 );
-$font-size:(
-    h1:        '1.8em',
-    h2:        '1.5em',
-    h3:        '1.4em',
-    h4:        '1.3em',
-    h5:        '1.2em',
-    h6:        '1.1em',
-    p:         '1em',
-    small:     '0.875em',
-    xsmall:    '0.75em',
-    xxsmall:   '0.625em',
-    xxxsmall:  '0.5em'
+
+$fonts-size:(
+    h1:      '3.5rem',
+    h2:      '3rem',
+    h3:      '2.5rem',
+    h4:      '2rem',
+    h5:      '1.5rem',
+    h6:      '1.25rem',
+    p:       '1.125rem',
+    small:   '0.8125rem',
+    xsmall:  '0.625rem',
+    xxsmall: '0.4375rem'
+
 );
 
 $colors: (
@@ -39,3 +38,5 @@ $colors: (
     color-5: #805B6A,
 );
 
+$border-light: 1px solid #7A583E;
+$border-1: 3px outset #3a252d;

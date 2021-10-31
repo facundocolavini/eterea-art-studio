@@ -7,5 +7,5 @@
 }
 
 @function fontSize($font-name){
-    @return map-get($font-size,$font-name);
+    @return map-get($fonts-size,$font-name);
 }
