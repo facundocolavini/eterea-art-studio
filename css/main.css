@@ -366,8 +366,8 @@
     display: -ms-grid;
     display: grid;
     grid-gap: 1rem;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
         grid-template-areas: "grid-description  grid-img" "grid-btn         grid-img ";
@@ -403,6 +403,14 @@
     grid-area: grid-btn;
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .intro-box-1 .intro-img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 /*# sourceMappingURL=main.css.map */

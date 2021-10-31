@@ -121,10 +121,11 @@
             font-size: fontSize(h6);
         }
     }
+
     .grid-container{
         display:grid;
         grid-gap:1rem;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 50% auto;
         grid-template-rows: auto;
         grid-template-areas: 
             "grid-description  grid-img"
@@ -151,7 +152,12 @@
             justify-self: start;
         }
     }
-
+    .intro-box-1{
+        .intro-img{
+            width: fit-content;
+            height: fit-content;
+        }
+    }
 
 }
 
