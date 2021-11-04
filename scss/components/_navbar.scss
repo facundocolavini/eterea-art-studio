@@ -1,16 +1,22 @@
+
 .navbar{
-    background: color(color-3);
+    position: fixed;
+    background: $bg-navbar;
     padding: 1em 2em;
-    position: relative;
+    display: flex;
     top:0;
-    right:0;
-    bottom:1;
-    height: 3.125em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
     margin:0;
+    z-index: 1;
+}
     .logo{
         object-fit: contain;
-        height:3.125em;
-        width:3.125em;
+        height:3em;
+        width:3em;
     }
     nav.menu-btn{
         display:block;
@@ -24,11 +30,12 @@
     nav{
         display:none;
         position: fixed;
-        z-index: 999;
+        top:0;
+        z-index: 2;
         width: 100%;
         right: 0;
         top:0;
-        height: 50%;
+        height: 100vh;
         padding: 1em;
         background: color(color-2);
     }
@@ -61,74 +68,37 @@
     .mobile-menu{
         cursor: pointer;
     }
-    section{
-        padding: 0;
-    }
-}
 
 
-@include media-up(md){
-/*     .navbar{
-        position: sticky;
-        z-index: 10;
-    }
-    .btn-menu-open, .btn-menu-close{
-        display: none;
-    }
-    .navbar .container{
-        display:grid;
-        grid-template-columns: 180px auto;
-        justify-content: space-between;
-    }
-
-    .navbar nav{
-        display:flex;  
-        justify-content: space-between;
-        background: none;
-        position: unset;
-        height: auto;
-        width: 100%;
-        padding: 0;
-        .nav-menu{
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-        li {
-            padding: .1em .1em;
-        }
-        a{
-            font-size: 1em;
-            font-family: fontsFamily(bold-c);
-            transition: .2s  ease-in-out;
-        }
-    } */
-}
 
 @include media-up(lg){
-    section{
-        padding: 10em 4em;
+    body,html{
+        font-size: 1.5rem;
     }
     .navbar{
-        position: sticky;
-        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top:0;
+        z-index: 1;
+        .logo{
+            height: 2.5rem;
+            width: 2.5rem;
+        }
     }
     .btn-menu-open, .btn-menu-close{
         display: none;
     }
-    .navbar .container{
-        display:grid;
-        grid-template-columns: 180px auto;
-        justify-content: space-between;
-    }
+
 
     .navbar nav{
         display:flex;  
         justify-content: space-between;
+        flex-direction: row-reverse;
         background: none;
         position: unset;
         height: auto;
-        width: 100%;
+        width: fit-content;
         padding: 0;
         .nav-menu{
             margin: 0;
@@ -145,3 +115,4 @@
         }
     }
 }
+

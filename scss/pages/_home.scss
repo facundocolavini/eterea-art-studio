@@ -2,38 +2,53 @@
 @import '../components/navbar';
 @import '../components/buttons';
 
+/* Mobile */
 .hero{
-    padding:1em 2em;
-    background:color(color-4);
-    h1{
-        font-size: fontSize(h1);
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 1rem;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    overflow: hidden;
+    object-fit: cover;
+    background-position: center;
+    background-image: url('../../assets/images/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content-hero{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .hero-title{
-        font-family: fontsFamily(bold-c);
-        font-size: fontSize(h1);
-        color:color(color-1);
-        line-height: 97px;
-        text-align: center;
+    .content{
+        text-align: center;   
+        h1{
+            font-size: fontSize(h1);
+            font-family: fontsFamily(bold-c);
+            color:color(color-2);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1em;
+        }
+        p{
+            font-size:  fontSize(p);
+            font-family: fontsFamily(sbold-m);
+            font-weight: 500;
+            padding: 1em;
+            line-height: 1.5;
+            color:color(color-2);
+            margin-bottom: 2.125em;
+        }
     }
-    p{
-        font-size:  fontSize(p);
-        font-family: fontsFamily(sbold-m);
-        font-weight: 400;
-        line-height: 1.5;
-        color:color(color-2);
-        text-align: center;
-        padding: 0 1rem;
-        margin-bottom: 1rem;
+   
+    .hero-btn{
+        @include genericBtn;
+      
+        &:hover{
+            @include hoverBtns;
+        }
     }
-    .hero-img{
-        display: block;
-        margin: 2rem auto;
-        max-width: 100%;
-        object-fit: contain;
-    }
+
 }
 .intro{
     padding:1em 2em;
@@ -58,9 +73,9 @@
         text-align: center;
        
         p{
+            width: fit-content;
             font-size: 1.2rem;
             color:color(color-2);
-            padding:0 1rem;
             line-height: 1.5;
             font-family: fontsFamily(regular-m);
         }
@@ -72,56 +87,75 @@
             @include hoverBtns;
         }
     }
+   
 }
 
-.grid-container{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-}
 
-/*----Breakpoints Hero---- */
+
+/*----Breakpoints---- */
+
 
 @include media-up(md){
+    /* Hero */
     body,html{
-        font-size: 18px;
-    }
-    h1{
-        font-size: 60px;
+        font-size: 20px;
     }
     .hero{
         padding: 5em 2em;
-       .hero-img{
-            margin: 4em 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .content-hero{
+        display: flex;
+        justify-content: flex-start;
+        .content{
+            text-align: left;
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                width: 511px;
+                padding: 0;
+            }
         }
+       
+    }
+    .hero-btn{
+        @include genericBtn;
+        &:hover{
+            @include hoverBtns;
+        }
+    }
+    /* Intro */
+    .intro{
+        height: 100vh;
+        
     }
 }
 @include media-up(lg){
     body,html{
-        font-size: 22px;
+        font-size: 24px;
     }
-    h1{
-        font-size: 70px;
-    }
-    p{
-        margin:0 0 3rem 0;
-        box-sizing: border-box;
-        width: 100%;
-    }
+    /* Hero */
     .hero {
-        .hero-img {
+        .content-hero{
             display: flex;
-            justify-content: center;
-            margin: 8em auto;
-            object-fit: contain;
-        }
-        p{
-            font-size: fontSize(h6);
+            justify-content: flex-start;
+            .content{
+                text-align: left;
+                h1{
+                    font-size: 3.181818rem;
+                }
+
+                p{
+                    margin:0 0 3rem 0;
+                    box-sizing: border-box;
+                    width: 511px;
+                }
+            }
         }
     }
-
+        /* Intro */
     .grid-container{
         display:grid;
         grid-gap:1rem;
