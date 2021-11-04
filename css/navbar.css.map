@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,OAAO,CAAA;EACH,UAAU,EAAE,cAAc;EAC1B,OAAO,EAAE,GAAG;CAGf;;AAED,AAAA,MAAM,CAAA;EACF,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CACf",
-    "sources": [
-        "../scss/components/navbar.scss"
-    ],
-    "names": [],
-    "file": "navbar.css"
-}

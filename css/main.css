@@ -213,7 +213,7 @@ li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
-  background-image: url("../../assets/images/hero.png");
+  background-image: url("assets/images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -237,7 +237,7 @@ li a:hover {
 }
 
 .hero .content h1 {
-  font-size: "3.5rem";
+  font-size: 3rem;
   font-family: "Cinzel Bold";
   color: #3F3D3F;
   font-weight: 700;
@@ -246,7 +246,7 @@ li a:hover {
 }
 
 .hero .content p {
-  font-size: "1.125rem";
+  font-size: 1.2rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 500;
   padding: 1em;
@@ -295,86 +295,48 @@ li a:hover {
   outline: none;
 }
 
-.intro {
-  padding: 1em 2em;
-  background: #F0ECEA;
-  display: block;
-}
+/* Intro Mobile */
+/* .intro{
+        padding:1em 2em;
+        background:color(color-4);
+        display:block;
+        .intro-box-1{
+            border: $border-light;
+            width: fit-content;
+            height: fit-content;
+            margin: 0 auto;
+            .intro-img{
+                position: relative;
+                right:10px;
+                top:20px;
+                max-width: 100%;
 
-.intro .intro-box-1 {
-  border: 1px solid #7A583E;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0 auto;
-}
+            }
+        }
+        .intro-box-2{
+            display: block;
+            right: 0;
+            text-align: center;
+        
+            p{
+                width: fit-content;
+                font-size: 1.2rem;
+                color:color(color-2);
+                line-height: 1.5;
+                font-family: fontsFamily(regular-m);
+            }
+        }
+        .intro-btn{
+            @include genericBtn;
+        
+            &:hover{
+                @include hoverBtns;
+            }
+        } 
+    }
 
-.intro .intro-box-1 .intro-img {
-  position: relative;
-  right: 10px;
-  top: 20px;
-  max-width: 100%;
-}
 
-.intro .intro-box-2 {
-  display: block;
-  right: 0;
-  text-align: center;
-}
-
-.intro .intro-box-2 p {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 1.2rem;
-  color: #3F3D3F;
-  line-height: 1.5;
-  font-family: "Montserrat Regular";
-}
-
-.intro .intro-btn {
-  cursor: pointer;
-  font-family: "Montserrat Regular";
-  color: #F0ECEA;
-  width: 189px;
-  height: 65px;
-  background-color: #805B6A;
-  outline: none;
-  border-radius: 8px;
-  border: none;
-  padding: .5rem;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-}
-
-@media screen and (min-width: 768px) {
-  .intro .intro-btn {
-    width: 255px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .intro .intro-btn {
-    width: 255px;
-  }
-}
-
-.intro .intro-btn:hover {
-  cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  border: none;
-  border-radius: 8px;
-  color: #F0ECEA;
-  background-color: #52353f;
-  -webkit-filter: drop-shadow(0px 6px 4px rgba(0, 10, 0, 0.4));
-          filter: drop-shadow(0px 6px 4px rgba(0, 10, 0, 0.4));
-  outline: none;
-}
-
+*/
 /*----Breakpoints---- */
 @media screen and (min-width: 768px) {
   /* Hero */
@@ -450,9 +412,6 @@ li a:hover {
     outline: none;
   }
   /* Intro */
-  .intro {
-    height: 100vh;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -475,61 +434,47 @@ li a:hover {
     font-size: 3.181818rem;
   }
   .hero .content-hero .content p {
-    margin: 0 0 3rem 0;
+    margin: 0 0 3em 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 511px;
+    width: 600px;
   }
   /* Intro */
-  .grid-container {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 1rem;
-    -ms-grid-columns: 50% auto;
+  /*  .grid-container{
+        display:grid;
+        grid-gap:1rem;
         grid-template-columns: 50% auto;
-    -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "grid-description  grid-img" "grid-btn         grid-img ";
-    justify-items: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .grid-container .grid-description {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: grid-description;
-    text-align: left;
-  }
-  .grid-container .grid-description p {
-    padding: 0;
-  }
-  .grid-container .grid-img {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    grid-area: grid-img;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-  }
-  .grid-container .grid-btn {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: grid-btn;
-    -ms-grid-column-align: start;
-        justify-self: start;
-  }
-  .intro-box-1 .intro-img {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
+        grid-template-areas: 
+            "grid-description  grid-img"
+            "grid-btn         grid-img ";
+    
+        justify-items: center;
+        align-items: start;
+        justify-content: space-between;
+        
+        .grid-description{
+            grid-area: grid-description;
+            text-align: left;
+            p{
+                padding: 0;
+            }
+        }
+        .grid-img{
+            grid-area: grid-img;
+            align-self: start;
+
+        }
+        .grid-btn{
+            grid-area: grid-btn;
+            justify-self: start;
+        }
+    }
+    .intro-box-1{
+        .intro-img{
+            width: fit-content;
+            height: fit-content;
+        }
+    } */
 }
 /*# sourceMappingURL=main.css.map */

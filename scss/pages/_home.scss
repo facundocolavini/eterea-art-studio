@@ -10,7 +10,7 @@
     overflow: hidden;
     object-fit: cover;
     background-position: center;
-    background-image: url('../../assets/images/hero.png');
+    background-image: url('assets/images/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
     .content-hero{
@@ -23,7 +23,7 @@
     .content{
         text-align: center;   
         h1{
-            font-size: fontSize(h1);
+            font-size: 3rem;
             font-family: fontsFamily(bold-c);
             color:color(color-2);
             font-weight: 700;
@@ -31,7 +31,7 @@
             margin-bottom: 1em;
         }
         p{
-            font-size:  fontSize(p);
+            font-size:  1.2rem;
             font-family: fontsFamily(sbold-m);
             font-weight: 500;
             padding: 1em;
@@ -50,48 +50,48 @@
     }
 
 }
-.intro{
-    padding:1em 2em;
-    background:color(color-4);
-    display:block;
-    .intro-box-1{
-        border: $border-light;
-        width: fit-content;
-        height: fit-content;
-        margin: 0 auto;
-        .intro-img{
-            position: relative;
-            right:10px;
-            top:20px;
-            max-width: 100%;
-
-        }
-    }
-    .intro-box-2{
-        display: block;
-        right: 0;
-        text-align: center;
-       
-        p{
+/* Intro Mobile */
+/* .intro{
+        padding:1em 2em;
+        background:color(color-4);
+        display:block;
+        .intro-box-1{
+            border: $border-light;
             width: fit-content;
-            font-size: 1.2rem;
-            color:color(color-2);
-            line-height: 1.5;
-            font-family: fontsFamily(regular-m);
+            height: fit-content;
+            margin: 0 auto;
+            .intro-img{
+                position: relative;
+                right:10px;
+                top:20px;
+                max-width: 100%;
+
+            }
         }
-    }
-    .intro-btn{
-        @include genericBtn;
-      
-        &:hover{
-            @include hoverBtns;
+        .intro-box-2{
+            display: block;
+            right: 0;
+            text-align: center;
+        
+            p{
+                width: fit-content;
+                font-size: 1.2rem;
+                color:color(color-2);
+                line-height: 1.5;
+                font-family: fontsFamily(regular-m);
+            }
         }
+        .intro-btn{
+            @include genericBtn;
+        
+            &:hover{
+                @include hoverBtns;
+            }
+        } 
     }
-   
-}
 
 
-
+*/
 /*----Breakpoints---- */
 
 
@@ -127,10 +127,7 @@
         }
     }
     /* Intro */
-    .intro{
-        height: 100vh;
-        
-    }
+
 }
 @include media-up(lg){
     body,html{
@@ -148,15 +145,15 @@
                 }
 
                 p{
-                    margin:0 0 3rem 0;
+                    margin:0 0 3em 0;
                     box-sizing: border-box;
-                    width: 511px;
+                    width: 600px;
                 }
             }
         }
     }
-        /* Intro */
-    .grid-container{
+    /* Intro */
+   /*  .grid-container{
         display:grid;
         grid-gap:1rem;
         grid-template-columns: 50% auto;
@@ -191,7 +188,7 @@
             width: fit-content;
             height: fit-content;
         }
-    }
+    } */
 
 }
 
