@@ -213,7 +213,7 @@ li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
-  background-image: url("assets/images/hero.png");
+  background-image: url("/assets/images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
