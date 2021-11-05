@@ -502,6 +502,7 @@ li a:hover {
   .intro {
     display: -ms-grid;
     display: grid;
+    height: 100vh;
     -ms-grid-columns: 50% auto;
         grid-template-columns: 50% auto;
     -webkit-box-pack: center;

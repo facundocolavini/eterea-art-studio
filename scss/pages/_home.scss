@@ -178,6 +178,7 @@
     /* Intro */
     .intro{
         display: grid;
+        height: 100vh;
         grid-template-columns: 50% auto;
         justify-content: center;
         bottom:0;
