@@ -9,11 +9,13 @@
     display:flex;
     overflow: hidden;
     object-fit: cover;
-    background-position: center;
-    background-color: transparent;
-    background: url('../../assets/images/hero.png');
-    background-repeat: no-repeat;
+
+
+    background: url('../assets/images/hero.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     .content-hero{
         height: 100%;
         width: 100%;
