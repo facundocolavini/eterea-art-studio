@@ -7,7 +7,7 @@
     width: 100%;
     height: 100vh;
     display:flex;
-    overflow: hidden;
+
     object-fit: cover;
 
 
@@ -17,8 +17,7 @@
     background-repeat: no-repeat;
 
     .content-hero{
-        height: 100%;
-        width: 100%;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,7 +42,6 @@
             margin-bottom: 2.125em;
         }
     }
-   
     .hero-btn{
         @include genericBtn;
       
@@ -54,47 +52,59 @@
 
 }
 /* Intro Mobile */
-/* .intro{
-        padding:1em 2em;
-        background:color(color-4);
-        display:block;
-        .intro-box-1{
-            border: $border-light;
-            width: fit-content;
-            height: fit-content;
-            margin: 0 auto;
-            .intro-img{
-                position: relative;
-                right:10px;
-                top:20px;
-                max-width: 100%;
 
-            }
-        }
-        .intro-box-2{
-            display: block;
-            right: 0;
-            text-align: center;
-        
-            p{
-                width: fit-content;
-                font-size: 1.2rem;
-                color:color(color-2);
-                line-height: 1.5;
-                font-family: fontsFamily(regular-m);
-            }
+.intro{
+    padding:5em 2em;
+    position: relative;
+    background-color: color(color-4);
+    display:grid;
+    align-items: center;
+    grid-gap: 2em;
+    grid-template-areas: 
+        "box-1"
+        "box-2";
+                            
+    padding: 1em;
+    text-align: center;
+    .box-1{
+        grid-area: box-1;
+        width: 100%;
+        right: 0;
+      
+        margin: 3em 0;
+        p{
+            font-size:  1.2rem;
+            font-family: fontsFamily(light-m);
+            line-height: 1.5;
+            color:color(color-2);
+            margin-bottom: 2.125em;
         }
         .intro-btn{
             @include genericBtn;
-        
             &:hover{
                 @include hoverBtns;
             }
-        } 
+        }
     }
+    .box-2{
+        box-sizing: content-box;
+        grid-area: box-2;
+        .border{
+            border:$border-light;
+            max-width:100%;
+            margin-left: 1em;
 
+        }
+        .intro-img{
+            position: relative;
+            top: 20px;
+            right: 20px;
+            height: 100%;
+            width: 100%;
+        }   
+    }
+}
 
-*/
 /*----Breakpoints---- */
 
 
@@ -129,8 +139,16 @@
             @include hoverBtns;
         }
     }
-    /* Intro */
-
+    .intro{
+    
+   
+        .box-2{
+            margin:0 auto;
+            width: 500px;
+            height: 500px;
+          
+        }
+    }
 }
 @include media-up(lg){
     body,html{
@@ -138,6 +156,8 @@
     }
     /* Hero */
     .hero {
+        height: 100vh;
+        padding: 3em 10em;
         .content-hero{
             display: flex;
             justify-content: flex-start;
@@ -156,42 +176,39 @@
         }
     }
     /* Intro */
-   /*  .grid-container{
-        display:grid;
-        grid-gap:1rem;
+    .intro{
+        display: grid;
         grid-template-columns: 50% auto;
-        grid-template-rows: auto;
+        justify-content: center;
+        bottom:0;
+        padding:  3em;
+
+        text-align: left;
         grid-template-areas: 
-            "grid-description  grid-img"
-            "grid-btn         grid-img ";
-    
-        justify-items: center;
-        align-items: start;
-        justify-content: space-between;
-        
-        .grid-description{
-            grid-area: grid-description;
-            text-align: left;
+            "box-1 box-2";
+
+        .box-1{
             p{
-                padding: 0;
+              
             }
         }
-        .grid-img{
-            grid-area: grid-img;
-            align-self: start;
+        .box-2{
 
+            margin:0;
+            .intro-img{
+             
+                object-fit: contain;
+                position: relative;
+                top: 50px;
+                width: 100%;
+                height: 100%;
+                right: 50px;
+
+            } 
         }
-        .grid-btn{
-            grid-area: grid-btn;
-            justify-self: start;
-        }
+
     }
-    .intro-box-1{
-        .intro-img{
-            width: fit-content;
-            height: fit-content;
-        }
-    } */
+
 
 }
 
