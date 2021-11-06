@@ -1,11 +1,11 @@
 //Abstracts
-@import 'abstracts/variables',
-        'abstracts/boilerplate',
-        'abstracts/mixins',
-        'abstracts/functions';
-//Base 
-@import 'base/typography';
+@import "abstracts/variables", "abstracts/boilerplate", "abstracts/mixins",
+  "abstracts/functions";
+//Base
+@import "base/typography";
 
+//components
+@import "components/footer";
 
 //Pages
-@import 'pages/home';
+@import "pages/home";
