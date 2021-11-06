@@ -606,9 +606,6 @@ li a:hover {
     font-size: 24px;
   }
   /* Hero */
-  .hero {
-    padding-left: 10em;
-  }
   .hero .content-hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -689,8 +686,6 @@ li a:hover {
     margin-bottom: 2em;
   }
   .content-main h2 {
-    width: 100%;
-    word-wrap: break-all;
     border-bottom: 1px solid #7A583E;
     font-size: 1.9rem;
     text-align: left;
