@@ -237,7 +237,7 @@
     }
     /* Hero */
     .hero {
-        padding-left:10em;
+
         .content-hero{
             display: flex;
             justify-content: flex-start;
@@ -300,8 +300,7 @@
             margin-bottom: 2em;
         }
         h2{
-            width: 100%;
-            word-wrap: break-all;
+
             border-bottom: $border-light;
 
             font-size: 1.9rem;
