@@ -49,6 +49,12 @@ ul, li, a, p {
   src: url("../assets/fonts/Cinzel-Bold.ttf");
 }
 
+footer {
+  font-family: "Montserrat Regular";
+  color: #F0ECEA;
+  background-color: #3F3D3F;
+}
+
 .navbar {
   position: fixed;
   background: rgba(175, 167, 157, 0.699);
