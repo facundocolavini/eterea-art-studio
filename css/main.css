@@ -51,8 +51,169 @@ ul, li, a, p {
 
 footer {
   font-family: "Montserrat Regular";
-  color: #F0ECEA;
-  background-color: #3F3D3F;
+  background-color: #B0A89E;
+  color: #7A583E;
+  font-size: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+      grid-template-areas: "subs" "social" "info";
+}
+
+.footer-subs {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: subs;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.8em;
+}
+
+.footer-subs input {
+  background-color: #B0A89E;
+  border: 2px solid #7A583E;
+  margin: 0.5em 0;
+}
+
+.footer-subs input:focus {
+  outline-color: #3F3D3F;
+}
+
+.footer-subs i {
+  display: none;
+}
+
+.footer-social {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: social;
+  padding-bottom: 0.5em;
+}
+
+.footer-social div {
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.footer-social div i {
+  padding: 0 0.2em;
+  font-size: 2rem;
+}
+
+.footer-social a {
+  color: #7A583E;
+}
+
+.footer-info {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: info;
+  font-family: "Montserrat Light";
+  text-align: center;
+}
+
+.footer-info p {
+  font-size: 1rem;
+}
+
+.footer-info p:nth-child(2) {
+  display: none;
+}
+
+.footer-logo {
+  fill: #7A583E;
+  margin: 0.5em 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: #3F3D3F;
+    color: #F0ECEA;
+    font-size: 0.8rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 3% 1fr 1fr 3%;
+        grid-template-columns: 3% 1fr 1fr 3%;
+        grid-template-areas: ". social  subs ." ". info  info .";
+  }
+  .footer-subs {
+    place-self: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-subs input {
+    background-color: #3F3D3F;
+    border: 1px solid #F0ECEA;
+    margin: 0.5em 1em;
+    max-height: 1rem;
+  }
+  .footer-subs input:focus {
+    outline-color: #3F3D3F;
+  }
+  .footer-subs i {
+    display: block;
+  }
+  .footer-social {
+    place-self: start;
+    padding-top: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-social div {
+    margin: 0 2em;
+    text-align: center;
+  }
+  .footer-social div p {
+    padding-right: 1em;
+  }
+  .footer-social div i {
+    padding: 0 0.5em;
+    font-size: inherit;
+  }
+  .footer-social a {
+    color: #F0ECEA;
+  }
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-info p {
+    font-size: 0.8rem;
+  }
+  .footer-info p:nth-child(2) {
+    display: block;
+  }
+  .footer-logo {
+    max-height: 2em;
+    margin: 0 0.5em;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .navbar {

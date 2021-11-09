@@ -1,5 +1,140 @@
 footer {
   font-family: fontsFamily(regular-m);
-  color: color(color-4);
-  background-color: color(color-2);
+  background-color: color(color-3);
+  color: color(color-1);
+  font-size: 1.5rem;
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "subs"
+    "social"
+    "info";
+}
+
+.footer-subs {
+  grid-area: subs;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.8em;
+  input {
+    background-color: color(color-3);
+    border: 2px solid color(color-1);
+    margin: 0.5em 0;
+  }
+  input:focus {
+    outline-color: color(color-2);
+  }
+  i {
+    display: none;
+  }
+}
+.footer-social {
+  grid-area: social;
+  padding-bottom: 0.5em;
+  div {
+    margin: 0.5em 0;
+    text-align: center;
+    i {
+      padding: 0 0.2em;
+      font-size: 2rem;
+    }
+  }
+  a {
+    color: color(color-1);
+  }
+}
+
+.footer-info {
+  grid-area: info;
+  font-family: fontsFamily(light-m);
+  text-align: center;
+  p {
+    font-size: 1rem;
+  }
+  p:nth-child(2) {
+    display: none;
+  }
+}
+
+.footer-logo {
+  fill: color(color-1);
+  margin: 0.5em 0;
+}
+
+@include media-up(md) {
+  footer {
+    background-color: color(color-2);
+    color: color(color-4);
+    font-size: 0.8rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3% 1fr 1fr 3%;
+    grid-template-areas:
+      ". social  subs ."
+      ". info  info .";
+  }
+
+  .footer-subs {
+    place-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    input {
+      background-color: color(color-2);
+      border: 1px solid color(color-4);
+      margin: 0.5em 1em;
+      max-height: 1rem;
+    }
+    input:focus {
+      outline-color: color(color-2);
+    }
+    i {
+      display: block;
+    }
+  }
+  .footer-social {
+    place-self: start;
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    div {
+      margin: 0 2em;
+      text-align: center;
+      p {
+        padding-right: 1em;
+      }
+      i {
+        padding: 0 0.5em;
+        font-size: inherit;
+      }
+    }
+    a {
+      color: color(color-4);
+    }
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 0.8rem;
+    }
+    p:nth-child(2) {
+      display: block;
+    }
+  }
+  .footer-logo {
+    max-height: 2em;
+    margin: 0 0.5em;
+    order: 2;
+  }
+}
+
+@include media-up(lg) {
+}
+
+@include media-up(xl) {
 }
