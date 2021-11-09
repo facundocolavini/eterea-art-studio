@@ -68,7 +68,7 @@ footer {
     font-size: 0.8rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 3% 1fr 1fr 3%;
+    grid-template-columns: 3% auto auto 3%;
     grid-template-areas:
       ". social  subs ."
       ". info  info .";
@@ -115,21 +115,33 @@ footer {
     }
   }
   .footer-info {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "p1 logo p2";
+    justify-self: space-between;
+    justify-items: space-between;
     align-items: center;
 
     p {
+      display: flex;
+      justify-content: flex-start;
+      grid-area: p1;
+
       font-size: 0.8rem;
     }
-    p:nth-child(2) {
-      display: block;
+    p:nth-child(n + 2) {
+      grid-area: p2;
+      display: flex;
+      justify-content: flex-end;
     }
   }
   .footer-logo {
+    display: flex;
+    justify-self: center;
+    grid-area: logo;
+    margin: 0 auto;
     max-height: 2em;
-    margin: 0 0.5em;
-    order: 2;
   }
 }
 
