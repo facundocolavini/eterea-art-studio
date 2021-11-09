@@ -62,6 +62,75 @@ footer {
 }
 
 @include media-up(md) {
+  footer {
+    background-color: color(color-2);
+    color: color(color-4);
+    font-size: 0.8rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3% 1fr 1fr 3%;
+    grid-template-areas:
+      ". social  subs ."
+      ". info  info .";
+  }
+
+  .footer-subs {
+    place-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    input {
+      background-color: color(color-2);
+      border: 1px solid color(color-4);
+      margin: 0.5em 1em;
+      max-height: 1rem;
+    }
+    input:focus {
+      outline-color: color(color-2);
+    }
+    i {
+      display: block;
+    }
+  }
+  .footer-social {
+    place-self: start;
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    div {
+      margin: 0 2em;
+      text-align: center;
+      p {
+        padding-right: 1em;
+      }
+      i {
+        padding: 0 0.5em;
+        font-size: inherit;
+      }
+    }
+    a {
+      color: color(color-4);
+    }
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 0.8rem;
+    }
+    p:nth-child(2) {
+      display: block;
+    }
+  }
+  .footer-logo {
+    max-height: 2em;
+    margin: 0 0.5em;
+    order: 2;
+  }
 }
 
 @include media-up(lg) {

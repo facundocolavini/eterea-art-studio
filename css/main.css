@@ -125,6 +125,97 @@ footer {
   margin: 0.5em 0;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: #3F3D3F;
+    color: #F0ECEA;
+    font-size: 0.8rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 3% 1fr 1fr 3%;
+        grid-template-columns: 3% 1fr 1fr 3%;
+        grid-template-areas: ". social  subs ." ". info  info .";
+  }
+  .footer-subs {
+    place-self: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-subs input {
+    background-color: #3F3D3F;
+    border: 1px solid #F0ECEA;
+    margin: 0.5em 1em;
+    max-height: 1rem;
+  }
+  .footer-subs input:focus {
+    outline-color: #3F3D3F;
+  }
+  .footer-subs i {
+    display: block;
+  }
+  .footer-social {
+    place-self: start;
+    padding-top: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-social div {
+    margin: 0 2em;
+    text-align: center;
+  }
+  .footer-social div p {
+    padding-right: 1em;
+  }
+  .footer-social div i {
+    padding: 0 0.5em;
+    font-size: inherit;
+  }
+  .footer-social a {
+    color: #F0ECEA;
+  }
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-info p {
+    font-size: 0.8rem;
+  }
+  .footer-info p:nth-child(2) {
+    display: block;
+  }
+  .footer-logo {
+    max-height: 2em;
+    margin: 0 0.5em;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 .navbar {
   position: fixed;
   background: rgba(175, 167, 157, 0.699);
