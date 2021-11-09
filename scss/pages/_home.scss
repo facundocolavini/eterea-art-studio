@@ -447,7 +447,7 @@
         display: grid;
 
         grid-gap:2em;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 50% auto;
         grid-template-areas: 
             "payment shipping";
         .payment{
