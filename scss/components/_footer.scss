@@ -133,6 +133,11 @@ footer {
     p:nth-child(1) {
       display: block;
       place-self: start;
+      display: flex;
+      justify-content: flex-start;
+      grid-area: p1;
+  
+      font-size: 0.8rem;
     }
     p:nth-child(n + 2) {
       grid-area: p2;
@@ -146,5 +151,9 @@ footer {
     grid-area: logo;
     margin: 0 auto;
     max-height: 1.5em;
+    justify-self:center;
+    grid-area: logo;
+    margin: 0 auto;
+    max-height: 2em;
   }
 }
