@@ -51,7 +51,7 @@ footer {
   p {
     font-size: 1rem;
   }
-  p:nth-child(2) {
+  p:nth-child(1) {
     display: none;
   }
 }
@@ -115,6 +115,7 @@ footer {
     }
   }
   .footer-info {
+    padding-bottom: 1em;
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
@@ -124,6 +125,14 @@ footer {
     align-items: center;
 
     p {
+      font-size: 0.6rem;
+      display: flex;
+      justify-content: flex-start;
+      grid-area: p1;
+    }
+    p:nth-child(1) {
+      display: block;
+      place-self: start;
       display: flex;
       justify-content: flex-start;
       grid-area: p1;
@@ -134,22 +143,17 @@ footer {
       grid-area: p2;
       display: flex;
       justify-content: flex-end;
-     
     }
   }
   .footer-logo {
     display: flex;
+    justify-self: center;
+    grid-area: logo;
+    margin: 0 auto;
+    max-height: 1.5em;
     justify-self:center;
     grid-area: logo;
     margin: 0 auto;
     max-height: 2em;
-   
-
   }
-}
-
-@include media-up(lg) {
-}
-
-@include media-up(xl) {
 }
