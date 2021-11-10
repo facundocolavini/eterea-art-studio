@@ -66,9 +66,10 @@ footer {
     background-color: color(color-2);
     color: color(color-4);
     font-size: 0.8rem;
+    padding: 1em 5em;
     display: grid;
     align-items: center;
-    grid-template-columns: 3% auto auto 3%;
+    grid-template-columns: 8% auto auto 8%;
     grid-template-areas:
       ". social  subs ."
       ". info  info .";
@@ -98,7 +99,6 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     div {
       margin: 0 2em;
       text-align: center;
@@ -115,45 +115,42 @@ footer {
     }
   }
   .footer-info {
-    padding-bottom: 1em;
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "p1 logo p2";
     justify-self: space-between;
     justify-items: space-between;
-    align-items: center;
-
+    align-items: flex-end;
     p {
       font-size: 0.6rem;
       display: flex;
       justify-content: flex-start;
       grid-area: p1;
+      align-items: flex-end;
     }
     p:nth-child(1) {
-      display: block;
-      place-self: start;
+     
       display: flex;
       justify-content: flex-start;
+      align-items: flex-end;
       grid-area: p1;
   
-      font-size: 0.8rem;
+      font-size: 0.5rem;
     }
     p:nth-child(n + 2) {
       grid-area: p2;
       display: flex;
       justify-content: flex-end;
     }
-  }
-  .footer-logo {
-    display: flex;
-    justify-self: center;
-    grid-area: logo;
-    margin: 0 auto;
-    max-height: 1.5em;
-    justify-self:center;
-    grid-area: logo;
-    margin: 0 auto;
-    max-height: 2em;
+    .footer-logo {
+      display: flex;
+      justify-self: center;
+      grid-area: logo;
+      margin: 0 auto;
+      max-height: 1.5em;
+      margin: 0 auto;
+      max-height: 2em;
+    }
   }
 }
