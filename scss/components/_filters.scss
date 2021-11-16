@@ -1,0 +1,56 @@
+@mixin filters-category{
+
+input[type=checkbox] + label {
+    display: flex;
+    margin: 0.3em;
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.2em;
+    color:color(color-1);
+    font-family: fontsFamily(light-m);
+    font-size: 1.2rem;
+}
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid color(color-1);
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 0.3em;
+    margin-right: 0.3em;
+    vertical-align: middle;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: color(color-1);
+    border-color: color(color-1);
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+
+  }
+  @include media-up(lg){
+        input[type=checkbox] + label {
+            display: flex;
+        }
+    }
+}

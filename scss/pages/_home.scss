@@ -41,7 +41,6 @@
     }
     .hero-btn{
         @include genericBtn;
-      
         &:hover{
             @include hoverBtns;
         }
@@ -92,6 +91,7 @@
         }
         .intro-btn{
             @include genericBtn;
+            font-size: 1rem;
             &:hover{
                 @include hoverBtns;
             }
@@ -152,6 +152,7 @@
         }
         .main-btn{
             @include genericBtn;
+            font-size: 1rem;
             &:hover{
                 @include hoverBtns;
             }
@@ -203,7 +204,7 @@
       
         .main-btn{
             @include genericBtn;
-
+            font-size: 1rem;
             margin-bottom: 1em;
             &:hover{
                 @include hoverBtns;
@@ -213,7 +214,7 @@
     .shipping{
         .main-btn{
             @include genericBtn;
-
+            font-size: 1rem;
             margin-bottom: 1em;
             &:hover{
                 @include hoverBtns;
@@ -250,6 +251,7 @@
     }
     .hero-btn{
         @include genericBtn;
+        font-size: 1rem;
         &:hover{
             @include hoverBtns;
         }
