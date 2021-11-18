@@ -53,4 +53,13 @@ input[type=checkbox] + label {
             display: flex;
         }
     }
+    .filter-category-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1.5em;
+    }
+    .checkbox{
+      width: auto;
+    }
 }

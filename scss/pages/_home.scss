@@ -161,7 +161,7 @@
 /* Shipping */
 .content-shipping{
     text-align: center;
-    padding:5em 2em;
+    padding:6em 3em;
     background: color(color-4);
  
     h2{
@@ -276,7 +276,7 @@
     .content-main{
         display: grid;
         grid-template-rows: 1fr;
-    
+        background: #fff;
         grid-template-areas: 
         "box-2"
         "box-1";
@@ -296,7 +296,7 @@
     .content-shipping{
         text-align: center;
         display: grid;
-        padding: 5em 2em;
+        padding: 1em calc(15% - 0.5em);
         grid-gap:2em;
         grid-template-columns: 1fr;
         grid-template-areas: 

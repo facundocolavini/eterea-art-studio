@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="../assets/images/logo.png"/>
+   
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -48,68 +49,40 @@
         </section>
         <aside class="filter-category">
           <h2>Categorias</h2>
-            <form>
-              <div class="checkboxs">
-                <input type="checkbox" id="product-1">
-                <label for="product-1">Producto 1</label>
-                <input type="checkbox" id="product-2">
-                <label for="product-2">Producto 2</label>
-                <input type="checkbox" id="product-3">
-                <label for="product-3">Producto 3</label>
-                <input type="checkbox" id="product-4">
-                <label for="product-4">Producto 4</label>    
-                <input type="checkbox" id="product-4">  
-              </div>
-              <button class="filter-btn" type="submit">FILTRAR</button>
-            </form>
+          <div class="category-list">
+            <a href="#" class="category-item" category="all">Todas</a>
+            <a href="#" class="category-item" category="producto-1">Producto 1</a>
+            <a href="#" class="category-item" category="producto-2">Producto 2</a>
+            <a href="#" class="category-item" category="producto-3">Producto 3</a>
+          </div>
         </aside>
-        <section class="products-container">
-            <div class="product-item">
-                <img class="product-img" src="../assets/images/main1.png" alt="product-1" />
-                <div class="product-description">
-                    <h2>Producto 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
-                    </p>
-                    <a class="card-btn" href="#">CONSULTAR</a>
-                </div>
+        <section class="products-container" id="list-products">
+          <div class="product-item" category="producto-1">
+            <img class="product-img" src="../assets/images/products/product1.png" alt="product-1" />
+            <div class="product-description">
+                <h2>Producto 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quidem.</p>
+                <a class="card-btn" href="#">CONSULTAR</a>
             </div>
-            <div class="product-item">
-                <img class="product-img" src="../assets/images/main1.png" alt="product-2" />
-                <div class="product-description">
-                    <h2>Producto 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
-                    </p>
-                    <a class="card-btn" href="#">CONSULTAR</a>
-                </div>
+          </div>
+          <div class="product-item" category="producto-2">
+            <img class="product-img" src="../assets/images/products/product2.jpg" alt="product-2" />
+            <div class="product-description">
+                <h2>Producto 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quidem.</p>
+                <a class="card-btn" href="#">CONSULTAR</a>
             </div>
-            <div class="product-item">
-                <img class="product-img" src="../assets/images/main1.png" alt="product-3" />
-                <div class="product-description">
-                    <h2>Producto 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.</p>
-                    <a class="card-btn" href="#">CONSULTAR</a>
-                </div>
+          </div>
+          <div class="product-item" category="producto-3">
+            <img class="product-img" src="../assets/images/products/product2.jpg" alt="product-3" />
+            <div class="product-description">
+                <h2>Producto 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quidem.</p>
+                <a class="card-btn" href="#">CONSULTAR</a>
             </div>
-            <div class="product-item">
-                <img class="product-img" src="../assets/images/main1.png" alt="product-4" />
-                <div class="product-description">
-                    <h2>Producto 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.</p>
-                    <a class="card-btn" href="#">CONSULTAR</a>
-                </div>
-            </div>
-            <div class="product-item">
-              <img class="product-img" src="../assets/images/main1.png" alt="product-5" />
-              <div class="product-description">
-                  <h2>Producto 5</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam, quidem.</p>
-                  <a class="card-btn" href="#">CONSULTAR</a>
-              </div>
           </div>
         </section>
     </main>
@@ -136,7 +109,9 @@
           <p>©2021 Etereo Art Studio</p>
         </div>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script src="../js/mobile-menu.js"></script>
+      <script type="module" src="../js/filter-category.js"></script>
       
 </body>
 </html>
