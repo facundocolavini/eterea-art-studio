@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="../assets/images/logo.png"/>
-   
     <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
@@ -48,41 +47,77 @@
             <h1>Elegi tu favorito</h1>
         </section>
         <aside class="filter-category">
-          <h2>Categorias</h2>
+          <h2>Categorías</h2>
           <div class="category-list">
-            <a href="#" class="category-item" category="all">Todas</a>
-            <a href="#" class="category-item" category="producto-1">Producto 1</a>
-            <a href="#" class="category-item" category="producto-2">Producto 2</a>
-            <a href="#" class="category-item" category="producto-3">Producto 3</a>
+            <a href="#" class="category-item all" subcategory="all">Todas</a>
+            <div class="filter-fieldset" category="hogar">
+              <div class="filter-legend" category="hogar">
+                <div class="filter-title">
+                  <span>Deco Hogar</span> 
+                </div>    
+              </div>
+              <ul class="categorys-lists"  category="hogar">
+                <li><a href="#" class="category-item" subcategory="posavasos">Posavasos</a></li>
+                <li><a href="#" class="category-item" subcategory="jaboneras">Jaboneras</a></li>
+                <li><a href="#" class="category-item" subcategory="porta-cepillos">Porta Cepillos</a></li>
+              </ul>
+            </div>
+            <div class="filter-fieldset" category="muebles">
+              <div class="filter-legend" category="muebles">
+                <div class="filter-title">
+                  <span>Deco Muebles</span> 
+                </div>    
+              </div>
+              <ul class="categorys-lists"  category="muebles">
+                <li><a href="#" class="category-item" subcategory="a-medida">A Medida</a></li>
+                <li><a href="#" class="category-item" subcategory="tablas-de-madera">Tablas de Madera</a></li>    
+              </ul>
+            </div>
+            <div class="filter-fieldset" category="accesorios">
+              <div class="filter-legend" category="accesorios">
+                <div class="filter-title">
+                  <span>Deco Accesorios</span> 
+                </div>    
+              </div>
+              <ul class="categorys-lists"  category="accesorios">
+                <li><a href="#" class="category-item" subcategory="peines">Peines</a></li>
+                <li><a href="#" class="category-item" subcategory="godetes">Godetes</a></li>    
+                <li><a href="#" class="category-item" subcategory="picadores">Picadores</a></li>    
+                <li><a href="#" class="category-item" subcategory="bandejas">Bandejas</a></li>    
+                <li><a href="#" class="category-item" subcategory="ceniceros">Ceniceros</a></li>    
+              </ul>
+            </div>
           </div>
         </aside>
         <section class="products-container" id="list-products">
-          <div class="product-item" category="producto-1">
-            <img class="product-img" src="../assets/images/products/product1.png" alt="product-1" />
-            <div class="product-description">
-                <h2>Producto 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quidem.</p>
-                <a class="card-btn" href="#">CONSULTAR</a>
-            </div>
+          <div class="bar-search">
+            <span class="icon-search"><i class="fas fa-search"></i></span>
+            <input class="input-search" type="search" placeholder="Buscar"> </input>
           </div>
-          <div class="product-item" category="producto-2">
-            <img class="product-img" src="../assets/images/products/product2.jpg" alt="product-2" />
-            <div class="product-description">
-                <h2>Producto 2</h2>
+          <div class="products">
+            <div class="card-product" subcategory="posavasos">
+              <div class="card-img">
+                <img src="../assets/images/products/product3.png" alt="product-3" />
+              </div>
+              <div class="card-description">
+                <h2>Posavasos 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam, quidem.</p>
-                <a class="card-btn" href="#">CONSULTAR</a>
+                <a class="card-btn" href="#">Consultar stock</a>
+              </div>
             </div>
-          </div>
-          <div class="product-item" category="producto-3">
-            <img class="product-img" src="../assets/images/products/product2.jpg" alt="product-3" />
-            <div class="product-description">
-                <h2>Producto 3</h2>
+            <div class="card-product" subcategory="posavasos">
+              <div class="card-img">
+                <img src="../assets/images/products/product3.png" alt="product-3" />
+              </div>
+              <div class="card-description">
+                <h2>Posavasos 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam, quidem.</p>
-                <a class="card-btn" href="#">CONSULTAR</a>
+                <a class="card-btn" href="#">Consultar stock</a>
+              </div>
             </div>
+          
           </div>
         </section>
     </main>
@@ -111,6 +146,7 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script src="../js/mobile-menu.js"></script>
+      <script type="module" src="../js/search-bar.js"></script>
       <script type="module" src="../js/filter-category.js"></script>
       
 </body>
