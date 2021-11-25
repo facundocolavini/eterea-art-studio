@@ -30,3 +30,22 @@
     outline:none;
 
 }
+
+
+@mixin btnCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 45px;
+    font-size: .8rem;
+    background-color:color(color-4);
+    color:black;
+    padding:.3em;
+    font-family: fontsFamily(sbold-m);
+    border-radius:10px;
+    &:hover{
+        background-color:color(color-5);
+        color:white;
+    }
+}
