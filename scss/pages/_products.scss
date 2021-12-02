@@ -5,25 +5,81 @@
 
 main{
     padding: 0;
-
     background: #fff;
+    scrollbar-gutter: 0;
+    scroll-behavior: none;
+    scroll-snap-type: none;
     box-sizing: content-box;
+    overflow: hidden;
 
 }
+
+
 .container{
-    padding:1em 2em;
+    padding:0;
     display:grid;
     grid-template-columns: 1fr;
-   
     margin-bottom: 30em;
-    grid-gap:5em 0;
+    grid-gap:1em 0;
+   
     grid-template-areas: 
-    "hero"
+ 
+    "p-hero"
     "aside" 
     "products";
 }
+.cat-intro{
+    position:relative;
+    padding: 0 2em;
+    top:80px;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100vh;
+    scrollbar-gutter: 0;
+    display:flex;
+    object-fit: cover;
+    background: url('../assets/images/hero-2.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+
+    .content-intro{
+        display: flex;
+        justify-content: center;
+    
+        align-items: center;
+    }
+    .cont-cat{
+        text-align: center;
+        h1{
+            font-size: 1.5rem;
+            font-family: fontsFamily(bold-c);
+            color:color(color-2);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: .2em;
+            width: 100%;
+        }
+/*         p{
+            width: 100%;
+            font-size:  1.2rem;
+            font-family: fontsFamily(sbold-c);
+            font-weight: 500;
+            padding: 1em;
+            line-height: 1.5;
+            color:color(color-2);
+            margin-bottom: 2.125em;
+        } */
+    }
+}
+
+
 .products-hero{
-    grid-area: hero;
+    padding:0 2em;
+    grid-area: p-hero;
     grid-column: 1/3;
     h1{
         text-align: center;
@@ -40,6 +96,7 @@ main{
     }
 }
 .filter-category{
+    margin:0 2em;
     background: #fff;
     grid-area:aside;
     grid-column: 2/-3;
@@ -144,7 +201,8 @@ main{
             width: 100%;
             a{
                 text-align: left;
-                scroll-behavior: unset;
+                scrollbar-gutter: 0;
+                scroll-behavior: none;
                 box-sizing: border-box;
                 font-size:  1rem;
                 text-align: center;
@@ -161,9 +219,38 @@ main{
              }
         }
     }
+    .categorys-lists[category]{	
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        li{
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+            a{
+                text-align: center;
+                scrollbar-gutter: 0;
+                scroll-behavior: none;
+                box-sizing: border-box;
+                font-size:  1rem;
+                color:color(color-2);
+                font-family: fontsFamily(regular-m);
+                width: 100%;
+            
+                transition:transform all .3s ease-in-out;
+                &:focus-within{
+                    transition:ease all .5s;
+                    width: 100%;
+                    text-align: center;
+                    background:color(color-3);
+                }
+            }
+        }
+    }
 }
 .products-container{
     grid-area:products;
+    margin:0 2em;
     height: fit-content;
     display: grid;
     grid-gap:1em;
@@ -250,7 +337,66 @@ main{
 
         }
     }
+    .product-not-found{
+        font-size: 1rem;
+        position: relative;    
+        background: color(color-4);
+        border-radius: 10px;
+        font-weight: 600;
+        width: 100%;
+        font-variant: normal;
+        padding: 1rem;
+        font-family: fontsFamily(regular-m);
+    }
+}
+
+@include media-up (md){
+    .cat-intro{
+        position:relative;
+        padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:80px;
+        left: 0;
+
+
+        scrollbar-gutter: 0;
+        object-fit: cover;
+        background: url('../assets/images/hero-2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
+        .content-intro{
+            display: flex;
+            justify-content: center;
+        
+            align-items: center;
+        }
+        .cont-cat{
+            text-align: center;
+            h1{
+                font-size: 1.5rem;
+                font-family: fontsFamily(bold-c);
+                color:color(color-2);
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: .2em;
+                width: 100%;
+            }
+    /*         p{
+                width: 100%;
+                font-size:  1.2rem;
+                font-family: fontsFamily(sbold-c);
+                font-weight: 500;
+                padding: 1em;
+                line-height: 1.5;
+                color:color(color-2);
+                margin-bottom: 2.125em;
+            } */
+        }
+    }
   
 }
 @include  media-up(lg){
@@ -263,18 +409,65 @@ main{
         grid-template-columns: 28% 1fr;
         grid-gap:1em;
         grid-template-areas: 
-        "hero  hero"
+        
+        "p-hero  p-hero"
         "aside  products";
     }
-    .products-hero{
-        h1{
-            text-align: left;
-            text-decoration: none;
-            border-bottom: $border-light;
+    
+
+
+    .cat-intro{
+        position:relative;
+        padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:80px;
+        left: 0;
+        right: 0;
+        grid-area:intro;
+        width: 100%;
+        height: 100vh;
+        scrollbar-gutter: 0;
+        display:flex;
+        object-fit: cover;
+        background: url('../assets/images/hero-2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        .content-intro{
+            display: flex;
+            justify-content: center;
+        
+            align-items: center;
+        }
+        .cont-cat{
+            text-align: center;
+            h1{
+                font-size: 2rem;
+                font-family: fontsFamily(bold-c);
+                color:color(color-2);
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: .2em;
+                width: 100%;
+            }
+    /*         p{
+                width: 100%;
+                font-size:  1.2rem;
+                font-family: fontsFamily(sbold-c);
+                font-weight: 500;
+                padding: 1em;
+                line-height: 1.5;
+                color:color(color-2);
+                margin-bottom: 2.125em;
+            } */
         }
     }
 
     .filter-category{
+        margin:0;
         display: grid;
         grid-template-columns: 1fr;
         padding: 1.4em;
@@ -398,6 +591,7 @@ main{
     }
     .products-container{
         grid-area:products;
+        margin:0;
         height: fit-content;
         display: grid;
         grid-template-areas: 
@@ -477,6 +671,10 @@ main{
                 }
             }
 
+        }
+        .product-not-found{
+            width: 500px;
+            background: transparent;
         }
     }
 }
