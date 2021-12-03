@@ -1,7 +1,7 @@
 footer {
   font-family: fontsFamily(regular-m);
-  background-color: color(color-3);
-  color: color(color-1);
+  background: color(color-2);
+  color: color(color-4);
   font-size: 1.5rem;
   display: grid;
   justify-items: center;
@@ -17,8 +17,13 @@ footer {
   padding-top: 1em;
   padding-bottom: 0.8em;
   input {
-    background-color: color(color-3);
-    border: 2px solid color(color-1);
+    padding-left: .2em;
+    margin:0 auto;
+    width: 85%;
+    color:color(color-4);
+    background-color:transparent;
+    border: 2px solid color(color-4);
+
     margin: 0.5em 0;
   }
   input:focus {
@@ -35,6 +40,7 @@ footer {
     margin: 0.5em 0;
     text-align: center;
     i {
+      color: color(color-4);
       padding: 0 0.2em;
       font-size: 2rem;
     }
