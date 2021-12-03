@@ -385,7 +385,7 @@ footer {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-      grid-template-areas: "subs" "social" "info";
+      grid-template-areas: "subs" "social" "info";
 }
 
 .footer-subs {
@@ -466,7 +466,7 @@ footer {
             align-items: center;
     -ms-grid-columns: 8% auto auto 8%;
         grid-template-columns: 8% auto auto 8%;
-        grid-template-areas: ". social  subs ." ". info  info .";
+        grid-template-areas: ". social  subs ." ". info  info .";
   }
   .footer-subs {
     place-self: end;
@@ -754,7 +754,7 @@ footer {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-      grid-template-areas: "subs" "social" "info";
+      grid-template-areas: "subs" "social" "info";
 }
 
 .footer-subs {
@@ -835,7 +835,7 @@ footer {
             align-items: center;
     -ms-grid-columns: 8% auto auto 8%;
         grid-template-columns: 8% auto auto 8%;
-        grid-template-areas: ". social  subs ." ". info  info .";
+        grid-template-areas: ". social  subs ." ". info  info .";
   }
   .footer-subs {
     place-self: end;
@@ -1059,7 +1059,7 @@ footer {
           align-items: center;
   text-align: center;
   grid-gap: 5em;
-      grid-template-areas: "box-1" "box-2";
+      grid-template-areas: "box-1" "box-2";
 }
 
 .intro .border {
@@ -1150,7 +1150,7 @@ footer {
           align-items: center;
   text-align: center;
   grid-gap: 5em;
-      grid-template-areas: "box-2" "box-1";
+      grid-template-areas: "box-2" "box-1";
 }
 
 .content-main .border {
@@ -1470,7 +1470,7 @@ footer {
     padding: 1em;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "box-2" "box-1";
+        grid-template-areas: "box-2" "box-1";
   }
   .intro .box-2 {
     margin: 0 auto;
@@ -1483,7 +1483,7 @@ footer {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     background: #fff;
-        grid-template-areas: "box-2" "box-1";
+        grid-template-areas: "box-2" "box-1";
   }
   .content-main .box-1 {
     margin: 0 auto;
@@ -1505,7 +1505,7 @@ footer {
     grid-gap: 2em;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "payment" "shipping";
+        grid-template-areas: "payment" "shipping";
   }
   .content-shipping .payment {
     -ms-grid-row: 1;
@@ -1979,7 +1979,7 @@ footer {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-      grid-template-areas: "subs" "social" "info";
+      grid-template-areas: "subs" "social" "info";
 }
 
 .footer-subs {
@@ -2060,7 +2060,7 @@ footer {
             align-items: center;
     -ms-grid-columns: 8% auto auto 8%;
         grid-template-columns: 8% auto auto 8%;
-        grid-template-areas: ". social  subs ." ". info  info .";
+        grid-template-areas: ". social  subs ." ". info  info .";
   }
   .footer-subs {
     place-self: end;
@@ -2196,14 +2196,14 @@ main {
 }
 
 .container {
-  padding: 0;
+  padding: 1em 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   margin-bottom: 30em;
   grid-gap: 1em 0;
-      grid-template-areas: "p-hero" "aside"  "products";
+      grid-template-areas: "p-hero" "aside"  "products";
 }
 
 .cat-intro {
@@ -2243,16 +2243,6 @@ main {
 
 .cat-intro .cont-cat {
   text-align: center;
-  /*         p{
-            width: 100%;
-            font-size:  1.2rem;
-            font-family: fontsFamily(sbold-c);
-            font-weight: 500;
-            padding: 1em;
-            line-height: 1.5;
-            color:color(color-2);
-            margin-bottom: 2.125em;
-        } */
 }
 
 .cat-intro .cont-cat h1 {
@@ -2284,8 +2274,7 @@ main {
   font-weight: 700;
   line-height: 1.5;
   margin-bottom: .5em;
-  -webkit-text-decoration: underline 1px;
-          text-decoration: underline 1px;
+  border-bottom: 1px solid #7A583E;
   margin-top: 80px;
   margin-bottom: 1em;
 }
@@ -2509,7 +2498,7 @@ main {
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
-      grid-template-areas: "searchbar" "products";
+      grid-template-areas: "searchbar" "products";
   grid-auto-rows: auto;
 }
 
@@ -2572,7 +2561,7 @@ main {
   padding: .8em;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "title" "description" "button";
+      grid-template-areas: "title" "description" "button";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   height: 10em;
@@ -2683,16 +2672,6 @@ main {
   }
   .cat-intro .cont-cat {
     text-align: center;
-    /*         p{
-                width: 100%;
-                font-size:  1.2rem;
-                font-family: fontsFamily(sbold-c);
-                font-weight: 500;
-                padding: 1em;
-                line-height: 1.5;
-                color:color(color-2);
-                margin-bottom: 2.125em;
-            } */
   }
   .cat-intro .cont-cat h1 {
     font-size: 1.5rem;
@@ -2702,6 +2681,28 @@ main {
     line-height: 1.2;
     margin-bottom: .2em;
     width: 100%;
+  }
+  .products-hero {
+    padding: 0 2em;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: p-hero;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .products-hero h1 {
+    text-align: left;
+    font-size: 3rem;
+    width: 100%;
+    font-family: "Cinzel Bold";
+    color: #7A583E;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #7A583E;
+    margin-top: 80px;
+    margin-bottom: 1em;
   }
 }
 
@@ -2714,7 +2715,7 @@ main {
     -ms-grid-columns: 28% 1fr;
         grid-template-columns: 28% 1fr;
     grid-gap: 1em;
-        grid-template-areas: "p-hero  p-hero" "aside  products";
+        grid-template-areas: "p-hero  p-hero" "aside  products";
   }
   .cat-intro {
     position: relative;
@@ -2935,7 +2936,7 @@ main {
     height: fit-content;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "searchbar" "products";
+        grid-template-areas: "searchbar" "products";
     grid-auto-rows: auto;
   }
   .products-container .bar-search {
@@ -3001,7 +3002,7 @@ main {
     padding: .5em;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "title" "description" "button";
+        grid-template-areas: "title" "description" "button";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 1fr;
@@ -3060,6 +3061,436 @@ main {
   .products-container .product-not-found {
     width: 500px;
     background: transparent;
+  }
+  .products-hero {
+    padding: 0 0;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: p-hero;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .products-hero h1 {
+    text-align: left;
+    font-size: 3rem;
+    width: 100%;
+    font-family: "Cinzel Bold";
+    color: #7A583E;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #7A583E;
+    margin-top: 80px;
+    margin-bottom: 1em;
+  }
+}
+
+.container-about {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "hero-about" "intro-about" "cares" "details-prod";
+}
+
+.container-about .hero-about {
+  margin-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "box-image" "box-text";
+  padding: 1em 2em;
+  grid-gap: 3em 0;
+  background: #B0A89E;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hero-about;
+}
+
+.container-about .hero-about .box-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: box-image;
+  height: 100%;
+}
+
+.container-about .hero-about .box-image .border-about {
+  border: 1px solid #7A583E;
+  max-width: 100%;
+  margin-right: 1.5em;
+}
+
+.container-about .hero-about .box-image .border-about .about-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 20px;
+  top: 30px;
+}
+
+.container-about .hero-about .box-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box-text;
+  text-align: center;
+}
+
+.container-about .hero-about .box-text .title-about {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Cinzel Regular";
+  color: #F0ECEA;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.container-about .hero-about .box-text .text-about {
+  font-size: 1.2rem;
+  font-family: "Montserrat Light";
+  font-weight: 600;
+  padding: .5em;
+  line-height: 1.5;
+  color: #3F3D3F;
+  margin: .2em auto;
+}
+
+.container-about .hero-about .box-text .text-about span {
+  font-family: "Montserrat-SemiBold";
+  color: #3F3D3F;
+}
+
+.container-about .intro-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: intro-about;
+  place-items: center;
+}
+
+.container-about .intro-about .bkg-p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: white;
+}
+
+.container-about .intro-about .bkg-p .text-about {
+  font-size: 1.2rem;
+  font-family: "Montserrat Light";
+  font-weight: 600;
+  padding: .5em;
+  line-height: 1.5;
+  color: #3F3D3F;
+  margin: .2em auto;
+}
+
+.container-about .intro-about .bkg-p .text-about span {
+  font-family: "Montserrat-SemiBold";
+  color: #3F3D3F;
+}
+
+.container-about .intro-about .border-intro {
+  content: '';
+  margin: 0 auto;
+  position: absolute;
+  padding: 1em calc(7.5% - 0.5em);
+  text-align: center;
+  margin: 0 auto;
+  left: calc(25% - 1em);
+  width: 60%;
+  border: 1px solid #7A583E;
+  text-align: center;
+  height: 400px;
+}
+
+.container-about .cares-about {
+  padding: 1em 2em;
+  background: #F0ECEA;
+  height: 100vh;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cares;
+}
+
+.container-about .products-about {
+  padding: 1em 2em;
+  background: #B0A89E;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: details-prod;
+}
+
+@media screen and (min-width: 768px) {
+  .container-about {
+    display: -ms-grid;
+    display: grid;
+  }
+  .hero-about {
+    margin-top: 80px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "box-image" "box-text";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: hero-about;
+    grid-gap: 2em 0;
+    background: #B0A89E;
+  }
+  .hero-about .box-image {
+    margin: 0 auto;
+    height: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: box-image;
+  }
+  .hero-about .box-image .border {
+    border: 1px solid #7A583E;
+    max-width: 100%;
+    margin-right: 1.5em;
+  }
+  .hero-about .box-image .border .about-img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: 20px;
+    top: 30px;
+  }
+  .hero-about .box-text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: box-text;
+    text-align: center;
+  }
+  .hero-about .box-text .text-about {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 2rem;
+    font-family: "Cinzel Regular";
+    color: #F0ECEA;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: .6em;
+    margin: 0 auto;
+    margin-bottom: .5em;
+  }
+  .hero-about .box-text p {
+    font-size: 1.2rem;
+    font-family: "Montserrat Light";
+    font-weight: 500;
+    padding: .5em;
+    line-height: 1.5;
+    color: #3F3D3F;
+    margin: .2em auto;
+  }
+  .hero-about .box-text p span {
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+  }
+  .intro-about {
+    padding: 1em 2em;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: intro-about;
+  }
+  .intro-about .bkg-p {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: white;
+  }
+  .intro-about .bkg-p p {
+    font-size: 1.2rem;
+    font-family: "Montserrat Light";
+    font-weight: 600;
+    padding: .5em;
+    line-height: 1.5;
+    color: #3F3D3F;
+    margin: .2em auto;
+  }
+  .intro-about .bkg-p p span {
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+  }
+  .intro-about .border-intro {
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    padding: 1em calc(7.5% - 0.5em);
+    text-align: center;
+    margin: 0 auto;
+    left: calc(25% - 1em);
+    width: 50%;
+    border: 1px solid #7A583E;
+    text-align: center;
+    height: 255px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-about {
+    display: -ms-grid;
+    display: grid;
+  }
+  .container-about .hero-about {
+    position: relative;
+    padding: 1em calc(10.5% - 0.5em);
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: hero-about;
+    height: 100vh;
+    width: 100%;
+    margin-top: 80px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-grid-columns: 2rem 1fr 1fr 2rem;
+        grid-template-columns: 2rem 1fr 1fr 2rem;
+        grid-template-areas: ". box-image box-text .";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 2em 3em;
+    background: #B0A89E;
+  }
+  .container-about .hero-about .box-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: box-image;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-about .hero-about .box-image .border-about {
+    margin: 0;
+    position: relative;
+    padding: 1em 0;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: 1px solid #7A583E;
+  }
+  .container-about .hero-about .box-image .border-about .about-img {
+    position: relative;
+    top: 5px;
+    left: 50px;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container-about .hero-about .box-text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: box-text;
+    text-align: left;
+    display: block;
+  }
+  .container-about .hero-about .box-text .title-about {
+    margin: 0;
+    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 2rem;
+    font-family: "Cinzel Bold";
+    color: #F0ECEA;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: .2em;
+    word-spacing: 1em;
+  }
+  .container-about .hero-about .box-text .text-about {
+    font-size: 1.2rem;
+    font-family: "Montserrat Light";
+    font-weight: 500;
+    padding: .5em;
+    line-height: 1.5;
+    color: #3F3D3F;
+    margin: .2em auto;
+  }
+  .container-about .hero-about .box-text .text-about span {
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+  }
+  .container-about .intro-about {
+    padding: 1em 5em;
+    padding: 1em calc(10.5% - 0.5em);
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: intro-about;
+  }
+  .container-about .intro-about .bkg-p {
+    position: relative;
+    width: 90%;
+    text-align: center;
+    background: white;
+  }
+  .container-about .intro-about .bkg-p .text-about {
+    font-size: 1.2rem;
+    font-family: "Montserrat Light";
+    font-weight: 600;
+    padding: .5em;
+    line-height: 1.5;
+    color: #3F3D3F;
+    margin: .2em auto;
+  }
+  .container-about .intro-about .bkg-p .text-about span {
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+  }
+  .container-about .intro-about .border-intro {
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    padding: 1em calc(7.5% - 0.5em);
+    text-align: center;
+    margin: 0 auto;
+    left: calc(25% - 1em);
+    width: 50%;
+    border: 1px solid #7A583E;
+    text-align: center;
+    height: 500px;
   }
 }
 /*# sourceMappingURL=main.css.map */

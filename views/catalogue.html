@@ -15,48 +15,42 @@
     <link rel="stylesheet" href="../css/main.css" />
     <title>Etéreo Art Studio</title>
 </head>
-<body>
+  <body>
     <section class="navbar">
-        <a href="../index.html"
-          ><img class="logo" src="../assets/images/logo.png" alt="logo"
-        /></a>
+      <a href="../index.html"
+        ><img class="logo" src="../assets/images/logo.png" alt="logo"
+      /></a>
+      <img
+        id="btn-open"
+        class="btn-menu-open"
+        src="../assets/icons/mobile-menu.svg"
+        alt="opne menu"
+      />
+      <nav>
         <img
-          id="btn-open"
-          class="btn-menu-open"
-          src="../assets/icons/mobile-menu.svg"
-          alt="opne menu"
+          id="btn-close"
+          class="btn-menu-close"
+          src="../assets/icons/exit.svg"
+          alt="close menu"
         />
-        <nav>
-          <img
-            id="btn-close"
-            class="btn-menu-close"
-            src="../assets/icons/exit.svg"
-            alt="close menu"
-          />
-          <ul class="nav-menu">
-            <li><a class="go-home" href="../index.html">INICIO</a></li>
-            <li><a class="go-us" href="../views/about.html">NOSOTROS</a></li>
-            <li><a class="go-products" href="../views/products.html">PRODUCTOS</a></li>
-            <li><a class="go-blog" href="#">BLOG</a></li>
-            <li><a class="go-contact" href="#">CONTACTO</a></li>
-          </ul>
-        </nav>
+        <ul class="nav-menu">
+          <li><a class="go-us" href="../views/about.html">NOSOTROS</a></li>
+          <li><a class="go-products" href="../views/catalogue.html">CATALOGO</a></li>
+          <li><a class="go-blog" href="#">BLOG</a></li>
+          <li><a class="go-contact" href="#">CONTACTO</a></li>
+        </ul>
+      </nav>
     </section>
     <section class="cat-intro">
       <div class="content-intro">
         <div class="cont-cat">
-              <h1 class="cat-intro-title"> Encuentra lo mejor para vos y tu hogar</h1>
-<!--           <p class="cat-intro-text">
-            Encuentra lo mejor para vos y tu hogar
-          </p> -->
-
+          <h1 class="cat-intro-title"> Encuentra lo mejor para vos y tu hogar</h1>
         </div>
       </div>
     </section>
     <main class="container">
-
         <section class="products-hero">
-            <h1>Elegi tu favorito</h1>
+          <h1>Elegi tu favorito</h1>
         </section>
         <aside class="filter-category">
           <h2>Categorías</h2>
@@ -65,7 +59,7 @@
             <div class="filter-fieldset" category="hogar">
               <div class="filter-legend" category="hogar">
                 <div class="filter-title">
-                  <span>Deco Hogar</span> 
+                  <span>Hogar</span> 
                 </div>    
               </div>
               <ul class="categorys-lists"  category="hogar">
@@ -77,7 +71,7 @@
             <div class="filter-fieldset" category="muebles">
               <div class="filter-legend" category="muebles">
                 <div class="filter-title">
-                  <span>Deco Muebles</span> 
+                  <span>Muebles</span> 
                 </div>    
               </div>
               <ul class="categorys-lists"  category="muebles">
@@ -88,7 +82,7 @@
             <div class="filter-fieldset" category="accesorios">
               <div class="filter-legend" category="accesorios">
                 <div class="filter-title">
-                  <span>Deco Accesorios</span> 
+                  <span>Accesorios</span> 
                 </div>    
               </div>
               <ul class="categorys-lists"  category="accesorios">
@@ -99,6 +93,18 @@
                 <li><a href="#" class="category-item" subcategory="ceniceros">Ceniceros</a></li>    
               </ul>
             </div>
+            <div class="filter-fieldset" category="hogar">
+              <div class="filter-legend" category="hogar">
+                <div class="filter-title">
+                  <span>Fundas de Celular</span> 
+                </div>    
+              </div>
+              <ul class="categorys-lists"  category="hogar">
+                <li><a href="#" class="category-item" subcategory="posavasos"></a></li>
+                <li><a href="#" class="category-item" subcategory="jaboneras">Con Stickers</a></li>
+                <li><a href="#" class="category-item" subcategory="porta-cepillos">Pintadas con Resina</a></li>
+              </ul>
+            </div>
           </div>
         </aside>
         <section class="products-container" id="list-products">
@@ -107,8 +113,6 @@
             <input class="input-search" type="input" placeholder="Buscar"> </input>
           </div>
           <div class="products">
-
-          
           </div>
         </section>
     </main>
@@ -135,7 +139,6 @@
           <p>©2021 Etereo Art Studio</p>
         </div>
       </footer>
-
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script type="module" src="../js/fetchData.js"></script>
       <script type="module" src="../js/main.js"></script>
@@ -143,6 +146,5 @@
       <script type="module" src="../js/search-bar.js"></script>
       <script src="../js/mobile-menu.js"></script>
       <script type="module" src="../js/filter-category.js"></script>
-      
-</body>
+  </body>
 </html>
