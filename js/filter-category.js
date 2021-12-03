@@ -1,7 +1,15 @@
 
 function filterCategory(){
+    //SACA EL SCROLL VERTICAL AL DARLE CLICK A UN FILTER
+    $(window).scroll(function(event) {
+        var scrollLeft = $(window).scrollLeft();
+        var scrollTop = $(window).scrollTop();
+        window.scroll(0, scrollTop)
 
+      });
     $('.category-item').click(function() {
+
+
         //FILTRADO DE PRODUCTO POR CATEGORIA
         let catProduct = $(this).attr('subcategory');
         console.log(catProduct,'productos');
