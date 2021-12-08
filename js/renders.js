@@ -8,11 +8,12 @@ let renderProduct =  (objItem, nodeParent) => {
         `
             <div class="card-product" subcategory="${objItem.category}">
                 <div class="card-img">
-                    <img src="../assets/images/products/${imageName}.png" alt="${objItem.name}" />
+                    <img loading="lazy" src="../assets/images/products/${imageName}.png" alt="${objItem.name}" />
                 </div>
                 <div class="card-description">
                     <h2>${objItem.name}</h2>
-                    <p>${objItem.description}</p>
+                    <p class="card-text-desc">${objItem.description}</p>
+                    <p class="card-text-measure">${objItem.measures}</p>
                     <a class="card-btn" href="#">Consultar stock</a>
                 </div>
             </div>
