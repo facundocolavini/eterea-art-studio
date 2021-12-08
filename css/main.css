@@ -1539,7 +1539,7 @@ footer {
     height: 90px;
   }
   .content-shipping .shipping {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: shipping;
   }
@@ -1750,8 +1750,8 @@ footer {
     margin-right: 1em;
   }
   .content-shipping .shipping {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: shipping;
   }
   .content-shipping .shipping-wrap {
@@ -2205,8 +2205,6 @@ main {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: hero;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
 
@@ -2825,6 +2823,105 @@ main {
   .products-container .card-product .card-description .card-btn:hover {
     background-color: #805B6A;
     color: white;
+  }
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: " hero " "infoMap" "shipping";
+  row-gap: 3em;
+  background: #F0ECEA;
+  color: #7A583E;
+}
+
+.contact-hero {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hero;
+  background-color: #B0A89E;
+}
+
+.contact-hero h2 {
+  color: #F0ECEA;
+  font-family: "Cinzel Bold";
+  font-size: 3.1rem;
+}
+
+.contact-info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: infoMap;
+  padding: 0 1em;
+  /*change padding bottom to change map height*/
+}
+
+.contact-info .contact-info-detail {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 2em;
+}
+
+.contact-info .contact-info-detail p {
+  padding: 0.2em;
+}
+
+.contact-info .contact-info-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border: 1px solid #7A583E;
+}
+
+.contact-info .contact-info-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact-shipping {
+  padding-bottom: 2em;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: shipping;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.contact-shipping div {
+  padding: 2em 0;
+}
+
+.contact-shipping div h3 {
+  font-size: 2rem;
+}
+
+.contact-shipping div p {
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-shipping {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-shipping div:first-child {
+    border-right: 1px solid #7A583E;
+  }
+  .contact-shipping div {
+    padding: 1em 5em;
+  }
+  .contact-shipping div p {
+    padding: 1em 0;
+  }
+  .contact-shipping div p i {
+    font-size: 1.8em;
+    padding-right: 0.3em;
   }
 }
 /*# sourceMappingURL=main.css.map */

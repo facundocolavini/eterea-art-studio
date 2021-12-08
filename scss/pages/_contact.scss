@@ -1,0 +1,86 @@
+.contact {
+  display: grid;
+  grid-template-areas:
+    " hero "
+    "infoMap"
+    "shipping";
+  row-gap: 3em;
+  background: color(color-4);
+  color: color(color-1);
+}
+
+.contact-hero {
+  grid-area: hero;
+  background-color: color(color-3);
+
+  h2 {
+    color: color(color-4);
+    font-family: fontsFamily(bold-c);
+    font-size: 3.1rem;
+  }
+}
+
+.contact-info {
+  grid-area: infoMap;
+
+  padding: 0 1em;
+
+  .contact-info-detail {
+    align-self: center;
+    padding-bottom: 2em;
+    p {
+      padding: 0.2em;
+    }
+  }
+  /*change padding bottom to change map height*/
+  .contact-info-map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border: 1px solid color(color-1);
+    iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
+
+.contact-shipping {
+  padding-bottom: 2em;
+  grid-area: shipping;
+  justify-self: center;
+  div {
+    padding: 2em 0;
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      padding: 1em 0;
+    }
+  }
+}
+
+@include media-up(lg) {
+  .contact-shipping {
+    display: flex;
+    div:first-child {
+      border-right: 1px solid color(color-1);
+    }
+    div {
+      padding: 1em 5em;
+
+      p {
+        padding: 1em 0;
+        i {
+          font-size: 1.8em;
+          padding-right: 0.3em;
+        }
+      }
+    }
+  }
+}

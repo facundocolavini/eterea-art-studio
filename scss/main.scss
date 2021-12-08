@@ -1,5 +1,6 @@
 //Abstracts
-@import "abstracts/variables", "abstracts/boilerplate", "abstracts/mixins","abstracts/functions","abstracts/animations";
+@import "abstracts/variables", "abstracts/boilerplate", "abstracts/mixins",
+  "abstracts/functions", "abstracts/animations";
 //Base
 @import "base/typography";
 
@@ -9,3 +10,4 @@
 //Pages
 @import "pages/home";
 @import "pages/products";
+@import "pages/contact";
