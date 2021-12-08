@@ -3,8 +3,8 @@
       "id":1,
       "category":"posavasos",
       "name":"Posavasos",
-      "description":"Cuadrados con bordes",
-      "measures":"(10 x 10 x 1,3 cm) Redondos (13cm diámetro)"
+      "description":"Cuadrados con bordes (10 x 10 x 1,3 cm) Redondos (13cm diámetro)",
+      "measures":""
    },
    {
       "id":2,
@@ -52,8 +52,8 @@
       "id":8,
       "category":"bandejas",
       "name":"Bandejas",
-      "description":"Con o sin luces led",
-      "measures":"18,5 x 10 cm"
+      "description":"Con o sin luces led 18,5 x 10 cm",
+      "measures":""
    },
    {
       "id":9,

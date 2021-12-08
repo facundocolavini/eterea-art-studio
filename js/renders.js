@@ -13,8 +13,7 @@ let renderProduct =  (objItem, nodeParent) => {
                 <div class="card-description">
                     <h2>${objItem.name}</h2>
                     <p class="card-text-desc">${objItem.description}</p>
-                    <p class="card-text-measure">${objItem.measures}</p>
-                    <a class="card-btn" href="#">Consultar stock</a>
+                    <a class="card-btn" target="_blank" href="https://wa.me/+543816812682?text=Consultar%20stock%20de%20${objItem.name}%20${objItem.description}">Consultar stock</a>
                 </div>
             </div>
         `

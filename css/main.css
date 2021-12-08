@@ -2261,7 +2261,7 @@ main {
 }
 
 .cat-intro .cont-cat h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Cinzel Regular";
   color: #3F3D3F;
   font-weight: 400;
@@ -2282,7 +2282,7 @@ main {
 
 .products-hero h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   width: 100%;
   font-family: "Cinzel Bold";
   color: #7A583E;
@@ -2573,29 +2573,39 @@ main {
 }
 
 .products-container .card-description {
-  height: 260px;
+  height: 200px;
   padding: .8em;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "title" "description" "measure" "button";
+  grid-gap: .2em;
+      grid-template-areas: "title" "description" "button";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 22px 22px;
+  /*         .card-text-measure{
+            margin-top:1.2em;
+  
+            font-size:.9rem;
+            font-family: fontsFamily(light-m);
+            font-weight: 500;
+            line-height: 1.5;
+            color:black;
+        } */
 }
 
 .products-container .card-description h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
+  text-overflow: ellipsis;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 500;
-  margin-bottom: .5em;
   color: black;
 }
 
@@ -2603,29 +2613,18 @@ main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-size: .9rem;
   font-family: "Montserrat Light";
   font-weight: 500;
   line-height: 1.5;
-  margin-bottom: 1em;
-  color: black;
-}
-
-.products-container .card-description .card-text-measure {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: measure;
-  height: 100%;
-  font-size: .9rem;
-  font-family: "Montserrat Light";
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 1em;
   color: black;
 }
 
 .products-container .card-description .card-btn {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: button;
   display: -webkit-box;
@@ -3027,10 +3026,10 @@ main {
   }
   .products-container .card-product .card-description {
     width: 100%;
-    height: 280px;
+    height: 100%;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "title" "description" "measure" "button";
+        grid-template-areas: "title" "description" "button";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     grid-gap: 0;
@@ -3038,12 +3037,22 @@ main {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 22px 22px;
+    /*                 .card-text-measure{
+                    margin-top: 1.5em;
+                    height: 50px;
+                    font-size:.9rem;
+                    font-family: fontsFamily(light-m);
+                    font-weight: 500;
+                    line-height: 1.5;
+                    color:black;
+                } */
   }
   .products-container .card-product .card-description h2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
     font-size: 1rem;
+    margin-bottom: .5em;
     font-family: "Montserrat-SemiBold";
     font-weight: 500;
     color: black;
@@ -3052,25 +3061,17 @@ main {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: description;
-    font-size: .9rem;
-    font-family: "Montserrat Light";
-    font-weight: 500;
-    line-height: 1.5;
-    color: black;
-  }
-  .products-container .card-product .card-description .card-text-measure {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: measure;
     height: 80px;
+    width: 100%;
     font-size: .9rem;
     font-family: "Montserrat Light";
     font-weight: 500;
     line-height: 1.5;
+    margin-bottom: .5em;
     color: black;
   }
   .products-container .card-product .card-description .card-btn {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: button;
     display: -webkit-box;
