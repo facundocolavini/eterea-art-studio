@@ -117,7 +117,11 @@
         }
         .box-1{
             grid-area: box-1;
+            .intro-btn{
+                margin-top: 2em;
+            }
         }
+
         .box-2{
             grid-area: box-2;
 
@@ -212,11 +216,45 @@
             }
         }
     }
-    .shipping{
-        .main-btn{
-            @include genericBtn;
-            font-size: 1rem;
+    .shipping-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        a{
+            display: flex;
+            padding: 0;
+            justify-content: center;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+        }
+        li{
+
+
+        }
+        img{
+                
+            width: 90px;
+            height:90px;
+        }
+        .shipping-btn{
+            cursor:pointer;
+            font-family: fontsFamily(regular-m);
+            color:color(color-4);
+            width: 127px;
+            height: 51px;
+            background-color:color(color-5);
+            outline:none;
+            border-radius: 8px;
+            border: none;
+            align-items: center;
             margin-bottom: 1em;
+            padding: .5em;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+           
+         
             &:hover{
                 @include hoverBtns;
             }
@@ -261,7 +299,7 @@
     /* Intro */
     .intro{
         display: grid;
-        padding:1em;
+      
         grid-template-rows: 1fr;
         grid-template-areas: 
         "box-2"
@@ -332,15 +370,43 @@
         .shipping-wrap{
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
+            a{
+                display: flex;
+                justify-content: center;
+            }
             ul{
                 display: flex;
                 align-items: center;
             }
             li{
-                img{
-                    width: 80px;
-                    height: 90px;
+
+
+            }
+            img{
+                    
+                width: 90px;
+                height:90px;
+            }
+            .shipping-btn{
+                cursor:pointer;
+                font-family: fontsFamily(regular-m);
+                color:color(color-4);
+                width: 255px;
+                height: 65px;
+                background-color:color(color-5);
+                outline:none;
+                border-radius: 8px;
+                border: none;
+                align-items: center;
+                margin-right: 1em;
+                padding: .5em;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+               
+             
+                &:hover{
+                    @include hoverBtns;
                 }
             }
         }
@@ -442,7 +508,7 @@
     .content-shipping{
         text-align: left;
         display: grid;
-        padding: 2em 3em;
+        padding: 2em 6em;
         grid-gap:5em;
         width: 100%;
         grid-template-columns:  3% auto auto 1%;
@@ -456,7 +522,7 @@
             
             .payment-wrap{
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 flex-direction: row;
                 flex-wrap: wrap;
                 width: 100%;
@@ -492,9 +558,10 @@
         }
         .shipping-wrap{
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: flex-start;
             width: 100%;
             ul{
                 padding:0;
@@ -505,24 +572,36 @@
             }
             li{
                 display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                padding:0;
-                margin: 1em;
-                margin-left: 0;
+                align-items: flex-start;
+                justify-content: center;
                 width: 100%;
             }
             img{
-                width: 40px;
-                height: 60px;
+                width: 70px;
+                height: 70px;
                 line-height: 20px;
-               
             }
-            .main-btn{
-                margin:0;
+            .shipping-btn{
+                cursor:pointer;
+                font-family: fontsFamily(regular-m);
+                color:color(color-4);
                 width: 200px;
+                height: 65px;
+                background-color:color(color-5);
+                outline:none;
+                border-radius: 8px;
+                border: none;
+                align-items: center;
                 margin-right: 1em;
+                padding: .5em;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+               
+             
+                &:hover{
+                    @include hoverBtns;
+                }
             }
+            
         }
         h2{
             display: block;
