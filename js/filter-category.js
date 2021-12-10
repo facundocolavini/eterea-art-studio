@@ -1,9 +1,15 @@
-import data from './products.js';
-$(document).ready(function() {
 
-    //Variables 
+function filterCategory(){
+    //SACA EL SCROLL VERTICAL AL DARLE CLICK A UN FILTER
+    $(window).scroll(function(event) {
+        var scrollLeft = $(window).scrollLeft();
+        var scrollTop = $(window).scrollTop();
+        window.scroll(0, scrollTop)
 
-   $('.category-item').click(function() {
+      });
+    $('.category-item').click(function() {
+
+
         //FILTRADO DE PRODUCTO POR CATEGORIA
         let catProduct = $(this).attr('subcategory');
         console.log(catProduct,'productos');
@@ -19,7 +25,7 @@ $(document).ready(function() {
             $(`.card-product[subcategory="${catProduct}"]`).css('transform','scale(1)');
         } setTimeout(showProduct,400);
      
-    })
+    });
     //MOSTRAR TODAS
     $('.category-item[subcategory="all"]').click(function(){
         function showAll(){
@@ -27,12 +33,13 @@ $(document).ready(function() {
             $('.card-product').css('transform','scale(1)');
         } setTimeout(showAll,400);
     })
+
     //ROTAR Y DESLIZAR SUBCATEGORIAS
     function rotate(){
         $(`.filter-fieldset`).click(function (e){
             let t = e.target;
             let sectionCategory = $(this).attr('category');
-          
+            
             setTimeout(()=> {
                 $(this).children('.filter-legend').addClass('filter-legend--down');
                     $(`.categorys-lists[category="${sectionCategory}"]`).slideDown('fast');
@@ -49,38 +56,12 @@ $(document).ready(function() {
             }     
         }); 
     }
-  
-    rotate()
-    let containerProducts = document.querySelector(".products");
-    //Carga de productos
-     const renderProducts = () =>{
-        containerProducts.innerHTML = '';
-        data.map(itemCart =>{
-/*             let cardProduct = document.createElement('div');
-            cardProduct.classList.add("cart-product");
-            cardProduct.setAttribute('subcategory', itemCart.category); */
-            let imageName = itemCart.name.toUpperCase().replaceAll(' ', '-');
-           /*  console.log(imageName); */
-            const content = 
-                `
-                <div class="card-product" subcategory="${itemCart.category}">
-                    <div class="card-img">
-                        <img src="../assets/images/products/${imageName}.png" alt="${itemCart.name}" />
-                    </div>
-                    <div class="card-description">
-                        <h2>${itemCart.name}</h2>
-                        <p>${itemCart.description}</p>
-                        <a class="card-btn" href="#">Consultar stock</a>
-                    </div>
-                    </div>
-                `;
-       /*      cardProduct.innerHTML = content */;
-            containerProducts.innerHTML += content;
-     /*        containerProducts.append(content); */
-           
-        })
-    }
-    renderProducts();
-    
-});
+    rotate();
+}
 
+
+
+
+  
+
+export default filterCategory;
