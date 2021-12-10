@@ -378,6 +378,7 @@ ul, li, a, p {
 }
 
 footer {
+  position: relative;
   font-family: "Montserrat Regular";
   background: #3F3D3F;
   color: #F0ECEA;
@@ -752,6 +753,7 @@ li a:hover {
 }
 
 footer {
+  position: relative;
   font-family: "Montserrat Regular";
   background: #3F3D3F;
   color: #F0ECEA;
@@ -1622,7 +1624,7 @@ footer {
     height: 90px;
   }
   .content-shipping .shipping {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: shipping;
   }
@@ -1874,8 +1876,8 @@ footer {
     margin-right: 1em;
   }
   .content-shipping .shipping {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
     grid-area: shipping;
   }
   .content-shipping .shipping-wrap {
@@ -2121,6 +2123,7 @@ li a:hover {
 }
 
 footer {
+  position: relative;
   font-family: "Montserrat Regular";
   background: #3F3D3F;
   color: #F0ECEA;
@@ -3834,129 +3837,545 @@ main {
   }
 }
 
-.contact {
+.contact-hero {
+  position: relative;
+  top: 80px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #B0A89E;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+}
+
+.contact-hero .content-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 1em;
+  background: #fff;
+  opacity: 0.8;
+}
+
+.contact-hero .content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.contact-hero .content h1 {
+  font-size: 2rem;
+  font-family: "Cinzel Regular";
+  color: #3F3D3F;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.contact-hero .content p {
+  font-size: 1.2rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 500;
+  padding: 1em;
+  line-height: 1.5;
+  color: #3F3D3F;
+  margin-bottom: 2.125em;
+}
+
+/* MAIN */
+.container-contact {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: " hero " "infoMap" "shipping";
-  row-gap: 3em;
-  background: #F0ECEA;
+  padding: 1em;
+  grid-gap: 4em;
+      grid-template-areas: "contact-info" "contact-shipping";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.container-contact .contact-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contact-info;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info-site" "map-site";
+}
+
+.container-contact .contact-info-detail {
+  text-align: left;
+  margin: 0  auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+  grid-gap: 2em 0;
+  -ms-grid-columns: 20% 60%;
+      grid-template-columns: 20% 60%;
+      grid-template-areas: "icon-1 mail" "icon-2 phone" "icon-3 address";
+}
+
+.container-contact .contact-info-detail .item-icon-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: icon-1;
+}
+
+.container-contact .contact-info-detail .item-mail {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: mail;
+}
+
+.container-contact .contact-info-detail .item-icon-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: icon-2;
+}
+
+.container-contact .contact-info-detail .item-phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: phone;
+}
+
+.container-contact .contact-info-detail .item-icon-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icon-3;
+  padding-left: .2em;
+}
+
+.container-contact .contact-info-detail .item-address {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: address;
+}
+
+.container-contact .contact-info-detail i {
+  font-size: 2.2rem;
   color: #7A583E;
 }
 
-.contact-hero {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: hero;
-  background-color: #B0A89E;
+.container-contact .contact-info-detail p {
+  font-size: 1rem;
+  font-family: "Montserrat Regular";
+  font-weight: 500;
+  color: #7A583E;
 }
 
-.contact-hero h2 {
-  color: #F0ECEA;
-  font-family: "Cinzel Bold";
-  font-size: 3.1rem;
-}
-
-.contact-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: infoMap;
-  padding: 0 1em;
-  /*change padding bottom to change map height*/
-}
-
-.contact-info .contact-info-detail {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-bottom: 2em;
-}
-
-.contact-info .contact-info-detail p {
-  padding: 0.2em;
-}
-
-.contact-info .contact-info-map {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-  border: 1px solid #7A583E;
-}
-
-.contact-info .contact-info-map iframe {
-  left: 0;
-  top: 0;
+.container-contact .contact-info-map .map-iframe {
   height: 100%;
   width: 100%;
-  position: absolute;
 }
 
-.contact-shipping {
-  padding-bottom: 2em;
+.container-contact .contact-shipping {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contact-shipping;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "shipping-steps" "payment-steps";
+}
+
+.container-contact .shipping-steps {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: shipping-steps;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1em;
+  margin-bottom: 5em;
+  text-align: center;
+      grid-template-areas: "title" "paragraph-1" "paragraph-2" "paragraph-3" "paragraph-4";
+}
+
+.container-contact .shipping-steps .title-shipping {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  font-size: 2rem;
+  font-family: "Cinzel Bold";
+  color: #7A583E;
+  font-weight: 700;
+}
+
+.container-contact .shipping-steps p {
+  font-size: 1.2rem;
+  font-family: "Montserrat Regular";
+  font-weight: 500;
+  color: #7A583E;
+}
+
+.container-contact .shipping-steps .p-shipping-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: paragraph-1;
+}
+
+.container-contact .shipping-steps .p-shipping-2 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: shipping;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: paragraph-2;
 }
 
-.contact-shipping div {
-  padding: 2em 0;
+.container-contact .shipping-steps .p-shipping-3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: paragraph-3;
 }
 
-.contact-shipping div h3 {
+.container-contact .shipping-steps .p-shipping-4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: paragraph-4;
+}
+
+.container-contact .payment-steps {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: payment-steps;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1em;
+  text-align: center;
+      grid-template-areas: "title-payment" "paragraph-p-1" "paragraph-p-2" "paragraph-p-3" "paragraph-p-4";
+  margin-bottom: 4em;
+}
+
+.container-contact .title-payment {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title-payment;
   font-size: 2rem;
+  font-family: "Cinzel Bold";
+  color: #7A583E;
+  font-weight: 700;
 }
 
-.contact-shipping div p {
-  padding: 1em 0;
+.container-contact p {
+  font-size: 1.2rem;
+  font-family: "Montserrat Regular";
+  font-weight: 500;
+  color: #7A583E;
+}
+
+.container-contact .p-payment-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: paragraph-p-1;
+}
+
+.container-contact .p-payment-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: paragraph-p-2;
+}
+
+.container-contact .p-payment-3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: paragraph-p-3;
+}
+
+.container-contact .p-payment-4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: paragraph-p-4;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-hero .content h1 {
+    font-size: 2.5rem;
+    font-family: "Cinzel Regular";
+    color: #3F3D3F;
+    font-weight: 500;
+    margin: 0 auto;
+  }
+  .contact-hero .content p {
+    font-size: 1.2rem;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 500;
+    padding: 1em;
+    line-height: 1.5;
+    color: #3F3D3F;
+    margin-bottom: 2.125em;
+  }
+  .container-contact {
+    display: -ms-grid;
+    display: grid;
+    padding: 1em;
+        grid-template-areas: "contact-info" "contact-shipping";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-contact .contact-info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact-info;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "info-site" "map-site";
+  }
+  .container-contact .contact-info-detail {
+    text-align: left;
+    margin: 0  auto;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2em;
+    grid-gap: 2em 0;
+    -ms-grid-columns: 20% 60%;
+        grid-template-columns: 20% 60%;
+        grid-template-areas: "icon-1 mail" "icon-2 phone" "icon-3 address";
+  }
+  .container-contact .contact-info-detail .item-icon-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: icon-1;
+  }
+  .container-contact .contact-info-detail .item-mail {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: mail;
+  }
+  .container-contact .contact-info-detail .item-icon-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: icon-2;
+  }
+  .container-contact .contact-info-detail .item-phone {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: phone;
+  }
+  .container-contact .contact-info-detail .item-icon-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: icon-3;
+    padding-left: .2em;
+  }
+  .container-contact .contact-info-detail .item-address {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: address;
+  }
+  .container-contact .contact-info-detail i {
+    font-size: 2.2rem;
+    color: #7A583E;
+  }
+  .container-contact .contact-info-detail p {
+    font-size: 1.2rem;
+    font-family: "Montserrat Regular";
+    font-weight: 500;
+    color: #7A583E;
+    width: 100%;
+  }
+  .container-contact .contact-info-map .map-iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .container-contact .contact-shipping {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: contact-shipping;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    /*change padding bottom to change map height*/
-  }
-  .contact-info .contact-info-map {
-    overflow: hidden;
-    padding-bottom: 56.25%;
+  .contact-hero {
     position: relative;
-    height: 0;
-  }
-  .contact-info .contact-info-map iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-  .contact-shipping {
+    top: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background: #B0A89E;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3em calc(15.5% - 0.5em);
   }
-  .contact-shipping div:first-child {
-    border-right: 1px solid #7A583E;
+  .contact-hero .content-hero {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.61);
   }
-  .contact-shipping div {
-    padding: 1em 5em;
+  .contact-hero .content {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    opacity: 1;
   }
-  .contact-shipping div p {
-    padding: 1em 0;
+  .contact-hero .content h1 {
+    font-size: 4rem;
+    font-family: "Cinzel Regular";
+    color: #3F3D3F;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 auto;
+    margin-bottom: .2em;
+    width: 100%;
   }
-  .contact-shipping div p i {
-    font-size: 1.8em;
-    padding-right: 0.3em;
+  .contact-hero .content p {
+    font-size: 1.2rem;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 500;
+    padding: 1em;
+    line-height: 1.5;
+    color: #3F3D3F;
+    margin-bottom: 2.125em;
+  }
+  .container-contact {
+    padding: 3em calc(15.5% - 0.5em);
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "contact-info" "contact-shipping";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-contact .contact-info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact-info;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        grid-template-areas: "info-site map-site";
+  }
+  .container-contact .contact-info-detail {
+    text-align: left;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    justify-self: flex-start;
+    justify-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    grid-gap: 1em;
+        grid-template-areas: "icon-1 mail" "icon-2 phone" "icon-3 address";
+  }
+  .container-contact .contact-info-detail .item-icon-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: icon-1;
+  }
+  .container-contact .contact-info-detail .item-mail {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: mail;
+  }
+  .container-contact .contact-info-detail .item-icon-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: icon-2;
+  }
+  .container-contact .contact-info-detail .item-phone {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: phone;
+  }
+  .container-contact .contact-info-detail .item-icon-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: icon-3;
+    padding-left: .2em;
+  }
+  .container-contact .contact-info-detail .item-address {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: address;
+  }
+  .container-contact .contact-info-detail i {
+    font-size: 2.2rem;
+    color: #7A583E;
+  }
+  .container-contact .contact-info-detail p {
+    font-size: 1rem;
+    font-family: "Montserrat Regular";
+    font-weight: 500;
+    color: #7A583E;
+  }
+  .container-contact .contact-shipping {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: contact-shipping;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 0em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+        grid-template-areas: "shipping-steps payment-steps";
+  }
+  .container-contact .shipping-steps {
+    text-align: left;
+    padding-right: 2em;
+  }
+  .container-contact .payment-steps {
+    border-left: 1px solid #7A583E;
+    text-align: left;
+    justify-self: flex-end;
+    padding-left: 2em;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
