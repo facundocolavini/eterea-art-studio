@@ -4,23 +4,19 @@
     display:grid;
     grid-template-areas:
     "introdution-faqs"
-    "accordion-faqs"
     "gallery-faqs" 
     ;
     position: relative;
-    top:80px;
     width: 100%;
-    height: 200vh;
-    padding-bottom: 180px;
+}
+.bkg-faqs{
+    width: 100%;
     object-fit: cover;
     background: url('../assets/images/faqs-hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    
 }
-
 .intro-faqs{
     grid-area: introdution-faqs;
     display: grid;
@@ -57,14 +53,14 @@
 }
     /* Accordion */
     .accordion{
-        grid-area:accordion-faqs;
-        padding: 1em calc(15.5% - 0.5em);
+        grid-area: introdution-faqs;
+        padding: 1em calc(5.5% - 0.5em);
 
     }
     .accordion-item{
         background: #fff;
-        margin-bottom: 1rem;
-        padding:1rem 1rem;
+        margin-bottom: 2rem;
+        padding:1rem 1rem 0rem 0em;
         box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
         
     }
@@ -76,7 +72,7 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 0;
+        padding: 1rem 0 1rem 1rem;
     
     }
     .accordion-link i{
@@ -86,12 +82,18 @@
     }
     .accordion-link .fa-chevron-up{
         display: none;
+        transform: translateY(-50%);
+        padding: 0;
+        animation-name: rotateIconUp;
+        transform: translateY(-50);
+        animation-duration: 0.3s;
+        transition: 0.3s;
     }
     .answer{
         max-height: 0;
         overflow: hidden;
         position: relative;
-        transition: max-height .870ms ;
+        transition: max-height .870ms ease-out; 
     
     
     }
@@ -101,10 +103,9 @@
         width: .2rem;
         height: 100%;
         background-color: color(color-5);
-        top: 50%;
+        top: 0;
         left: 0;
-        transform: translateY(-50%);
-        transition: max-height .650ms ;
+        
     }
     .answer p{
         padding:0;
@@ -113,6 +114,7 @@
         font-family: fontsFamily(regular-m);
         font-weight: 500;
         padding-left: 1rem;
+        padding-bottom: 1rem;
         line-height: 1.5;
         color: color(color-2);
      
@@ -127,31 +129,106 @@
     }
     .accordion-item:target .accordion-link .fa-chevron-down{
         display: none;
+
+        transform: translateY(-50%);
+        animation-name: rotateIconDown;
+        transform: translateY(-50);
+        animation-duration: 0.3s;
+        transition: 0.3s;
+        
     }
     .accordion-item:target .accordion-link .fa-chevron-up{
         display: block;
     }
+    .gallery-products{
+        grid-area: gallery-faqs;
+        padding: 1em calc(5.5% - 0.5em);
+    }
 
+        //Gallery
+        .gallery-products{
+            grid-area: gallery-faqs;
+            padding: 5em calc(5.5% - 0.5em);
+            height: 100%;
+    
+            display:grid;
+            grid-gap: 3em;
+            grid-template-areas:
+            "title-faqs-gallery"
+            "gallery-items-faqs";
+            background: color(color-3);
+        }
+        .gallery-title{
+            grid-area: title-faqs-gallery;
+    
+            text-align: center;
+            font-size: 1.5rem;
+            width:100%;
+            font-family: fontsFamily(bold-c);
+            color:color(color-4);
+            font-weight: 600;
+            line-height: 1.5;
+            border: none;
+        }
+        .gallery-images{
+            grid-area: gallery-items-faqs;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            align-self: center;
+        }
+        .gallery-img{
+            width: 100%;
+            
+            object-fit: cover;
+            padding: 1em;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .border-nr{
+            width: 100%;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: $border-light;
+            border-bottom:none;
+            padding: 1.5em 1em 0 1em;
+        }
+        .border-nl{
+            width: 100%;
+      
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: $border-light;
+            border-top:none;
+            padding: 0 1em 1.5em 1em;
+        }
 @include media-up(md) {
     .container-faqs{
         display:grid;
         grid-template-areas:
         "introdution-faqs"
-        "accordion-faqs"
         "gallery-faqs" 
         ;
-        position: relative;
-        padding-top:80px;
         width: 100%;
-        
-        height: 200vh;
+       
+    }
+    .bkg-faqs{
+        padding: 1em 2em;
+        width: 100%;
+      
         object-fit: cover;
         background: url('../assets/images/faqs-hero.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-       
-      
     }
     .intro-faqs{
         grid-area: introdution-faqs;
@@ -159,7 +236,7 @@
         grid-template-areas: 
         "title-faqs"
         "text-faqs";
-        padding: 1em 2em;
+
         h1{
             text-align: center;
             font-size: 2rem;
@@ -190,14 +267,15 @@
     
         /* Accordion */
         .accordion{
-            grid-area:accordion-faqs;
-            padding: 1em calc(15.5% - 0.5em);
+            grid-area: introdution-faqs;
+            padding: 1em calc(2.5% - 0.5em);
+            padding:0;
     
         }
         .accordion-item{
             background: #fff;
             margin-bottom: 1rem;
-            padding:1rem 3rem;
+            padding:1rem 1rem 0rem 0em;
             box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
             
         }
@@ -209,7 +287,7 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 0;
+            padding: 2rem 0;
             padding-left: 3rem;
         }
         .accordion-link i{
@@ -219,6 +297,12 @@
         }
         .accordion-link .fa-chevron-up{
             display: none;
+            animation-name: rotateIconUp;
+            padding-right: .4rem;
+            transform: translateY(-50);
+            animation-duration: 0.3s;
+            text-align: center;
+            transition: 0.3s;
         }
         .answer{
             max-height: 0;
@@ -233,10 +317,9 @@
             width: .2rem;
             height: 100%;
             background-color: color(color-5);
-            top: 50%;
+            top: 0;
             left: 0;
-            transform: translateY(-50%);
-            transition: max-height .650ms ;
+
         }
         .answer p{
             padding:2rem;
@@ -259,36 +342,72 @@
         }
         .accordion-item:target .accordion-link .fa-chevron-down{
             display: none;
+
         }
         .accordion-item:target .accordion-link .fa-chevron-up{
             display: block;
         }
-        
+        .gallery-images{
+            grid-template-columns: 1fr 1fr;
+        }
+        .border-nr{
+            width: 100%;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: $border-light;
+            border-right:none;
+            border-bottom: none;
+            padding: 1em 0 0 1em;
+        }
+        .border-nl{
+            width: 100%;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: $border-light;
+            border-top:none;
+            border-left:none;  
+            padding: 0 1em 1em 0em;
+        }
+
+        .md-pad-1{
+            padding-left: 0;
+            padding-top: 2em;
+        }
+        .md-pad-2{
+            padding-right: 0;
+            padding-top: 0em;
+    
+           
+
+        }
 }
 
 @include media-up(lg) {
     .container-faqs{
         display:grid;
-        
         grid-template-areas:
         "introdution-faqs"
-        "accordion-faqs"
         "gallery-faqs" 
         ;
         position: relative;
         width: 100%;
-        height: 200vh;
-    
+    }
+    .bkg-faqs{
+        padding: 1em 2em;
+        width: 100%;
         object-fit: cover;
         background: url('../assets/images/faqs-hero.png');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;      
+        background-repeat: no-repeat;
     }
     .intro-faqs{
-        padding: 1em calc(15.5% - 0.5em);
+        padding: 1em calc(13.5% - 0.5em);
         grid-area: introdution-faqs;
-
         display: grid;
         grid-template-columns: 20% auto;
         grid-template-areas: 
@@ -338,14 +457,14 @@
     }
     /* Accordion */
     .accordion{
-        grid-area:accordion-faqs;
-        padding: 1em calc(15.5% - 0.5em);
+        grid-area: introdution-faqs;
+        padding: 1em calc(13.5% - 0.5em);
 
     }
     .accordion-item{
         background: #fff;
         margin-bottom: 1rem;
-        padding:1rem 3rem;
+        padding:1rem 1rem 0rem 0em;
         box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
         
     }
@@ -367,6 +486,11 @@
     }
     .accordion-link .fa-chevron-up{
         display: none;
+        animation-name: rotateIconUp;
+        padding-right: .4rem;
+        transform: translateY(-50);
+        animation-duration: 0.3s;
+        transition: 0.3s;
     }
     .answer{
         max-height: 0;
@@ -381,10 +505,9 @@
         width: .2rem;
         height: 100%;
         background-color: color(color-5);
-        top: 50%;
+        top: 0;
         left: 0;
-        transform: translateY(-50%);
-        transition: max-height .650ms ;
+
     }
     .answer p{
         padding:2rem;
@@ -402,13 +525,79 @@
         }
     }
     .accordion-item:target .answer{
+        transition: max-height .650ms; 
         max-height:20rem;
      
     }
     .accordion-item:target .accordion-link .fa-chevron-down{
+
         display: none;
     }
     .accordion-item:target .accordion-link .fa-chevron-up{
         display: block;
+    }
+
+    //Gallery
+    .gallery-products{
+        grid-area: gallery-faqs;
+        padding: 5em calc(15.5% - 0.5em);
+        height: 100%;
+
+        display:grid;
+        grid-gap: 3em;
+        grid-template-areas:
+        "title-faqs-gallery"
+        "gallery-items-faqs";
+        background: color(color-3);
+    }
+    .gallery-title{
+        grid-area: title-faqs-gallery;
+
+        text-align: center;
+        font-size: 2rem;
+        width:100%;
+        font-family: fontsFamily(bold-c);
+        color:color(color-4);
+        font-weight: 600;
+        line-height: 1.5;
+        border: none;
+    }
+    .gallery-images{
+        grid-area: gallery-items-faqs;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        align-self: center;
+    }
+    .gallery-img{
+        width: 100%;
+        object-fit: cover;
+        padding: 1em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .border-nr{
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: $border-light;
+        border-right:none;
+        padding: 1.5em 0 1.5em 1.5em;
+    }
+    .border-nl{
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: $border-light;
+        border-left:none;
+        padding: 1.5em 1.5em 1.5em 0;
     }
 }
