@@ -2404,7 +2404,7 @@ main {
 
 .cat-intro .cont-cat h1 {
   font-size: 2rem;
-  font-family: "Cinzel Regular";
+  font-family: "Cinzel Bold";
   color: #3F3D3F;
   font-weight: 400;
   line-height: 1.2;
@@ -2844,9 +2844,9 @@ main {
   }
   .cat-intro .cont-cat h1 {
     font-size: 2.5rem;
-    font-family: "Cinzel Regular";
+    font-family: "Cinzel Bold";
     color: #3F3D3F;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: .2em;
     width: 100%;
@@ -2938,10 +2938,10 @@ main {
             } */
   }
   .cat-intro .cont-cat h1 {
-    font-size: 4rem;
-    font-family: "Cinzel Regular";
+    font-size: 3.7rem;
+    font-family: "Cinzel Bold";
     color: #3F3D3F;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.2;
     margin: 0 auto;
     margin-bottom: .2em;
@@ -3283,25 +3283,38 @@ main {
 }
 
 .container-about .hero-about {
+  /*         margin-top: 80px;
+        display:grid;
+
+        box-sizing: border-box;
+
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "box-image"
+        "box-text";
+    
+        padding: 1em 2em;
+        grid-gap: 3em 0;
+        background: color(color-3);
+
+        grid-area: hero-about; */
   margin-top: 80px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: "box-image" "box-text";
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1em 2em;
-  grid-gap: 3em 0;
-  background: #B0A89E;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: hero-about;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/images/about-hero.png") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/images/about-hero.png") no-repeat center center fixed;
 }
 
 .container-about .hero-about .box-image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: box-image;
   height: 100%;
 }
@@ -3323,18 +3336,16 @@ main {
 }
 
 .container-about .hero-about .box-text {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: box-text;
   text-align: center;
 }
 
 .container-about .hero-about .box-text .title-about {
+  color: #fff;
   margin: 0;
   font-size: 2rem;
-  font-family: "Cinzel Regular";
+  font-family: "Cinzel Bold";
   color: #F0ECEA;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.4;
   text-align: center;
 }
@@ -3342,16 +3353,16 @@ main {
 .container-about .hero-about .box-text .text-about {
   font-size: 1.2rem;
   font-family: "Montserrat Light";
-  font-weight: 600;
+  font-weight: 400;
   padding: .5em;
   line-height: 1.5;
-  color: #3F3D3F;
+  color: #fff;
   margin: .2em auto;
 }
 
 .container-about .hero-about .box-text .text-about span {
   font-family: "Montserrat-SemiBold";
-  color: #3F3D3F;
+  color: #fff;
 }
 
 .container-about .intro-about {
@@ -3555,26 +3566,22 @@ main {
     display: grid;
   }
   .hero-about {
-    margin-top: 80px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
+    /*         margin-top: 80px;
+        display:grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "box-image" "box-text";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: hero-about;
-    grid-gap: 2em 0;
-    background: #B0A89E;
+        grid-template-areas: 
+        "box-image"
+        "box-text";
+        justify-content: center;
+        grid-area: hero-about;
+        grid-gap: 2em 0;
+        background: color(color-3); */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/images/about-hero.png") no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/images/about-hero.png") no-repeat center center fixed;
   }
   .hero-about .box-image {
     margin: 0 auto;
     height: 100%;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: box-image;
   }
   .hero-about .box-image .border {
@@ -3592,8 +3599,6 @@ main {
     top: 30px;
   }
   .hero-about .box-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: box-text;
     text-align: center;
   }
@@ -3669,33 +3674,47 @@ main {
     display: grid;
   }
   .container-about .hero-about {
-    position: relative;
-    padding: 1em calc(10.5% - 0.5em);
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: hero-about;
-    height: 100vh;
-    width: 100%;
-    margin-top: 80px;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-sizing: border-box;
+    padding: 1em calc(12.5% - 0.5em);
+    /*            
+            padding: 1em calc(10.5% - 0.5em);
+            grid-area: hero-about;
+            height: 100vh;
+            width: 100%;
+            margin-top: 80px;
+            display:grid;
             box-sizing: border-box;
-    -ms-grid-columns: 2rem 1fr 1fr 2rem;
-        grid-template-columns: 2rem 1fr 1fr 2rem;
-        grid-template-areas: ". box-image box-text .";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+            grid-template-columns: 2rem 1fr 1fr 2rem;
+            grid-template-areas: 
+            ". box-image box-text ."
+            ;
             justify-content: center;
+            align-items: center;
+    
+            grid-gap: 2em 3em;
+            background: color(color-3); */
+    width: 100%;
+    position: relative;
+    top: -80px;
+    height: 100vh;
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/images/about-hero.png") no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/images/about-hero.png") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    grid-gap: 2em 3em;
-    background: #B0A89E;
   }
   .container-about .hero-about .box-image {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: box-image;
     width: 100%;
     height: 100%;
@@ -3731,10 +3750,10 @@ main {
        object-fit: cover;
   }
   .container-about .hero-about .box-text {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
     grid-area: box-text;
     text-align: left;
+    width: 50%;
+    margin-top: 70px;
     display: block;
   }
   .container-about .hero-about .box-text .title-about {
@@ -3743,26 +3762,26 @@ main {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Cinzel Bold";
-    color: #F0ECEA;
+    color: #fff;
     font-weight: 700;
     line-height: 1.4;
     padding: .2em;
     word-spacing: 1em;
   }
   .container-about .hero-about .box-text .text-about {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: "Montserrat Light";
     font-weight: 500;
     padding: .5em;
     line-height: 1.5;
-    color: #3F3D3F;
+    color: #fff;
     margin: .2em auto;
   }
   .container-about .hero-about .box-text .text-about span {
     font-family: "Montserrat-SemiBold";
-    color: #3F3D3F;
+    color: #fff;
   }
   .container-about .intro-about {
     padding: 1em 5em;
@@ -3840,13 +3859,14 @@ main {
 .contact-hero {
   position: relative;
   top: 80px;
+  width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -o-object-fit: cover;
      object-fit: cover;
-  background: #B0A89E;
+  background: url("../assets/images/contact-hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3867,6 +3887,7 @@ main {
 }
 
 .contact-hero .content {
+  opacity: 1;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3882,7 +3903,7 @@ main {
 
 .contact-hero .content h1 {
   font-size: 2rem;
-  font-family: "Cinzel Regular";
+  font-family: "Cinzel Bold";
   color: #3F3D3F;
   font-weight: 700;
   margin: 0 auto;
@@ -4111,11 +4132,14 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .contact-hero .content {
+    opacity: 1;
+  }
   .contact-hero .content h1 {
-    font-size: 2.5rem;
-    font-family: "Cinzel Regular";
+    font-size: 2.8rem;
+    font-family: "Cinzel Bold";
     color: #3F3D3F;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0 auto;
   }
   .contact-hero .content p {
@@ -4222,7 +4246,6 @@ main {
     display: flex;
     -o-object-fit: cover;
        object-fit: cover;
-    background: #B0A89E;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4237,6 +4260,7 @@ main {
     margin: 0 auto;
     padding: 1em;
     background: rgba(255, 255, 255, 0.61);
+    opacity: 1;
   }
   .contact-hero .content {
     opacity: 1;
@@ -4257,9 +4281,9 @@ main {
   }
   .contact-hero .content h1 {
     font-size: 4rem;
-    font-family: "Cinzel Regular";
+    font-family: "Cinzel Bold";
     color: #3F3D3F;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2;
     margin: 0 auto;
     margin-bottom: .2em;

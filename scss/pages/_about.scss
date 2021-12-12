@@ -14,7 +14,7 @@
 
 
     .hero-about{
-        margin-top: 80px;
+/*         margin-top: 80px;
         display:grid;
 
         box-sizing: border-box;
@@ -28,7 +28,14 @@
         grid-gap: 3em 0;
         background: color(color-3);
 
-        grid-area: hero-about;
+        grid-area: hero-about; */
+        margin-top: 80px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 1em 2em;
+        align-items: center;
+        background:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url('../assets/images/about-hero.png') no-repeat center center fixed;
         .box-image{
             grid-area: box-image;
             height: 100%;
@@ -47,16 +54,16 @@
             }
         }
         .box-text{
-            grid-area: box-text;
+         
             text-align: center;
             .title-about{
             
-
+                color: #fff;
                 margin: 0 ;
                 font-size: 2rem;
-                font-family: fontsFamily(regular-c);
+                font-family: fontsFamily(bold-c);
                 color:color(color-4);
-                font-weight: 500;
+                font-weight: 700;
                 line-height: 1.4;
     
                 text-align: center;
@@ -65,16 +72,17 @@
 
             }
             .text-about{
+
                 font-size:  1.2rem;
                 font-family: fontsFamily(light-m);
-                font-weight: 600;
+                font-weight: 400;
                 padding: .5em;
                 line-height: 1.5;
-                color:color(color-2);
+                color: #fff;
                 margin:.2em auto;
                 span{
                     font-family: fontsFamily(sbold-m);
-                    color:color(color-2);
+                    color: #fff;
                 }
             }
         }
@@ -246,7 +254,7 @@
 
     }
     .hero-about{
-        margin-top: 80px;
+/*         margin-top: 80px;
         display:grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -255,8 +263,8 @@
         justify-content: center;
         grid-area: hero-about;
         grid-gap: 2em 0;
-        background: color(color-3);
-    
+        background: color(color-3); */
+        background:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url('../assets/images/about-hero.png') no-repeat center center fixed;
         .box-image{
             margin:0 auto;
             height: 100%;
@@ -358,7 +366,8 @@
     .container-about{
         display:grid;
         .hero-about{
-            position: relative;
+            padding: 1em calc(12.5% - 0.5em);
+/*            
             padding: 1em calc(10.5% - 0.5em);
             grid-area: hero-about;
             height: 100vh;
@@ -374,8 +383,21 @@
             align-items: center;
     
             grid-gap: 2em 3em;
-            background: color(color-3);
-    
+            background: color(color-3); */
+            width: 100%;
+            position: relative;
+            top:-80px;
+            height: 100vh;
+            margin-top: 80px;
+            display:flex;
+            object-fit: contain;
+            background:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url('../assets/images/about-hero.png') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-content: flex-end;
+            
+            align-items: center;
             .box-image{
                 grid-area: box-image;
                 width: 100%;
@@ -407,30 +429,32 @@
             .box-text{
                 grid-area: box-text;
                 text-align: left;
+                width: 50%;
+                margin-top: 70px;
                 display: block;
                 .title-about{
                     margin: 0 ;
                     text-align: left;
                     width: fit-content;
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                     font-family: fontsFamily(bold-c);
-                    color:color(color-4);
+                    color:#fff;
                     font-weight: 700;
                     line-height: 1.4;
                     padding: .2em;
                     word-spacing: 1em;
                 }
                 .text-about{
-                    font-size:  1.2rem;
+                    font-size:  1.5rem;     
                     font-family: fontsFamily(light-m);
                     font-weight: 500;
                     padding: .5em;
                     line-height: 1.5;
-                    color:color(color-2);
+                    color:#fff;
                     margin:.2em auto;
                     span{
                         font-family: fontsFamily(sbold-m);
-                        color:color(color-2);
+                        color:#fff;
                     }
                 }
             }
