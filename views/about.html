@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/svg" href="../assets/icons/logo.svg" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -36,19 +37,14 @@
             <ul class="nav-menu">
                 <li><a class="go-us" href="../views/about.html">NOSOTROS</a></li>
                 <li><a class="go-products" href="../views/catalogue.html">CATALOGO</a></li>
-                <li><a class="go-blog" href="#">BLOG</a></li>
+                <li><a class="go-blog" href="../views/faqs.html">PREGUNTAS FRECUENTES</a></li>
                 <li><a class="go-contact" href="../views/contact.html">CONTACTO</a></li>
             </ul>
             </nav>
         </section>
         <main class="container-about">
             <section class="hero-about">
-              <!--   <div class="box-image">
-                    <div class="border-about">
-                        <img class="about-img" src="../assets/images/hero-3.png" alt="hero image"/>
-                    </div>
-                </div> -->
-                <div class="box-text">
+                <div class="box-text" data-aos="fade-right" data-aos-duration="1500">
                     <h1 class="title-about">CONOCENOS</h1>
                     <p class="text-about">
                         Somos Nicolás y Agostina. Vivimos en Yerba Buena, una ciudad de <span>Tucumán</span> muy cerca de las yungas y el cerro, donde se aprecia lo lindo y puro de la naturaleza.
@@ -118,5 +114,10 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="../js/mobile-menu.js"></script>
+        <script type="module" src="../js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

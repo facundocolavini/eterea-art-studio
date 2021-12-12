@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="../assets/images/logo.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -36,7 +37,7 @@
         <ul class="nav-menu">
           <li><a class="go-us" href="../views/about.html">NOSOTROS</a></li>
           <li><a class="go-products" href="../views/catalogue.html">CATALOGO</a></li>
-          <li><a class="go-blog" href="#">BLOG</a></li>
+          <li><a class="go-blog" href="../views/faqs.html">PREGUNTAS FRECUENTES</a></li>
           <li><a class="go-contact" href="contact.html">CONTACTO</a></li>
         </ul>
       </nav>
@@ -44,8 +45,7 @@
     <section class="contact-hero">
       <div class="content-hero">
         <div class="content">
-          <h1 class="hero-title">¿Nos contactamos?</h1>
-
+          <h1 class="hero-title"  data-aos="fade-in" data-aos-duration="1500">¿Nos contactamos?</h1>
         </div>
       </div>
     </section>
@@ -118,68 +118,6 @@
         </div>
       </section>
     </main>
-<!--     <main class="contact">
-      <section class="contact-hero">
-        <img src="../assets/images/main1.png" alt="" />
-        <h2>¿Nos contactamos?</h2>
-      </section>
-      <section class="contact-info">
-        <div class="contact-info-detail">
-          <p><i class="far fa-envelope"></i> &nbsp; etereo@gmail.com</p>
-          <p><i class="fas fa-phone-alt"></i> &nbsp; +58 381 4157-9645</p>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> &nbsp; San Javier 2250, San
-            Miguel de Tucumán.
-          </p>
-        </div>
-        <div class="contact-info-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227858.03427402262!2d-65.36281846425184!3d-26.830988390254518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942243209c3d241b%3A0x7d4e0a9c7531c218!2sSan%20Javier%202250%2C%20T4107%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1sen!2sar!4v1638913925969!5m2!1sen!2sar"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </section>
-      <section class="contact-shipping">
-        <div >
-          <h3>Sobre Envíos</h3>
-          <p>
-            1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tristique lorem id cursus sagittis. Nulla euismod.
-          </p>
-          <p>
-            2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tristique lorem id cursus sagittis. Nulla euismod.
-          </p>
-          <p>
-            3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tristique lorem id cursus sagittis. Nulla euismod.
-          </p>
-          <p>
-            4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tristique lorem id cursus sagittis. Nulla euismod.
-          </p>
-        </div>
-        <div >
-          <h3>Métodos de Pago</h3>
-          <p>
-            1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tristique lorem id cursus sagittis. Nulla euismod.
-          </p>
-          <p>
-            2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tristique lorem id cursus sagittis. Nulla euismod.
-          </p>
-          <p>
-            <i class="fab fa-cc-mastercard"></i>
-            <i class="fab fa-cc-visa"></i>
-            <i class="far fa-money-bill-alt"></i>
-          </p>
-        </div>
-      </section> -->
     <footer class="footer">
       <div class="footer-social">
         <p>Seguinos:</p>
@@ -209,7 +147,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/mobile-menu.js"></script>
-    <script type="module" src="../js/search-bar.js"></script>
-    <script type="module" src="../js/filter-category.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

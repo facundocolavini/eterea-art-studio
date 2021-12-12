@@ -8,11 +8,8 @@ function filterCategory(){
 
       });
     $('.category-item').click(function() {
-
-
         //FILTRADO DE PRODUCTO POR CATEGORIA
         let catProduct = $(this).attr('subcategory');
-        console.log(catProduct,'productos');
         //OCULTAR PRODUCTOS
         $('.card-product').css('transform','scale(0)');
         function hideProduct(){
@@ -46,7 +43,7 @@ function filterCategory(){
                 },
             30);
             if(t.classList.contains("filter-legend--down")){
-                console.log(t.classList.contains("filter-legend--down"));
+
                     setTimeout(()=> {
                         $(this).children('.filter-legend').removeClass('filter-legend--down');
                         $(this).children('.filter-legend').addClass('filter-legend--up');

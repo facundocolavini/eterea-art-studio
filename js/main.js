@@ -3,11 +3,10 @@ import dataAjax from './fetchData.js';
 import searchProduct from './search-bar.js';
 import {renderConditional, renderProduct} from './renders.js';
 import filterCategory from './filter-category.js';
+import filterFaqs from './filter-faqs.js';
+
 let products_data = [];
 const url= '../js/products.json';
-
-
-
 
 
 class Catalog {
@@ -49,8 +48,8 @@ $(()=>{
         renderConditional(products_data,containerProducts,productsNotFound);
         searchProduct(products_data,productsNotFound);
         filterCategory();
+        filterFaqs();
         
-    
     })
     .catch(err =>{console.log(err)});
 
