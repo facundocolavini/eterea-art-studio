@@ -1,6 +1,5 @@
 body, html {
   scroll-behavior: smooth;
-  /*     overflow-x: hidden; */
   font-size: 16px;
   position: relative;
   bottom: 0;
@@ -979,7 +978,7 @@ footer {
   display: flex;
   -o-object-fit: cover;
      object-fit: cover;
-  background: url("../assets/images/hero.png");
+  background: url("../assets/images/hero-index.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1466,7 +1465,6 @@ footer {
   outline: none;
 }
 
-/*----Breakpoints---- */
 @media screen and (min-width: 768px) {
   /* Hero */
   body, html {
@@ -2726,15 +2724,6 @@ main {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 22px 22px;
-  /*         .card-text-measure{
-            margin-top:1.2em;
-  
-            font-size:.9rem;
-            font-family: fontsFamily(light-m);
-            font-weight: 500;
-            line-height: 1.5;
-            color:black;
-        } */
 }
 
 .products-container .card-description h2 {
@@ -2926,16 +2915,6 @@ main {
   }
   .cat-intro .cont-cat {
     text-align: center;
-    /*         p{
-                width: 100%;
-                font-size:  1.2rem;
-                font-family: fontsFamily(sbold-c);
-                font-weight: 500;
-                padding: 1em;
-                line-height: 1.5;
-                color:color(color-2);
-                margin-bottom: 2.125em;
-            } */
   }
   .cat-intro .cont-cat h1 {
     font-size: 3.7rem;
@@ -3179,15 +3158,6 @@ main {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 22px 22px;
-    /*                 .card-text-measure{
-                    margin-top: 1.5em;
-                    height: 50px;
-                    font-size:.9rem;
-                    font-family: fontsFamily(light-m);
-                    font-weight: 500;
-                    line-height: 1.5;
-                    color:black;
-                } */
   }
   .products-container .card-product .card-description h2 {
     -ms-grid-row: 1;
@@ -3283,21 +3253,6 @@ main {
 }
 
 .container-about .hero-about {
-  /*         margin-top: 80px;
-        display:grid;
-
-        box-sizing: border-box;
-
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "box-image"
-        "box-text";
-    
-        padding: 1em 2em;
-        grid-gap: 3em 0;
-        background: color(color-3);
-
-        grid-area: hero-about; */
   margin-top: 80px;
   height: 100vh;
   display: -webkit-box;
@@ -3566,16 +3521,6 @@ main {
     display: grid;
   }
   .hero-about {
-    /*         margin-top: 80px;
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "box-image"
-        "box-text";
-        justify-content: center;
-        grid-area: hero-about;
-        grid-gap: 2em 0;
-        background: color(color-3); */
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/images/about-hero.png") no-repeat center center fixed;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/images/about-hero.png") no-repeat center center fixed;
   }
@@ -3675,23 +3620,6 @@ main {
   }
   .container-about .hero-about {
     padding: 1em calc(12.5% - 0.5em);
-    /*            
-            padding: 1em calc(10.5% - 0.5em);
-            grid-area: hero-about;
-            height: 100vh;
-            width: 100%;
-            margin-top: 80px;
-            display:grid;
-            box-sizing: border-box;
-            grid-template-columns: 2rem 1fr 1fr 2rem;
-            grid-template-areas: 
-            ". box-image box-text ."
-            ;
-            justify-content: center;
-            align-items: center;
-    
-            grid-gap: 2em 3em;
-            background: color(color-3); */
     width: 100%;
     position: relative;
     top: -80px;

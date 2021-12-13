@@ -6,6 +6,8 @@ import filterCategory from './filter-category.js';
 import filterFaqs from './filter-faqs.js';
 
 let products_data = [];
+let containerProducts = $(".products");
+let productsNotFound = $(`<span class="product-not-found">Producto no encontrado...</span>`);
 const url= '../js/products.json';
 
 
@@ -21,39 +23,19 @@ class Catalog {
 }
 
 
-
-
-let containerProducts = $(".products");
-let productsNotFound = $(`<span class="product-not-found">Producto no encontrado...</span>`);
-
-
-
-
-/* Request http */
-
 /* GET PRODUCTS*/
 //Loading Dom
 $(()=>{
     dataAjax().then(res =>{
-
         //Solo aquí dentro tus datos estaran disponibles
-
-         console.log(res);
-
         for(const prod of res){
             const product = new Catalog(prod.id,prod.name,prod.category,prod.description,prod.measures);
             products_data.push(product);
         }
-        console.log(products_data);
         renderConditional(products_data,containerProducts,productsNotFound);
         searchProduct(products_data,productsNotFound);
         filterCategory();
         filterFaqs();
-        
     })
     .catch(err =>{console.log(err)});
-
-
-   
-
 })

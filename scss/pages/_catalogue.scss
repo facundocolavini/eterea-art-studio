@@ -1,6 +1,5 @@
 @import '../components/navbar';
 @import '../components/buttons';
-@import '../components/filters';
 @import '../components/footer';
 
 main{
@@ -11,19 +10,15 @@ main{
     scroll-snap-type: none;
     box-sizing: content-box;
     overflow: hidden;
-
 }
-
 
 .container{
     padding:1em 0;
     display:grid;
     grid-template-columns: 1fr;
     margin-bottom: 30em;
-    grid-gap:1em 0;
-   
+    grid-gap:1em 0;   
     grid-template-areas: 
- 
     "p-hero"
     "aside" 
     "products";
@@ -157,7 +152,7 @@ main{
         border-width: 0 3px 3px 0;
         content:"\f077";
     }
-    .filter-legend--up::after{//Agregar con js
+    .filter-legend--up::after{
         position: relative;
         content: "\f077";
         right: 0;
@@ -168,7 +163,7 @@ main{
         animation-duration: 0.3s;
         transition: 0.3s;
     }
-    .filter-legend--down::after{//Agregar para dar vuelta el chevron
+    .filter-legend--down::after{
         position: relative;
         content: "\f078";
         animation-name: rotateIconDown;
@@ -320,15 +315,6 @@ main{
             line-height: 1.5;
             color:black;
         }
-/*         .card-text-measure{
-            margin-top:1.2em;
-  
-            font-size:.9rem;
-            font-family: fontsFamily(light-m);
-            font-weight: 500;
-            line-height: 1.5;
-            color:black;
-        } */
         .card-btn{
             grid-area: button;
             @include btnCard;
@@ -421,9 +407,6 @@ main{
         "p-hero  p-hero"
         "aside  products";
     }
-    
-
-
     .cat-intro{
         position:relative;
         padding: 0 2em;
@@ -462,16 +445,6 @@ main{
                 margin-bottom: .2em;
                 width: 100%;
             }
-    /*         p{
-                width: 100%;
-                font-size:  1.2rem;
-                font-family: fontsFamily(sbold-c);
-                font-weight: 500;
-                padding: 1em;
-                line-height: 1.5;
-                color:color(color-2);
-                margin-bottom: 2.125em;
-            } */
         }
     }
 
@@ -540,7 +513,7 @@ main{
             border-width: 0 3px 3px 0;
             content:"\f077";
         }
-        .filter-legend--up::after{//Agregar con js
+        .filter-legend--up::after{
             position: relative;
             content: "\f077";
             right: 0;
@@ -551,7 +524,7 @@ main{
             animation-duration: 0.3s;
             transition: 0.3s;
         }
-        .filter-legend--down::after{//Agregar para dar vuelta el chevron
+        .filter-legend--down::after{
             position: relative;
             content: "\f078";
             animation-name: rotateIconDown;
@@ -676,21 +649,9 @@ main{
                     margin-bottom: .5em;
                     color:black;
                 }
-/*                 .card-text-measure{
-                    margin-top: 1.5em;
-                    height: 50px;
-                    font-size:.9rem;
-                    font-family: fontsFamily(light-m);
-                    font-weight: 500;
-                    line-height: 1.5;
-                    color:black;
-                } */
                 .card-btn{
                     grid-area: button;
-              
                     @include btnCard;
-       
-
                 }
             }
 
