@@ -22,6 +22,7 @@ main{
     "p-hero"
     "aside" 
     "products";
+    margin-bottom:5em;
 }
 .cat-intro{
     position:relative;
@@ -29,7 +30,6 @@ main{
     top:80px;
     left: 0;
     right: 0;
-
     width: 100%;
     height: 100vh;
     scrollbar-gutter: 0;
@@ -406,6 +406,7 @@ main{
         
         "p-hero  p-hero"
         "aside  products";
+        margin-bottom:6em;
     }
     .cat-intro{
         position:relative;
@@ -437,7 +438,7 @@ main{
         .cont-cat{
             text-align: center;
             h1{
-                font-size: 3.7rem;
+                font-size: 3rem;
                 font-family: fontsFamily(bold-c);
                 color:color(color-2);
                 font-weight: 700;
@@ -576,6 +577,7 @@ main{
     .products-container{
         grid-area:products;
         margin:0;
+        margin-bottom:0;
         height: fit-content;
         display: grid;
         grid-template-areas: 
@@ -598,6 +600,7 @@ main{
             grid-template-columns: repeat(auto-fit,299px);
             justify-content: flex-start;
             grid-template-rows: 1fr;
+       
         }
         .card-product{
             display: flex;
@@ -655,7 +658,6 @@ main{
                     @include btnCard;
                 }
             }
-
         }
         .product-not-found{
             width: 500px;
@@ -668,7 +670,7 @@ main{
         grid-column: 1/3;
         h1{
             text-align: left;
-            font-size: 3rem;
+            font-size: 2.2rem;
             width:100%;
             font-family: fontsFamily(bold-c);
             color:color(color-1);

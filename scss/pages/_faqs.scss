@@ -3,54 +3,82 @@
 .container-faqs{
     display:grid;
     grid-template-areas:
-    "introdution-faqs"
+    "faqs-accordions"
     "gallery-faqs" 
     ;
-    position: relative;
-    width: 100%;
+
 }
 .bkg-faqs{
+    display:grid;
+    grid-area:faqs-accordions;
+    grid-template-areas:
+    "title-all-page"
+    "title-faq-p"
+    "accordion-personalization"
+    "title-faq-s"
+    "accordion-payment-and-shipping"
+    "title-faq-r"
+    "accordion-returns-and-refunds";
     width: 100%;
+    padding: 5em calc(5.5% - 0.5em);
     object-fit: cover;
     background: url('../assets/images/faqs-hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.intro-faqs{
-    grid-area: introdution-faqs;
-    display: grid;
-    grid-template-areas: 
-    "title-faqs"
-    "text-faqs";
-    padding: 1em 2em;
+.title-intro-faqs{
+    grid-area:title-all-page;
     h1{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         width:100%;
         font-family: fontsFamily(bold-c);
         color:color(color-1);
         font-weight: 700;
         line-height: 1.5;
-        border-bottom: $border-light;
-        margin-top: 80px;
-        margin-bottom: 1em;
-    }
-    .text-faqs{
-        text-align: center;
-        font-size:  1.2rem;
-        font-family: fontsFamily(regular-m);
-        font-weight: 500;
-        padding: .5em;
-        line-height: 1.5;
-        color: color(color-2);
-        margin:.2em auto;
-        span{
-            font-family: fontsFamily(sbold-m);
-            color: color(color-2);
-        }
+        margin-top: 20px;
+        margin-bottom: .5m;
     }
 }
+.title-faq-p{
+    grid-area: title-faq-p;
+    border-top: $border-bold;
+    margin-top: 5em;
+    text-align: center;
+    font-size: 1.6rem;
+    width:100%;
+    font-family: fontsFamily(sbold-m);
+    color:color(color-1);
+    font-weight: 700;
+    line-height: 1.5;
+}
+.title-faq-s{
+    grid-area: title-faq-s;
+    border-top: $border-bold;
+    margin-top: 5em;
+    text-align: center;
+    font-size: 1.6rem;
+    width:100%;
+    font-family: fontsFamily(sbold-m);
+    color:color(color-1);
+    font-weight: 700;
+    line-height: 1.5;
+}
+.title-faq-r{
+        grid-area: title-faq-r;
+        border-top: $border-bold;
+        margin-top: 5em;
+        text-align: center;
+        font-size: 1.6rem;
+        width:100%;
+        font-family: fontsFamily(sbold-m);
+        color:color(color-1);
+        font-weight: 700;
+        line-height: 1.5;
+}
+
+
     //Gallery
 
     .gallery-products{
@@ -118,15 +146,293 @@
         padding: 0 1em 1.5em 1em;
     }
 
-    .accordion{
-        grid-area: introdution-faqs;
+    .accordion-personalization{
+        grid-area: accordion-personalization;
         margin: 1em calc(5.5% - 0.5em);
-
-
         margin-bottom: 2rem;
+        height: fit-content;  
+        .accordion-link{
+            width: 100%;
+            font-size: 1.2rem;
+            font-family: fontsFamily(sbold-m);
+            color: color(color-2);
+            margin: 1rem 0;
+            padding: 1rem 1rem 0 0;
+            padding-left:  0;
+            background: #fff;
+            box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
+        }
 
-        height: fit-content;
+        .accordion-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .filter-fieldset{
+            cursor: pointer;
+            text-align: left;
+            scroll-behavior: smooth;
+            border:none;
+            padding-bottom: 1rem;
+        }
+        .filter-legend{
+            display: flex;
+            font-style:normal;
+            font-variant: normal;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0em;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+        .filter-legend::after{
+            position: relative;
+            display:flex;
+            color: colors(color-1);
+            right: 0;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 600;
+            font-size:15px; 
+            border-width: 0 3px 3px 0;
+            content:"\f077";
+            
+        }
+        .filter-legend--up::after{
+            position: relative;
+            content: "\f077";
+            right: 0;
+            display: inline-block;
+            color: colors(color-1);
+            border-width: 0 3px 3px 0;
+            animation-name: rotateIconUp;
+            transform: translateY(-50);
+            animation-duration: 0.3s;
+            transition: 0.3s;
+        }
+        .filter-legend--down::after{
+            position: relative;
+            content: "\f078";
+            animation-name: rotateIconDown;
+            animation-duration: 0.3s;
+            transform: translateY(-50);
+        }
+        .filter-title{
+            font-family: "Font Awesome 5 Free"; 
+            content:"\f077";
+            color: colors(color-2);
+            padding-left: 1rem;
+
+            span{
+                color:black;
+                font-family: fontsFamily(regular-m);
+            }
+        }
+        .categorys-lists[category]{
+            display:none;
+            width: 100%;
         
+            li{
+                width: 100%;
+                a{
+                    text-align: left;
+                    scrollbar-gutter: 0;
+                    scroll-behavior: none;
+                    box-sizing: border-box;
+                    font-size:  1rem;
+                    text-align: center;
+                    color:color(color-2);
+                    font-family: fontsFamily(regular-m);
+                    width: 100%;
+                    transition:transform all .3s ease-in-out;
+                        &:active &:focus {
+                        transition:ease all .5s;
+                        width: 100%;
+                        text-align: center;
+                        background:color(color-3);
+                        }
+                    }
+            }
+        }
+        .categorys-lists[category]{	
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            .text-faqs{
+                padding:.6rem;
+                text-align: left;
+                font-size:  1rem;
+                font-family: fontsFamily(regular-m);
+                font-weight: 500;
+                padding-left: 1rem;
+                line-height: 1.5;
+                color: color(color-2);
+                
+                span{
+                    font-family: fontsFamily(sbold-m);
+                    color: color(color-2);
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: .2rem;
+                height: 100%;
+                background-color: color(color-5);
+                z-index: -1;
+            }
+        }
+    }
+    .accordion-payment-and-shipping{
+        grid-area: accordion-payment-and-shipping;
+        margin: 1em calc(5.5% - 0.5em);
+        margin-bottom: 2rem;
+        height: fit-content;  
+        .accordion-link{
+            width: 100%;
+            font-size: 1.2rem;
+            font-family: fontsFamily(sbold-m);
+            color: color(color-2);
+            margin: 1rem 0;
+            padding: 1rem 1rem 0 0;
+            padding-left:  0;
+            background: #fff;
+            box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
+        }
+
+        .accordion-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .filter-fieldset{
+            cursor: pointer;
+            text-align: left;
+            scroll-behavior: smooth;
+            border:none;
+            padding-bottom: 1rem;
+        }
+        .filter-legend{
+            display: flex;
+            font-style:normal;
+            font-variant: normal;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0em;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+        .filter-legend::after{
+            position: relative;
+            display:flex;
+            color: colors(color-1);
+            right: 0;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 600;
+            font-size:15px; 
+            border-width: 0 3px 3px 0;
+            content:"\f077";
+            
+        }
+        .filter-legend--up::after{
+            position: relative;
+            content: "\f077";
+            right: 0;
+            display: inline-block;
+            color: colors(color-1);
+            border-width: 0 3px 3px 0;
+            animation-name: rotateIconUp;
+            transform: translateY(-50);
+            animation-duration: 0.3s;
+            transition: 0.3s;
+        }
+        .filter-legend--down::after{
+            position: relative;
+            content: "\f078";
+            animation-name: rotateIconDown;
+            animation-duration: 0.3s;
+            transform: translateY(-50);
+        }
+        .filter-title{
+            font-family: "Font Awesome 5 Free"; 
+            content:"\f077";
+            color: colors(color-2);
+            padding-left: 1rem;
+
+            span{
+                color:black;
+                font-family: fontsFamily(regular-m);
+            }
+        }
+        .categorys-lists[category]{
+            display:none;
+            width: 100%;
+        
+            li{
+                width: 100%;
+                a{
+                    text-align: left;
+                    scrollbar-gutter: 0;
+                    scroll-behavior: none;
+                    box-sizing: border-box;
+                    font-size:  1rem;
+                    text-align: center;
+                    color:color(color-2);
+                    font-family: fontsFamily(regular-m);
+                    width: 100%;
+                    transition:transform all .3s ease-in-out;
+                        &:active &:focus {
+                        transition:ease all .5s;
+                        width: 100%;
+                        text-align: center;
+                        background:color(color-3);
+                        }
+                    }
+            }
+        }
+        .categorys-lists[category]{	
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            .text-faqs{
+                padding:.6rem;
+                text-align: left;
+                font-size:  1rem;
+                font-family: fontsFamily(regular-m);
+                font-weight: 500;
+                padding-left: 1rem;
+                line-height: 1.5;
+                color: color(color-2);
+                
+                span{
+                    font-family: fontsFamily(sbold-m);
+                    color: color(color-2);
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: .2rem;
+                height: 100%;
+                background-color: color(color-5);
+                z-index: -1;
+            }
+        }
+    }
+    .accordion-returns-and-refunds{
+        grid-area: accordion-returns-and-refunds;
+        margin: 1em calc(5.5% - 0.5em);
+        margin-bottom: 2rem;
+        height: fit-content;  
         .accordion-link{
             width: 100%;
             font-size: 1.2rem;
@@ -264,57 +570,7 @@
         }
     }
 @include media-up(md) {
-    .container-faqs{
-        display:grid;
-        grid-template-areas:
-        "introdution-faqs"
-        "gallery-faqs" 
-        ;
-        width: 100%;
-    }
-    .bkg-faqs{
-        padding: 1em 2em;
-        width: 100%;
-        object-fit: cover;
-        background: url('../assets/images/faqs-hero.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .intro-faqs{
-        grid-area: introdution-faqs;
-        display: grid;
-        grid-template-areas: 
-        "title-faqs"
-        "text-faqs";
 
-        h1{
-            text-align: center;
-            font-size: 2rem;
-            width:100%;
-            font-family: fontsFamily(bold-c);
-            color:color(color-1);
-            font-weight: 700;
-            line-height: 1.5;
-            border-bottom: $border-light;
-            margin-top: 80px;
-            margin-bottom: 1em;
-        }
-        .text-faqs{
-            text-align: center;
-            font-size:  1.2rem;
-            font-family: fontsFamily(regular-m);
-            font-weight: 500;
-            padding: .5em;
-            line-height: 1.5;
-            color: color(color-2);
-            margin:.2em auto;
-            span{
-                font-family: fontsFamily(sbold-m);
-                color: color(color-2);
-            }
-        }
-    }
     /* Accordion */
     .accordion{
         grid-area: introdution-faqs;
@@ -508,15 +764,27 @@
 @include media-up(lg) {
     .container-faqs{
         display:grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "introdution-faqs"
+        "faqs-accordions"
         "gallery-faqs" 
         ;
         position: relative;
         width: 100%;
     }
     .bkg-faqs{
-        padding: 1em 2em;
+        grid-area:faqs-accordions ;
+        padding: 1em calc(15.5% - 0.5em);
+        display: grid;
+        grid-gap:3em;
+        grid-template-columns: 30% 1fr;
+        grid-template-areas:
+        "title-all-page title-all-page"
+        "title-faq-p  accordion-personalization"
+        "title-faq-s  accordion-payment-and-shipping"
+        "title-faq-r  accordion-returns-and-refunds";
+        align-items: flex-start;
+        justify-content: center;
         width: 100%;
         object-fit: cover;
         background: url('../assets/images/faqs-hero.png');
@@ -524,59 +792,63 @@
         background-position: top;
         background-repeat: no-repeat;
     }
-    .intro-faqs{
-        padding: 1em calc(13.5% - 0.5em);
-        grid-area: introdution-faqs;
-        display: grid;
-        grid-template-columns: 20% auto;
-        grid-template-areas: 
-        "title-faqs ."
-        "separator text-faqs";
-
+    .title-intro-faqs{
+        grid-area:title-all-page;
         h1{
-            grid-area: title-faqs;
             text-align: left;
-            font-size: 3rem;
+            font-size: 2.5rem;
             width:100%;
             font-family: fontsFamily(bold-c);
             color:color(color-1);
             font-weight: 700;
             line-height: 1.5;
-            border: none;
-
-        }
-        .separator-line{
-            grid-area: separator;
-            height: 250px;
-            background: color(color-1); 
-            justify-items: center;
-            justify-self: center;
-            font-size:  1.2rem;
-            width: 2px;
-       
-            color: color(color-1);
-        }
-        .text-faqs{
-            align-self: center;
-            grid-area: text-faqs;
-            text-align: center;
-            font-size:  1.2rem;
-            font-family: fontsFamily(regular-m);
-            font-weight: 500;
-            padding: .5em;
-            line-height: 1.5;
-            color: color(color-2);
-            margin:.2em auto;
-            span{
-                font-family: fontsFamily(sbold-m);
-                color: color(color-2);
-            }
+    /*         border-bottom: $border-light; */
+            margin-top: 5em;
+            margin-bottom: .5em;
         }
     }
+    .title-faq-p{
+        grid-area: title-faq-p;
+        outline-offset: $border-bold;
+        margin-top:1.5em;
+        text-align: left;
+        font-size: 1.6rem;
+        width: fit-content;
+        font-family: fontsFamily(sbold-m);
+        color:color(color-1);
+        font-weight: 900;
+        line-height: 1.5;
+   
+    }
+    .title-faq-s{
+        grid-area: title-faq-s;
+        border-top: $border-bold;
+        margin-top:1.5em;
+        text-align: left;
+        font-size: 1.6rem;
+        width:100%;
+        font-family: fontsFamily(sbold-m);
+        color:color(color-1);
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .title-faq-r{
+        grid-area:title-faq-r;
+        border-top: $border-bold;
+        margin-top:1.5em;
+        text-align: left;
+        font-size: 1.6rem;
+        width:90%;
+        font-family: fontsFamily(sbold-m);
+        color:color(color-1);
+        font-weight: 900;
+        line-height: 1.5;
+
+    }
     /* Accordion */
-    .accordion{
-        grid-area: introdution-faqs;
-        margin: 1em calc(13.5% - 0.5em);
+    .accordion-personalization{
+        grid-area: accordion-personalization;
+        
         margin-bottom: 2rem;
         height: fit-content;
         .accordion-link{
@@ -691,7 +963,239 @@
             }
         }
     }
+    .accordion-payment-and-shipping{
+        grid-area: accordion-payment-and-shipping;
+       
+        margin-bottom: 2rem;
+        height: fit-content;
+        .accordion-link{
+            width: 100%;
+            font-size: 1.2rem;
+            font-family: fontsFamily(sbold-m);
+            color: color(color-2);
+            padding-left:  0;
+            background: #fff;
+            box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
+        }
+        .accordion-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
 
+        }
+        .filter-fieldset{
+            cursor: pointer;
+            text-align: left;
+            scroll-behavior: smooth;
+            border:none;
+            padding:0;
+        }
+        .filter-legend{
+            display: flex;
+            font-style:normal;
+            font-variant: normal;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 3rem 2rem  0;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+        .filter-legend::after{
+            position: relative;
+            display:flex;
+            color: colors(color-1);
+            right: 0;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 600;
+            font-size:15px; 
+            border-width: 0 3px 3px 0;
+            content:"\f077";
+            
+        }
+        .filter-legend--up::after{//Agregar con js
+            position: relative;
+            content: "\f077";
+            right: 0;
+            display: inline-block;
+            color: colors(color-1);
+            border-width: 0 3px 3px 0;
+            animation-name: rotateIconUp;
+            transform: translateY(-50);
+            animation-duration: 0.3s;
+            transition: 0.3s;
+        }
+        .filter-legend--down::after{//Agregar para dar vuelta el chevron
+            position: relative;
+            content: "\f078";
+            animation-name: rotateIconDown;
+            animation-duration: 0.3s;
+            transform: translateY(-50);
+        }
+        .filter-title{
+            font-family: "Font Awesome 5 Free"; 
+            content:"\f077";
+            color: colors(color-2);
+            padding-left: 3rem;
+            span{
+                color:black;
+                font-family: fontsFamily(regular-m);
+            }
+        }
+        .categorys-lists[category]{	
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            margin-bottom: 1rem;
+            ul{
+                padding-top: 1rem;
+                li{
+                    padding:0 ;
+                }
+            }
+            .text-faqs{
+                padding-right: 3rem;
+                text-align: left;
+                font-size:  1.2rem;
+                font-family: fontsFamily(regular-m);
+                font-weight: 500;
+                padding-left: 3rem;
+                line-height: 1.5;
+                color: color(color-2);
+                span{
+                    font-family: fontsFamily(sbold-m);
+                    color: color(color-2);
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: .2rem;
+                height: 100%;
+                background-color: color(color-5);
+                z-index: -1;
+            }
+        }
+    }
+    .accordion-returns-and-refunds{
+        grid-area: accordion-returns-and-refunds;
+        margin-bottom: 2rem;
+        height: fit-content;
+        .accordion-link{
+            width: 100%;
+            font-size: 1.2rem;
+            font-family: fontsFamily(sbold-m);
+            color: color(color-2);
+            padding-left:  0;
+            background: #fff;
+            box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
+        }
+        .accordion-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .filter-fieldset{
+            cursor: pointer;
+            text-align: left;
+            scroll-behavior: smooth;
+            border:none;
+            padding:0;
+        }
+        .filter-legend{
+            display: flex;
+            font-style:normal;
+            font-variant: normal;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 3rem 2rem  0;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+        .filter-legend::after{
+            position: relative;
+            display:flex;
+            color: colors(color-1);
+            right: 0;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 600;
+            font-size:15px; 
+            border-width: 0 3px 3px 0;
+            content:"\f077";
+            
+        }
+        .filter-legend--up::after{//Agregar con js
+            position: relative;
+            content: "\f077";
+            right: 0;
+            display: inline-block;
+            color: colors(color-1);
+            border-width: 0 3px 3px 0;
+            animation-name: rotateIconUp;
+            transform: translateY(-50);
+            animation-duration: 0.3s;
+            transition: 0.3s;
+        }
+        .filter-legend--down::after{//Agregar para dar vuelta el chevron
+            position: relative;
+            content: "\f078";
+            animation-name: rotateIconDown;
+            animation-duration: 0.3s;
+            transform: translateY(-50);
+        }
+        .filter-title{
+            font-family: "Font Awesome 5 Free"; 
+            content:"\f077";
+            color: colors(color-2);
+            padding-left: 3rem;
+            span{
+                color:black;
+                font-family: fontsFamily(regular-m);
+            }
+        }
+        .categorys-lists[category]{	
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            margin-bottom: 1rem;
+            ul{
+                padding-top: 1rem;
+                li{
+                    padding:0 ;
+                }
+            }
+            .text-faqs{
+                padding-right: 3rem;
+                text-align: left;
+                font-size:  1.2rem;
+                font-family: fontsFamily(regular-m);
+                font-weight: 500;
+                padding-left: 3rem;
+                line-height: 1.5;
+                color: color(color-2);
+                span{
+                    font-family: fontsFamily(sbold-m);
+                    color: color(color-2);
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: .2rem;
+                height: 100%;
+                background-color: color(color-5);
+                z-index: -1;
+            }
+        }
+    }
     //Gallery
     .gallery-products{
         grid-area: gallery-faqs;

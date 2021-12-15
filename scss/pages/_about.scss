@@ -332,7 +332,7 @@
             margin-top: 80px;
             display:flex;
             object-fit: contain;
-            background:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url('../assets/images/about-hero.png') no-repeat center center fixed;
+            background:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 100%), url('../assets/images/about-hero.png') no-repeat center center fixed;
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat;
@@ -368,7 +368,8 @@
             .box-text{
                 grid-area: box-text;
                 text-align: left;
-                width: 50%;
+                width: 37%;
+                flex-wrap: wrap;
                 margin-top: 70px;
                 display: block;
                 .title-about{
@@ -405,7 +406,7 @@
             grid-area: intro-about;
             .bkg-p{
                 position: relative;
-                width:90%;
+                width:80%;
                 text-align: center;
                 background: white;
                 .text-about{
@@ -425,13 +426,11 @@
         
             .border-intro{
                 content:'';
-                margin: 0 auto;
                 position:absolute;
-                padding: 1em calc(7.5% - 0.5em);
                 text-align: center;
                 margin: 0 auto;            
-                left:calc(25% - 1em);
-                width:50%;
+                left:calc(30% - 1em);
+                width:40%;
                 border: $border-light;
                 text-align: center;
                 height: 500px;
@@ -440,15 +439,15 @@
         .cares-about{
             text-align: left;
             padding: 1em calc(15.5% - 0.5em);          
-   
+            
             .cares-box-1{
                 grid-area: cares-box-1;
                 display: grid;
-
+         
             }
            .flex-line{
             position: relative;
-            top:calc(20% - 1em);
+            top:calc(50% - 1em);
             left: -20%;
          
             }
@@ -456,15 +455,25 @@
 
         .products-about{
             text-align: left;
-            padding: 1em calc(15.5% - 0.5em);
+            padding: 3em calc(15.5% - 0.5em);
             grid-gap: 2em;
+            height: 80vh;
             justify-content: center;
             grid-template-areas: 
             "box-products-1 box-products-2";
             .box-products-2{
                 position: relative;
-                bottom:200px;
+                bottom:10px;
                 grid-area: box-products-2;
+
+            }
+            .box-products-1{
+                position: relative;
+                bottom:20px;
+
+            }
+            p{
+                width: 95%;
             }
         }
     }    

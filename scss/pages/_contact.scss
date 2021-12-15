@@ -52,8 +52,8 @@
   padding: 1em;
   grid-gap:6em;
   grid-template-areas: 
-  "contact-info"
-  "contact-shipping";
+  "contact-title"
+  "contact-info";
   grid-template-columns: 1fr;
   .contact-info{
     grid-area: contact-info;
@@ -116,44 +116,13 @@
     }
     
   }
-  .contact-shipping{
-    grid-area: contact-shipping;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap:2em;
-    grid-template-areas: 
-    "shipping-c"
-    "buy-c"
-    "payment-c";
-   
-    .shipping-steps{
-      grid-area:shipping-c ;
-      text-align: center;
-    }	
-    .buyment-steps{
-      grid-area: buy-c;
-      text-align: center;
-    }
-    .payment-steps{
-      grid-area: payment-c;
-      text-align: center;
-    }
-  }
-  .title-steps{
-    width: 100%;
-    margin-bottom: 1em;
-    font-size: 1.8rem;
+  .title-contact{
+    grid-area: contact-title;
+    font-size: 1.5rem;
+    font-family: fontsFamily(sbold-m);
     text-align: center;
-    font-family: fontsFamily(bold-c);
-    color:color(color-1);
-    font-weight: 700;
-  }
-  .p-steps{
-    font-size: 1.2rem;
-    font-family: fontsFamily(regular-m);
-    font-weight: 500;
-    padding-bottom: 3rem;
     color: color(color-1);
+    margin-top:2em;
   }
 
 } 
@@ -186,8 +155,8 @@
 
     padding: 1em;
     grid-template-areas: 
-    "contact-info"
-    "contact-shipping";
+    "contact-title"
+    "contact-info";
     grid-template-columns: 1fr;
     .contact-info{
       grid-area: contact-info;
@@ -252,7 +221,7 @@
       }
     }
     .contact-shipping{
-      grid-area: contact-shipping;
+      grid-area: contact-title;
     }
   }
 }
@@ -287,7 +256,7 @@
       margin: 0 auto;
       opacity: 1;
       h1{
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: fontsFamily(bold-c);
         color:color(color-2);
         font-weight: 500;
@@ -312,13 +281,14 @@
     padding: 3em calc(15.5% - 0.5em);
     display:grid;
     grid-template-areas: 
-    "contact-info"
-    "contact-shipping";
+    "contact-title"
+    "contact-info";
     grid-template-columns: 1fr;
     .contact-info{
       grid-area: contact-info;
       grid-template-columns: 1fr 1fr;
       justify-content: space-between;
+      margin-bottom:5em;
       grid-template-areas:
       "info-site map-site";
     }
@@ -371,46 +341,15 @@
   
       }
     }
-    .contact-shipping{
-      
-      grid-area: contact-shipping;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap:2em;
-      grid-template-areas: 
-      "shipping-c buy-c"
-      "shipping-c payment-c";
-    }
-    .title-steps{
-      width: 100%;
-      margin-bottom: 1em;
-      font-size: 1.8rem;
-      font-family: fontsFamily(bold-c);
-      color:color(color-1);
-      font-weight: 700;
+    .title-contact{
+      grid-area: contact-title;
+      font-size: 2.2rem;
+      font-family: fontsFamily(sbold-m);
       text-align: left;
-    }
-    .p-steps{
-      font-size: 1.2rem;
-      font-family: fontsFamily(regular-m);
-      font-weight: 500;
-      padding-bottom: 1em;
       color: color(color-1);
-      text-align: left;
+      margin-top:2em;
+      width: 90%;
+  
     }
-    .shipping-steps{
-      grid-area:shipping-c ;
-      border-right: $border-light;
-      padding-right: 2em;
-      text-align: left;
-    }	
-    .buyment-steps{
-      grid-area: buy-c;
-      text-align: left;
-    }
-    .payment-steps{
-      grid-area: payment-c;
-      text-align: left;
-    }
-  } 
+  }
 }

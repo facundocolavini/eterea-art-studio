@@ -393,26 +393,17 @@ footer {
   -ms-grid-column: 1;
   grid-area: subs;
   text-align: center;
+  display: block;
   padding-top: 1em;
-  padding-bottom: 0.8em;
-}
-
-.footer-subs input {
-  padding-left: .2em;
-  margin: 0 auto;
-  width: 85%;
-  color: #F0ECEA;
-  background-color: transparent;
-  border: 2px solid #F0ECEA;
-  margin: 0.5em 0;
-}
-
-.footer-subs input:focus {
-  outline-color: #3F3D3F;
+  padding-bottom: .5em;
 }
 
 .footer-subs i {
-  display: none;
+  margin-top: .8em;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  color: #F0ECEA;
 }
 
 .footer-social {
@@ -480,24 +471,32 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: .7em;
+    margin: 0;
   }
-  .footer-subs input {
-    background-color: #3F3D3F;
-    border: 1px solid #F0ECEA;
-    margin: 0.5em 1em;
-    max-height: 1rem;
-  }
-  .footer-subs input:focus {
-    outline-color: #3F3D3F;
+  .footer-subs a {
+    padding: 0;
+    margin: 0;
   }
   .footer-subs i {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: .7rem;
+    padding: 0;
+    margin: 0;
   }
   .footer-social {
     place-self: start;
@@ -770,26 +769,17 @@ footer {
   -ms-grid-column: 1;
   grid-area: subs;
   text-align: center;
+  display: block;
   padding-top: 1em;
-  padding-bottom: 0.8em;
-}
-
-.footer-subs input {
-  padding-left: .2em;
-  margin: 0 auto;
-  width: 85%;
-  color: #F0ECEA;
-  background-color: transparent;
-  border: 2px solid #F0ECEA;
-  margin: 0.5em 0;
-}
-
-.footer-subs input:focus {
-  outline-color: #3F3D3F;
+  padding-bottom: .5em;
 }
 
 .footer-subs i {
-  display: none;
+  margin-top: .8em;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  color: #F0ECEA;
 }
 
 .footer-social {
@@ -857,24 +847,32 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: .7em;
+    margin: 0;
   }
-  .footer-subs input {
-    background-color: #3F3D3F;
-    border: 1px solid #F0ECEA;
-    margin: 0.5em 1em;
-    max-height: 1rem;
-  }
-  .footer-subs input:focus {
-    outline-color: #3F3D3F;
+  .footer-subs a {
+    padding: 0;
+    margin: 0;
   }
   .footer-subs i {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: .7rem;
+    padding: 0;
+    margin: 0;
   }
   .footer-social {
     place-self: start;
@@ -1811,36 +1809,34 @@ footer {
     padding: 2em 6em;
     grid-gap: 5em;
     width: 100%;
-    -ms-grid-columns: 3% auto auto 1%;
-        grid-template-columns: 3% auto auto 1%;
+    padding: 6em calc(14.5% - 0.5em);
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     -ms-grid-row: 1;
     grid-row: 1fr;
-        grid-template-areas: ". payment shipping .";
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+        grid-template-areas: " payment shipping ";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .content-shipping .payment {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     grid-area: payment;
   }
   .content-shipping .payment .payment-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
   .content-shipping .payment .payment-wrap ul {
@@ -1851,7 +1847,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .content-shipping .payment .payment-wrap li {
     display: -webkit-box;
@@ -1860,102 +1858,46 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     margin: 1em;
     margin-left: 0;
   }
   .content-shipping .payment .payment-wrap img {
-    width: 40px;
-    height: 60px;
+    width: 80px;
+    height: 50px;
     line-height: 20px;
-  }
-  .content-shipping .payment .payment-wrap .main-btn {
-    margin: 0;
-    width: 200px;
-    margin-right: 1em;
   }
   .content-shipping .shipping {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     grid-area: shipping;
   }
   .content-shipping .shipping-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 100%;
-  }
-  .content-shipping .shipping-wrap ul {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 200px;
-  }
-  .content-shipping .shipping-wrap li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 100%;
   }
   .content-shipping .shipping-wrap img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     line-height: 20px;
-  }
-  .content-shipping .shipping-wrap .shipping-btn {
-    cursor: pointer;
-    font-family: "Montserrat Regular";
-    color: #F0ECEA;
-    width: 200px;
-    height: 65px;
-    background-color: #805B6A;
-    outline: none;
-    border-radius: 8px;
-    border: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 1em;
-    padding: .5em;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-  }
-  .content-shipping .shipping-wrap .shipping-btn:hover {
-    cursor: pointer;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border: none;
-    border-radius: 8px;
-    color: #F0ECEA;
-    background-color: #52353f;
-    -webkit-filter: drop-shadow(0px 6px 4px rgba(0, 10, 0, 0.4));
-            filter: drop-shadow(0px 6px 4px rgba(0, 10, 0, 0.4));
-    outline: none;
   }
   .content-shipping h2 {
     display: block;
@@ -2141,26 +2083,17 @@ footer {
   -ms-grid-column: 1;
   grid-area: subs;
   text-align: center;
+  display: block;
   padding-top: 1em;
-  padding-bottom: 0.8em;
-}
-
-.footer-subs input {
-  padding-left: .2em;
-  margin: 0 auto;
-  width: 85%;
-  color: #F0ECEA;
-  background-color: transparent;
-  border: 2px solid #F0ECEA;
-  margin: 0.5em 0;
-}
-
-.footer-subs input:focus {
-  outline-color: #3F3D3F;
+  padding-bottom: .5em;
 }
 
 .footer-subs i {
-  display: none;
+  margin-top: .8em;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  color: #F0ECEA;
 }
 
 .footer-social {
@@ -2228,24 +2161,32 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: .7em;
+    margin: 0;
   }
-  .footer-subs input {
-    background-color: #3F3D3F;
-    border: 1px solid #F0ECEA;
-    margin: 0.5em 1em;
-    max-height: 1rem;
-  }
-  .footer-subs input:focus {
-    outline-color: #3F3D3F;
+  .footer-subs a {
+    padding: 0;
+    margin: 0;
   }
   .footer-subs i {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: .7rem;
+    padding: 0;
+    margin: 0;
   }
   .footer-social {
     place-self: start;
@@ -2365,6 +2306,7 @@ main {
   margin-bottom: 30em;
   grid-gap: 1em 0;
       grid-template-areas: "p-hero" "aside"  "products";
+  margin-bottom: 5em;
 }
 
 .cat-intro {
@@ -2880,6 +2822,7 @@ main {
         grid-template-columns: 28% 1fr;
     grid-gap: 1em;
         grid-template-areas: "p-hero  p-hero" "aside  products";
+    margin-bottom: 6em;
   }
   .cat-intro {
     position: relative;
@@ -2923,7 +2866,7 @@ main {
     text-align: center;
   }
   .cat-intro .cont-cat h1 {
-    font-size: 3.7rem;
+    font-size: 3rem;
     font-family: "Cinzel Bold";
     color: #3F3D3F;
     font-weight: 700;
@@ -3086,6 +3029,7 @@ main {
     -ms-grid-column: 1;
     grid-area: products;
     margin: 0;
+    margin-bottom: 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3230,7 +3174,7 @@ main {
   }
   .products-hero h1 {
     text-align: left;
-    font-size: 3rem;
+    font-size: 2.2rem;
     width: 100%;
     font-family: "Cinzel Bold";
     color: #7A583E;
@@ -3634,8 +3578,8 @@ main {
     display: flex;
     -o-object-fit: contain;
        object-fit: contain;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/images/about-hero.png") no-repeat center center fixed;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/images/about-hero.png") no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../assets/images/about-hero.png") no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/images/about-hero.png") no-repeat center center fixed;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -3684,7 +3628,9 @@ main {
   .container-about .hero-about .box-text {
     grid-area: box-text;
     text-align: left;
-    width: 50%;
+    width: 37%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 70px;
     display: block;
   }
@@ -3724,7 +3670,7 @@ main {
   }
   .container-about .intro-about .bkg-p {
     position: relative;
-    width: 90%;
+    width: 80%;
     text-align: center;
     background: white;
   }
@@ -3743,13 +3689,11 @@ main {
   }
   .container-about .intro-about .border-intro {
     content: '';
-    margin: 0 auto;
     position: absolute;
-    padding: 1em calc(7.5% - 0.5em);
     text-align: center;
     margin: 0 auto;
-    left: calc(25% - 1em);
-    width: 50%;
+    left: calc(30% - 1em);
+    width: 40%;
     border: 1px solid #7A583E;
     text-align: center;
     height: 500px;
@@ -3767,13 +3711,14 @@ main {
   }
   .container-about .cares-about .flex-line {
     position: relative;
-    top: calc(20% - 1em);
+    top: calc(50% - 1em);
     left: -20%;
   }
   .container-about .products-about {
     text-align: left;
-    padding: 1em calc(15.5% - 0.5em);
+    padding: 3em calc(15.5% - 0.5em);
     grid-gap: 2em;
+    height: 80vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3781,23 +3726,35 @@ main {
   }
   .container-about .products-about .box-products-2 {
     position: relative;
-    bottom: 200px;
+    bottom: 10px;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: box-products-2;
+  }
+  .container-about .products-about .box-products-1 {
+    position: relative;
+    bottom: 20px;
+  }
+  .container-about .products-about p {
+    width: 95%;
   }
 }
 
 .container-faqs {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "introdution-faqs" "gallery-faqs";
-  position: relative;
-  width: 100%;
+      grid-template-areas: "faqs-accordions" "gallery-faqs";
 }
 
 .bkg-faqs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: faqs-accordions;
+      grid-template-areas: "title-all-page" "title-faq-p" "accordion-personalization" "title-faq-s" "accordion-payment-and-shipping" "title-faq-r" "accordion-returns-and-refunds";
   width: 100%;
+  padding: 5em calc(5.5% - 0.5em);
   -o-object-fit: cover;
      object-fit: cover;
   background: url("../assets/images/faqs-hero.png");
@@ -3806,43 +3763,67 @@ main {
   background-repeat: no-repeat;
 }
 
-.intro-faqs {
+.title-intro-faqs {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: introdution-faqs;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "title-faqs" "text-faqs";
-  padding: 1em 2em;
+  grid-area: title-all-page;
 }
 
-.intro-faqs h1 {
+.title-intro-faqs h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   width: 100%;
   font-family: "Cinzel Bold";
   color: #7A583E;
   font-weight: 700;
   line-height: 1.5;
-  border-bottom: 1px solid #7A583E;
-  margin-top: 80px;
-  margin-bottom: 1em;
+  margin-top: 20px;
+  margin-bottom: .5m;
 }
 
-.intro-faqs .text-faqs {
+.title-faq-p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: title-faq-p;
+  border-top: 0.2rem solid #7A583E;
+  margin-top: 5em;
   text-align: center;
-  font-size: 1.2rem;
-  font-family: "Montserrat Regular";
-  font-weight: 500;
-  padding: .5em;
+  font-size: 1.6rem;
+  width: 100%;
+  font-family: "Montserrat-SemiBold";
+  color: #7A583E;
+  font-weight: 700;
   line-height: 1.5;
-  color: #3F3D3F;
-  margin: .2em auto;
 }
 
-.intro-faqs .text-faqs span {
+.title-faq-s {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: title-faq-s;
+  border-top: 0.2rem solid #7A583E;
+  margin-top: 5em;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
   font-family: "Montserrat-SemiBold";
-  color: #3F3D3F;
+  color: #7A583E;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.title-faq-r {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: title-faq-r;
+  border-top: 0.2rem solid #7A583E;
+  margin-top: 5em;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
+  font-family: "Montserrat-SemiBold";
+  color: #7A583E;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .gallery-products {
@@ -3926,10 +3907,10 @@ main {
   padding: 0 1em 1.5em 1em;
 }
 
-.accordion {
-  -ms-grid-row: 1;
+.accordion-personalization {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: introdution-faqs;
+  grid-area: accordion-personalization;
   margin: 1em calc(5.5% - 0.5em);
   margin-bottom: 2rem;
   height: -webkit-fit-content;
@@ -3937,7 +3918,7 @@ main {
   height: fit-content;
 }
 
-.accordion .accordion-link {
+.accordion-personalization .accordion-link {
   width: 100%;
   font-size: 1.2rem;
   font-family: "Montserrat-SemiBold";
@@ -3950,7 +3931,7 @@ main {
           box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.accordion .accordion-list {
+.accordion-personalization .accordion-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -3964,7 +3945,7 @@ main {
   text-align: center;
 }
 
-.accordion .filter-fieldset {
+.accordion-personalization .filter-fieldset {
   cursor: pointer;
   text-align: left;
   scroll-behavior: smooth;
@@ -3972,7 +3953,7 @@ main {
   padding-bottom: 1rem;
 }
 
-.accordion .filter-legend {
+.accordion-personalization .filter-legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3989,7 +3970,7 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
-.accordion .filter-legend::after {
+.accordion-personalization .filter-legend::after {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4003,7 +3984,7 @@ main {
   content: "\f077";
 }
 
-.accordion .filter-legend--up::after {
+.accordion-personalization .filter-legend--up::after {
   position: relative;
   content: "\f077";
   right: 0;
@@ -4020,7 +4001,7 @@ main {
   transition: 0.3s;
 }
 
-.accordion .filter-legend--down::after {
+.accordion-personalization .filter-legend--down::after {
   position: relative;
   content: "\f078";
   -webkit-animation-name: rotateIconDown;
@@ -4031,28 +4012,28 @@ main {
           transform: translateY(-50);
 }
 
-.accordion .filter-title {
+.accordion-personalization .filter-title {
   font-family: "Font Awesome 5 Free";
   content: "\f077";
   color: colors(color-2);
   padding-left: 1rem;
 }
 
-.accordion .filter-title span {
+.accordion-personalization .filter-title span {
   color: black;
   font-family: "Montserrat Regular";
 }
 
-.accordion .categorys-lists[category] {
+.accordion-personalization .categorys-lists[category] {
   display: none;
   width: 100%;
 }
 
-.accordion .categorys-lists[category] li {
+.accordion-personalization .categorys-lists[category] li {
   width: 100%;
 }
 
-.accordion .categorys-lists[category] li a {
+.accordion-personalization .categorys-lists[category] li a {
   text-align: left;
   scrollbar-gutter: 0;
   scroll-behavior: none;
@@ -4069,7 +4050,7 @@ main {
   transition: transform all .3s ease-in-out, -webkit-transform all .3s ease-in-out;
 }
 
-.accordion .categorys-lists[category] li a:active .accordion .categorys-lists[category] li a:focus {
+.accordion-personalization .categorys-lists[category] li a:active .accordion-personalization .categorys-lists[category] li a:focus {
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
   width: 100%;
@@ -4077,13 +4058,13 @@ main {
   background: #B0A89E;
 }
 
-.accordion .categorys-lists[category] {
+.accordion-personalization .categorys-lists[category] {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
-.accordion .categorys-lists[category] .text-faqs {
+.accordion-personalization .categorys-lists[category] .text-faqs {
   padding: .6rem;
   text-align: left;
   font-size: 1rem;
@@ -4094,12 +4075,380 @@ main {
   color: #3F3D3F;
 }
 
-.accordion .categorys-lists[category] .text-faqs span {
+.accordion-personalization .categorys-lists[category] .text-faqs span {
   font-family: "Montserrat-SemiBold";
   color: #3F3D3F;
 }
 
-.accordion .categorys-lists[category]::before {
+.accordion-personalization .categorys-lists[category]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: .2rem;
+  height: 100%;
+  background-color: #805B6A;
+  z-index: -1;
+}
+
+.accordion-payment-and-shipping {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: accordion-payment-and-shipping;
+  margin: 1em calc(5.5% - 0.5em);
+  margin-bottom: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.accordion-payment-and-shipping .accordion-link {
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Montserrat-SemiBold";
+  color: #3F3D3F;
+  margin: 1rem 0;
+  padding: 1rem 1rem 0 0;
+  padding-left: 0;
+  background: #fff;
+  -webkit-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.accordion-payment-and-shipping .accordion-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.accordion-payment-and-shipping .filter-fieldset {
+  cursor: pointer;
+  text-align: left;
+  scroll-behavior: smooth;
+  border: none;
+  padding-bottom: 1rem;
+}
+
+.accordion-payment-and-shipping .filter-legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-variant: normal;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accordion-payment-and-shipping .filter-legend::after {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: colors(color-1);
+  right: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  border-width: 0 3px 3px 0;
+  content: "\f077";
+}
+
+.accordion-payment-and-shipping .filter-legend--up::after {
+  position: relative;
+  content: "\f077";
+  right: 0;
+  display: inline-block;
+  color: colors(color-1);
+  border-width: 0 3px 3px 0;
+  -webkit-animation-name: rotateIconUp;
+          animation-name: rotateIconUp;
+  -webkit-transform: translateY(-50);
+          transform: translateY(-50);
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.accordion-payment-and-shipping .filter-legend--down::after {
+  position: relative;
+  content: "\f078";
+  -webkit-animation-name: rotateIconDown;
+          animation-name: rotateIconDown;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-transform: translateY(-50);
+          transform: translateY(-50);
+}
+
+.accordion-payment-and-shipping .filter-title {
+  font-family: "Font Awesome 5 Free";
+  content: "\f077";
+  color: colors(color-2);
+  padding-left: 1rem;
+}
+
+.accordion-payment-and-shipping .filter-title span {
+  color: black;
+  font-family: "Montserrat Regular";
+}
+
+.accordion-payment-and-shipping .categorys-lists[category] {
+  display: none;
+  width: 100%;
+}
+
+.accordion-payment-and-shipping .categorys-lists[category] li {
+  width: 100%;
+}
+
+.accordion-payment-and-shipping .categorys-lists[category] li a {
+  text-align: left;
+  scrollbar-gutter: 0;
+  scroll-behavior: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  text-align: center;
+  color: #3F3D3F;
+  font-family: "Montserrat Regular";
+  width: 100%;
+  -webkit-transition: -webkit-transform all .3s ease-in-out;
+  transition: -webkit-transform all .3s ease-in-out;
+  transition: transform all .3s ease-in-out;
+  transition: transform all .3s ease-in-out, -webkit-transform all .3s ease-in-out;
+}
+
+.accordion-payment-and-shipping .categorys-lists[category] li a:active .accordion-payment-and-shipping .categorys-lists[category] li a:focus {
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+  width: 100%;
+  text-align: center;
+  background: #B0A89E;
+}
+
+.accordion-payment-and-shipping .categorys-lists[category] {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.accordion-payment-and-shipping .categorys-lists[category] .text-faqs {
+  padding: .6rem;
+  text-align: left;
+  font-size: 1rem;
+  font-family: "Montserrat Regular";
+  font-weight: 500;
+  padding-left: 1rem;
+  line-height: 1.5;
+  color: #3F3D3F;
+}
+
+.accordion-payment-and-shipping .categorys-lists[category] .text-faqs span {
+  font-family: "Montserrat-SemiBold";
+  color: #3F3D3F;
+}
+
+.accordion-payment-and-shipping .categorys-lists[category]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: .2rem;
+  height: 100%;
+  background-color: #805B6A;
+  z-index: -1;
+}
+
+.accordion-returns-and-refunds {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: accordion-returns-and-refunds;
+  margin: 1em calc(5.5% - 0.5em);
+  margin-bottom: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.accordion-returns-and-refunds .accordion-link {
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Montserrat-SemiBold";
+  color: #3F3D3F;
+  margin: 1rem 0;
+  padding: 1rem 1rem 0 0;
+  padding-left: 0;
+  background: #fff;
+  -webkit-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.accordion-returns-and-refunds .accordion-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.accordion-returns-and-refunds .filter-fieldset {
+  cursor: pointer;
+  text-align: left;
+  scroll-behavior: smooth;
+  border: none;
+  padding-bottom: 1rem;
+}
+
+.accordion-returns-and-refunds .filter-legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-variant: normal;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accordion-returns-and-refunds .filter-legend::after {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: colors(color-1);
+  right: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  border-width: 0 3px 3px 0;
+  content: "\f077";
+}
+
+.accordion-returns-and-refunds .filter-legend--up::after {
+  position: relative;
+  content: "\f077";
+  right: 0;
+  display: inline-block;
+  color: colors(color-1);
+  border-width: 0 3px 3px 0;
+  -webkit-animation-name: rotateIconUp;
+          animation-name: rotateIconUp;
+  -webkit-transform: translateY(-50);
+          transform: translateY(-50);
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.accordion-returns-and-refunds .filter-legend--down::after {
+  position: relative;
+  content: "\f078";
+  -webkit-animation-name: rotateIconDown;
+          animation-name: rotateIconDown;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-transform: translateY(-50);
+          transform: translateY(-50);
+}
+
+.accordion-returns-and-refunds .filter-title {
+  font-family: "Font Awesome 5 Free";
+  content: "\f077";
+  color: colors(color-2);
+  padding-left: 1rem;
+}
+
+.accordion-returns-and-refunds .filter-title span {
+  color: black;
+  font-family: "Montserrat Regular";
+}
+
+.accordion-returns-and-refunds .categorys-lists[category] {
+  display: none;
+  width: 100%;
+}
+
+.accordion-returns-and-refunds .categorys-lists[category] li {
+  width: 100%;
+}
+
+.accordion-returns-and-refunds .categorys-lists[category] li a {
+  text-align: left;
+  scrollbar-gutter: 0;
+  scroll-behavior: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  text-align: center;
+  color: #3F3D3F;
+  font-family: "Montserrat Regular";
+  width: 100%;
+  -webkit-transition: -webkit-transform all .3s ease-in-out;
+  transition: -webkit-transform all .3s ease-in-out;
+  transition: transform all .3s ease-in-out;
+  transition: transform all .3s ease-in-out, -webkit-transform all .3s ease-in-out;
+}
+
+.accordion-returns-and-refunds .categorys-lists[category] li a:active .accordion-returns-and-refunds .categorys-lists[category] li a:focus {
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+  width: 100%;
+  text-align: center;
+  background: #B0A89E;
+}
+
+.accordion-returns-and-refunds .categorys-lists[category] {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.accordion-returns-and-refunds .categorys-lists[category] .text-faqs {
+  padding: .6rem;
+  text-align: left;
+  font-size: 1rem;
+  font-family: "Montserrat Regular";
+  font-weight: 500;
+  padding-left: 1rem;
+  line-height: 1.5;
+  color: #3F3D3F;
+}
+
+.accordion-returns-and-refunds .categorys-lists[category] .text-faqs span {
+  font-family: "Montserrat-SemiBold";
+  color: #3F3D3F;
+}
+
+.accordion-returns-and-refunds .categorys-lists[category]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4111,60 +4460,8 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .container-faqs {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "introdution-faqs" "gallery-faqs";
-    width: 100%;
-  }
-  .bkg-faqs {
-    padding: 1em 2em;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    background: url("../assets/images/faqs-hero.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .intro-faqs {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: introdution-faqs;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "title-faqs" "text-faqs";
-  }
-  .intro-faqs h1 {
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
-    font-family: "Cinzel Bold";
-    color: #7A583E;
-    font-weight: 700;
-    line-height: 1.5;
-    border-bottom: 1px solid #7A583E;
-    margin-top: 80px;
-    margin-bottom: 1em;
-  }
-  .intro-faqs .text-faqs {
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: "Montserrat Regular";
-    font-weight: 500;
-    padding: .5em;
-    line-height: 1.5;
-    color: #3F3D3F;
-    margin: .2em auto;
-  }
-  .intro-faqs .text-faqs span {
-    font-family: "Montserrat-SemiBold";
-    color: #3F3D3F;
-  }
   /* Accordion */
   .accordion {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: introdution-faqs;
     padding: 1em calc(2.5% - 0.5em);
     padding: 0;
@@ -4206,8 +4503,6 @@ main {
     padding-top: 0em;
   }
   .accordion {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: introdution-faqs;
     margin: 1em calc(13.5% - 0.5em);
     margin-bottom: 2rem;
@@ -4383,12 +4678,29 @@ main {
   .container-faqs {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "introdution-faqs" "gallery-faqs";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "faqs-accordions" "gallery-faqs";
     position: relative;
     width: 100%;
   }
   .bkg-faqs {
-    padding: 1em 2em;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: faqs-accordions;
+    padding: 1em calc(15.5% - 0.5em);
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 3em;
+    -ms-grid-columns: 30% 1fr;
+        grid-template-columns: 30% 1fr;
+        grid-template-areas: "title-all-page title-all-page" "title-faq-p  accordion-personalization" "title-faq-s  accordion-payment-and-shipping" "title-faq-r  accordion-returns-and-refunds";
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -4397,75 +4709,79 @@ main {
     background-position: top;
     background-repeat: no-repeat;
   }
-  .intro-faqs {
-    padding: 1em calc(13.5% - 0.5em);
+  .title-intro-faqs {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    grid-area: introdution-faqs;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20% auto;
-        grid-template-columns: 20% auto;
-        grid-template-areas: "title-faqs ." "separator text-faqs";
+    -ms-grid-column-span: 2;
+    grid-area: title-all-page;
   }
-  .intro-faqs h1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: title-faqs;
+  .title-intro-faqs h1 {
     text-align: left;
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 100%;
     font-family: "Cinzel Bold";
     color: #7A583E;
     font-weight: 700;
     line-height: 1.5;
-    border: none;
+    /*         border-bottom: $border-light; */
+    margin-top: 5em;
+    margin-bottom: .5em;
   }
-  .intro-faqs .separator-line {
+  .title-faq-p {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    grid-area: separator;
-    height: 250px;
-    background: #7A583E;
-    justify-items: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    font-size: 1.2rem;
-    width: 2px;
-    color: #7A583E;
-  }
-  .intro-faqs .text-faqs {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: text-faqs;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: "Montserrat Regular";
-    font-weight: 500;
-    padding: .5em;
-    line-height: 1.5;
-    color: #3F3D3F;
-    margin: .2em auto;
-  }
-  .intro-faqs .text-faqs span {
+    grid-area: title-faq-p;
+    outline-offset: 0.2rem solid #7A583E;
+    margin-top: 1.5em;
+    text-align: left;
+    font-size: 1.6rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     font-family: "Montserrat-SemiBold";
-    color: #3F3D3F;
+    color: #7A583E;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+  .title-faq-s {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: title-faq-s;
+    border-top: 0.2rem solid #7A583E;
+    margin-top: 1.5em;
+    text-align: left;
+    font-size: 1.6rem;
+    width: 100%;
+    font-family: "Montserrat-SemiBold";
+    color: #7A583E;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .title-faq-r {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: title-faq-r;
+    border-top: 0.2rem solid #7A583E;
+    margin-top: 1.5em;
+    text-align: left;
+    font-size: 1.6rem;
+    width: 90%;
+    font-family: "Montserrat-SemiBold";
+    color: #7A583E;
+    font-weight: 900;
+    line-height: 1.5;
   }
   /* Accordion */
-  .accordion {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: introdution-faqs;
-    margin: 1em calc(13.5% - 0.5em);
+  .accordion-personalization {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: accordion-personalization;
     margin-bottom: 2rem;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
-  .accordion .accordion-link {
+  .accordion-personalization .accordion-link {
     width: 100%;
     font-size: 1.2rem;
     font-family: "Montserrat-SemiBold";
@@ -4475,7 +4791,7 @@ main {
     -webkit-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
             box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
   }
-  .accordion .accordion-list {
+  .accordion-personalization .accordion-list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -4488,14 +4804,14 @@ main {
             justify-content: center;
     text-align: center;
   }
-  .accordion .filter-fieldset {
+  .accordion-personalization .filter-fieldset {
     cursor: pointer;
     text-align: left;
     scroll-behavior: smooth;
     border: none;
     padding: 0;
   }
-  .accordion .filter-legend {
+  .accordion-personalization .filter-legend {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4511,7 +4827,7 @@ main {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
   }
-  .accordion .filter-legend::after {
+  .accordion-personalization .filter-legend::after {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4524,7 +4840,7 @@ main {
     border-width: 0 3px 3px 0;
     content: "\f077";
   }
-  .accordion .filter-legend--up::after {
+  .accordion-personalization .filter-legend--up::after {
     position: relative;
     content: "\f077";
     right: 0;
@@ -4540,7 +4856,7 @@ main {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .accordion .filter-legend--down::after {
+  .accordion-personalization .filter-legend--down::after {
     position: relative;
     content: "\f078";
     -webkit-animation-name: rotateIconDown;
@@ -4550,29 +4866,29 @@ main {
     -webkit-transform: translateY(-50);
             transform: translateY(-50);
   }
-  .accordion .filter-title {
+  .accordion-personalization .filter-title {
     font-family: "Font Awesome 5 Free";
     content: "\f077";
     color: colors(color-2);
     padding-left: 3rem;
   }
-  .accordion .filter-title span {
+  .accordion-personalization .filter-title span {
     color: black;
     font-family: "Montserrat Regular";
   }
-  .accordion .categorys-lists[category] {
+  .accordion-personalization .categorys-lists[category] {
     position: relative;
     z-index: 1;
     width: 100%;
     margin-bottom: 1rem;
   }
-  .accordion .categorys-lists[category] ul {
+  .accordion-personalization .categorys-lists[category] ul {
     padding-top: 1rem;
   }
-  .accordion .categorys-lists[category] ul li {
+  .accordion-personalization .categorys-lists[category] ul li {
     padding: 0;
   }
-  .accordion .categorys-lists[category] .text-faqs {
+  .accordion-personalization .categorys-lists[category] .text-faqs {
     padding-right: 3rem;
     text-align: left;
     font-size: 1.2rem;
@@ -4582,11 +4898,291 @@ main {
     line-height: 1.5;
     color: #3F3D3F;
   }
-  .accordion .categorys-lists[category] .text-faqs span {
+  .accordion-personalization .categorys-lists[category] .text-faqs span {
     font-family: "Montserrat-SemiBold";
     color: #3F3D3F;
   }
-  .accordion .categorys-lists[category]::before {
+  .accordion-personalization .categorys-lists[category]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: #805B6A;
+    z-index: -1;
+  }
+  .accordion-payment-and-shipping {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: accordion-payment-and-shipping;
+    margin-bottom: 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .accordion-payment-and-shipping .accordion-link {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+    padding-left: 0;
+    background: #fff;
+    -webkit-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  .accordion-payment-and-shipping .accordion-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .accordion-payment-and-shipping .filter-fieldset {
+    cursor: pointer;
+    text-align: left;
+    scroll-behavior: smooth;
+    border: none;
+    padding: 0;
+  }
+  .accordion-payment-and-shipping .filter-legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 3rem 2rem  0;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  .accordion-payment-and-shipping .filter-legend::after {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: colors(color-1);
+    right: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 15px;
+    border-width: 0 3px 3px 0;
+    content: "\f077";
+  }
+  .accordion-payment-and-shipping .filter-legend--up::after {
+    position: relative;
+    content: "\f077";
+    right: 0;
+    display: inline-block;
+    color: colors(color-1);
+    border-width: 0 3px 3px 0;
+    -webkit-animation-name: rotateIconUp;
+            animation-name: rotateIconUp;
+    -webkit-transform: translateY(-50);
+            transform: translateY(-50);
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .accordion-payment-and-shipping .filter-legend--down::after {
+    position: relative;
+    content: "\f078";
+    -webkit-animation-name: rotateIconDown;
+            animation-name: rotateIconDown;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-transform: translateY(-50);
+            transform: translateY(-50);
+  }
+  .accordion-payment-and-shipping .filter-title {
+    font-family: "Font Awesome 5 Free";
+    content: "\f077";
+    color: colors(color-2);
+    padding-left: 3rem;
+  }
+  .accordion-payment-and-shipping .filter-title span {
+    color: black;
+    font-family: "Montserrat Regular";
+  }
+  .accordion-payment-and-shipping .categorys-lists[category] {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .accordion-payment-and-shipping .categorys-lists[category] ul {
+    padding-top: 1rem;
+  }
+  .accordion-payment-and-shipping .categorys-lists[category] ul li {
+    padding: 0;
+  }
+  .accordion-payment-and-shipping .categorys-lists[category] .text-faqs {
+    padding-right: 3rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Montserrat Regular";
+    font-weight: 500;
+    padding-left: 3rem;
+    line-height: 1.5;
+    color: #3F3D3F;
+  }
+  .accordion-payment-and-shipping .categorys-lists[category] .text-faqs span {
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+  }
+  .accordion-payment-and-shipping .categorys-lists[category]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: #805B6A;
+    z-index: -1;
+  }
+  .accordion-returns-and-refunds {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: accordion-returns-and-refunds;
+    margin-bottom: 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .accordion-returns-and-refunds .accordion-link {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+    padding-left: 0;
+    background: #fff;
+    -webkit-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  .accordion-returns-and-refunds .accordion-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .accordion-returns-and-refunds .filter-fieldset {
+    cursor: pointer;
+    text-align: left;
+    scroll-behavior: smooth;
+    border: none;
+    padding: 0;
+  }
+  .accordion-returns-and-refunds .filter-legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 3rem 2rem  0;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  .accordion-returns-and-refunds .filter-legend::after {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: colors(color-1);
+    right: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 15px;
+    border-width: 0 3px 3px 0;
+    content: "\f077";
+  }
+  .accordion-returns-and-refunds .filter-legend--up::after {
+    position: relative;
+    content: "\f077";
+    right: 0;
+    display: inline-block;
+    color: colors(color-1);
+    border-width: 0 3px 3px 0;
+    -webkit-animation-name: rotateIconUp;
+            animation-name: rotateIconUp;
+    -webkit-transform: translateY(-50);
+            transform: translateY(-50);
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .accordion-returns-and-refunds .filter-legend--down::after {
+    position: relative;
+    content: "\f078";
+    -webkit-animation-name: rotateIconDown;
+            animation-name: rotateIconDown;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-transform: translateY(-50);
+            transform: translateY(-50);
+  }
+  .accordion-returns-and-refunds .filter-title {
+    font-family: "Font Awesome 5 Free";
+    content: "\f077";
+    color: colors(color-2);
+    padding-left: 3rem;
+  }
+  .accordion-returns-and-refunds .filter-title span {
+    color: black;
+    font-family: "Montserrat Regular";
+  }
+  .accordion-returns-and-refunds .categorys-lists[category] {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .accordion-returns-and-refunds .categorys-lists[category] ul {
+    padding-top: 1rem;
+  }
+  .accordion-returns-and-refunds .categorys-lists[category] ul li {
+    padding: 0;
+  }
+  .accordion-returns-and-refunds .categorys-lists[category] .text-faqs {
+    padding-right: 3rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Montserrat Regular";
+    font-weight: 500;
+    padding-left: 3rem;
+    line-height: 1.5;
+    color: #3F3D3F;
+  }
+  .accordion-returns-and-refunds .categorys-lists[category] .text-faqs span {
+    font-family: "Montserrat-SemiBold";
+    color: #3F3D3F;
+  }
+  .accordion-returns-and-refunds .categorys-lists[category]::before {
     content: "";
     position: absolute;
     top: 0;
@@ -4742,13 +5338,13 @@ main {
   display: grid;
   padding: 1em;
   grid-gap: 6em;
-      grid-template-areas: "contact-info" "contact-shipping";
+      grid-template-areas: "contact-title" "contact-info";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
 
 .container-contact .contact-info {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: contact-info;
   display: -ms-grid;
@@ -4828,55 +5424,15 @@ main {
   width: 100%;
 }
 
-.container-contact .contact-shipping {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contact-shipping;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-gap: 2em;
-      grid-template-areas: "shipping-c" "buy-c" "payment-c";
-}
-
-.container-contact .contact-shipping .shipping-steps {
+.container-contact .title-contact {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: shipping-c;
+  grid-area: contact-title;
+  font-size: 1.5rem;
+  font-family: "Montserrat-SemiBold";
   text-align: center;
-}
-
-.container-contact .contact-shipping .buyment-steps {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: buy-c;
-  text-align: center;
-}
-
-.container-contact .contact-shipping .payment-steps {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: payment-c;
-  text-align: center;
-}
-
-.container-contact .title-steps {
-  width: 100%;
-  margin-bottom: 1em;
-  font-size: 1.8rem;
-  text-align: center;
-  font-family: "Cinzel Bold";
   color: #7A583E;
-  font-weight: 700;
-}
-
-.container-contact .p-steps {
-  font-size: 1.2rem;
-  font-family: "Montserrat Regular";
-  font-weight: 500;
-  padding-bottom: 3rem;
-  color: #7A583E;
+  margin-top: 2em;
 }
 
 @media screen and (min-width: 768px) {
@@ -4903,12 +5459,12 @@ main {
     display: -ms-grid;
     display: grid;
     padding: 1em;
-        grid-template-areas: "contact-info" "contact-shipping";
+        grid-template-areas: "contact-title" "contact-info";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .container-contact .contact-info {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: contact-info;
     display: -ms-grid;
@@ -4979,9 +5535,9 @@ main {
     width: 100%;
   }
   .container-contact .contact-shipping {
-    -ms-grid-row: 2;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
-    grid-area: contact-shipping;
+    grid-area: contact-title;
   }
 }
 
@@ -5028,7 +5584,7 @@ main {
     opacity: 1;
   }
   .contact-hero .content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Cinzel Bold";
     color: #3F3D3F;
     font-weight: 500;
@@ -5050,12 +5606,12 @@ main {
     padding: 3em calc(15.5% - 0.5em);
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "contact-info" "contact-shipping";
+        grid-template-areas: "contact-title" "contact-info";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .container-contact .contact-info {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: contact-info;
     -ms-grid-columns: 1fr 1fr;
@@ -5063,6 +5619,7 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 5em;
         grid-template-areas: "info-site map-site";
   }
   .container-contact .contact-info-detail {
@@ -5123,54 +5680,16 @@ main {
     font-weight: 500;
     color: #7A583E;
   }
-  .container-contact .contact-shipping {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: contact-shipping;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
-        grid-template-areas: "shipping-c buy-c" "shipping-c payment-c";
-  }
-  .container-contact .title-steps {
-    width: 100%;
-    margin-bottom: 1em;
-    font-size: 1.8rem;
-    font-family: "Cinzel Bold";
-    color: #7A583E;
-    font-weight: 700;
-    text-align: left;
-  }
-  .container-contact .p-steps {
-    font-size: 1.2rem;
-    font-family: "Montserrat Regular";
-    font-weight: 500;
-    padding-bottom: 1em;
-    color: #7A583E;
-    text-align: left;
-  }
-  .container-contact .shipping-steps {
+  .container-contact .title-contact {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
-    grid-area: shipping-c;
-    border-right: 1px solid #7A583E;
-    padding-right: 2em;
+    grid-area: contact-title;
+    font-size: 2.2rem;
+    font-family: "Montserrat-SemiBold";
     text-align: left;
-  }
-  .container-contact .buyment-steps {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: buy-c;
-    text-align: left;
-  }
-  .container-contact .payment-steps {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: payment-c;
-    text-align: left;
+    color: #7A583E;
+    margin-top: 2em;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */
