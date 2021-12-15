@@ -588,6 +588,9 @@ footer {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: logo;
+    color: #805B6A;
+    -webkit-filter: invert(100%) sepia(2%) saturate(245%) hue-rotate(154deg) brightness(118%) contrast(100%);
+            filter: invert(100%) sepia(2%) saturate(245%) hue-rotate(154deg) brightness(118%) contrast(100%);
     margin: 0 auto;
     max-height: 1.5em;
     margin: 0 auto;
@@ -964,6 +967,9 @@ footer {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: logo;
+    color: #805B6A;
+    -webkit-filter: invert(100%) sepia(2%) saturate(245%) hue-rotate(154deg) brightness(118%) contrast(100%);
+            filter: invert(100%) sepia(2%) saturate(245%) hue-rotate(154deg) brightness(118%) contrast(100%);
     margin: 0 auto;
     max-height: 1.5em;
     margin: 0 auto;
@@ -2278,6 +2284,9 @@ footer {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: logo;
+    color: #805B6A;
+    -webkit-filter: invert(100%) sepia(2%) saturate(245%) hue-rotate(154deg) brightness(118%) contrast(100%);
+            filter: invert(100%) sepia(2%) saturate(245%) hue-rotate(154deg) brightness(118%) contrast(100%);
     margin: 0 auto;
     max-height: 1.5em;
     margin: 0 auto;
