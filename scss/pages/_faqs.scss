@@ -65,7 +65,7 @@
     font-weight: 700;
     line-height: 1.5;
 }
-.title-faq-r{
+    .title-faq-r{
         grid-area: title-faq-r;
         border-top: $border-bold;
         margin-top: 5em;
@@ -76,16 +76,13 @@
         color:color(color-1);
         font-weight: 700;
         line-height: 1.5;
-}
-
+    }
 
     //Gallery
-
     .gallery-products{
         grid-area: gallery-faqs;
         padding: 5em calc(5.5% - 0.5em);
         height: 100%;
-
         display:grid;
         grid-gap: 3em;
         grid-template-areas:
@@ -95,7 +92,6 @@
     }
     .gallery-title{
         grid-area: title-faqs-gallery;
-
         text-align: center;
         font-size: 1.5rem;
         width:100%;
@@ -197,31 +193,31 @@
             font-weight: 600;
             font-size:15px; 
             border-width: 0 3px 3px 0;
-            content:"\f077";
+            content:"\f078";
             
         }
         .filter-legend--up::after{
             position: relative;
-            content: "\f077";
+            content: "\f078";
             right: 0;
             display: inline-block;
             color: colors(color-1);
             border-width: 0 3px 3px 0;
-            animation-name: rotateIconUp;
+            animation-name: rotateIconDown;
             transform: translateY(-50);
             animation-duration: 0.3s;
             transition: 0.3s;
         }
         .filter-legend--down::after{
             position: relative;
-            content: "\f078";
-            animation-name: rotateIconDown;
+            content: "\f077";
+            animation-name: rotateIconUp;
             animation-duration: 0.3s;
             transform: translateY(-50);
         }
         .filter-title{
             font-family: "Font Awesome 5 Free"; 
-            content:"\f077";
+            content:"\f078";
             color: colors(color-2);
             padding-left: 1rem;
 
@@ -233,7 +229,6 @@
         .categorys-lists[category]{
             display:none;
             width: 100%;
-        
             li{
                 width: 100%;
                 a{
@@ -247,13 +242,13 @@
                     font-family: fontsFamily(regular-m);
                     width: 100%;
                     transition:transform all .3s ease-in-out;
-                        &:active &:focus {
+                    &:active &:focus {
                         transition:ease all .5s;
                         width: 100%;
                         text-align: center;
                         background:color(color-3);
-                        }
                     }
+                }
             }
         }
         .categorys-lists[category]{	
@@ -338,31 +333,31 @@
             font-weight: 600;
             font-size:15px; 
             border-width: 0 3px 3px 0;
-            content:"\f077";
+            content:"\f078";
             
         }
         .filter-legend--up::after{
             position: relative;
-            content: "\f077";
+            content: "\f078";
             right: 0;
             display: inline-block;
             color: colors(color-1);
             border-width: 0 3px 3px 0;
-            animation-name: rotateIconUp;
+            animation-name: rotateIconDown;
             transform: translateY(-50);
             animation-duration: 0.3s;
             transition: 0.3s;
         }
         .filter-legend--down::after{
             position: relative;
-            content: "\f078";
-            animation-name: rotateIconDown;
+            content: "\f077";
+            animation-name: rotateIconUp;
             animation-duration: 0.3s;
             transform: translateY(-50);
         }
         .filter-title{
             font-family: "Font Awesome 5 Free"; 
-            content:"\f077";
+            content:"\f078";
             color: colors(color-2);
             padding-left: 1rem;
 
@@ -479,31 +474,31 @@
             font-weight: 600;
             font-size:15px; 
             border-width: 0 3px 3px 0;
-            content:"\f077";
+            content:"\f078";
             
         }
         .filter-legend--up::after{
             position: relative;
-            content: "\f077";
+            content: "\f078";
             right: 0;
             display: inline-block;
             color: colors(color-1);
             border-width: 0 3px 3px 0;
-            animation-name: rotateIconUp;
+            animation-name: rotateIconDown;
             transform: translateY(-50);
             animation-duration: 0.3s;
             transition: 0.3s;
         }
         .filter-legend--down::after{
             position: relative;
-            content: "\f078";
-            animation-name: rotateIconDown;
+            content: "\f077";
+            animation-name: rotateIconUp;
             animation-duration: 0.3s;
             transform: translateY(-50);
         }
         .filter-title{
             font-family: "Font Awesome 5 Free"; 
-            content:"\f077";
+            content:"\f078";
             color: colors(color-2);
             padding-left: 1rem;
 
@@ -894,31 +889,31 @@
             font-weight: 600;
             font-size:15px; 
             border-width: 0 3px 3px 0;
-            content:"\f077";
+            content:"\f078";
             
         }
         .filter-legend--up::after{//Agregar con js
             position: relative;
-            content: "\f077";
+            content: "\f078";
+            animation-name: rotateIconDown;
             right: 0;
             display: inline-block;
             color: colors(color-1);
             border-width: 0 3px 3px 0;
-            animation-name: rotateIconUp;
             transform: translateY(-50);
             animation-duration: 0.3s;
             transition: 0.3s;
         }
         .filter-legend--down::after{//Agregar para dar vuelta el chevron
             position: relative;
-            content: "\f078";
-            animation-name: rotateIconDown;
+            content: "\f077";
+            animation-name: rotateIconUp;
             animation-duration: 0.3s;
             transform: translateY(-50);
         }
         .filter-title{
             font-family: "Font Awesome 5 Free"; 
-            content:"\f077";
+            content:"\f078";
             color: colors(color-2);
             padding-left: 3rem;
             span{
@@ -1011,31 +1006,31 @@
             font-weight: 600;
             font-size:15px; 
             border-width: 0 3px 3px 0;
-            content:"\f077";
+            content:"\f078";
             
         }
-        .filter-legend--up::after{//Agregar con js
+        .filter-legend--up::after{
             position: relative;
-            content: "\f077";
+            content: "\f078";
             right: 0;
             display: inline-block;
             color: colors(color-1);
             border-width: 0 3px 3px 0;
-            animation-name: rotateIconUp;
+            animation-name: rotateIconDown;
             transform: translateY(-50);
             animation-duration: 0.3s;
             transition: 0.3s;
         }
-        .filter-legend--down::after{//Agregar para dar vuelta el chevron
+        .filter-legend--down::after{
             position: relative;
-            content: "\f078";
-            animation-name: rotateIconDown;
+            content: "\f077";
+            animation-name: rotateIconUp;
             animation-duration: 0.3s;
             transform: translateY(-50);
         }
         .filter-title{
             font-family: "Font Awesome 5 Free"; 
-            content:"\f077";
+            content:"\f078";
             color: colors(color-2);
             padding-left: 3rem;
             span{
@@ -1127,25 +1122,25 @@
             font-weight: 600;
             font-size:15px; 
             border-width: 0 3px 3px 0;
-            content:"\f077";
+            content:"\f078";
             
         }
         .filter-legend--up::after{//Agregar con js
             position: relative;
-            content: "\f077";
+            content: "\f078";
             right: 0;
             display: inline-block;
             color: colors(color-1);
             border-width: 0 3px 3px 0;
-            animation-name: rotateIconUp;
+            animation-name: rotateIconDown;
             transform: translateY(-50);
             animation-duration: 0.3s;
             transition: 0.3s;
         }
         .filter-legend--down::after{//Agregar para dar vuelta el chevron
             position: relative;
-            content: "\f078";
-            animation-name: rotateIconDown;
+            content: "\f077";
+            animation-name: rotateIconUp;
             animation-duration: 0.3s;
             transform: translateY(-50);
         }

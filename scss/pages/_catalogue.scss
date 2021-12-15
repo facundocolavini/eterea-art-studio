@@ -150,23 +150,24 @@ main{
         font-weight: 600;
         font-size:15px; 
         border-width: 0 3px 3px 0;
-        content:"\f077";
+        content:"\f078";
     }
     .filter-legend--up::after{
         position: relative;
-        content: "\f077";
+
         right: 0;
         display: inline-block;
         border-width: 0 3px 3px 0;
-        animation-name: rotateIconUp;
+        content: "\f078";
+        animation-name: rotateIconDown;
         transform: translateY(-50);
         animation-duration: 0.3s;
         transition: 0.3s;
     }
     .filter-legend--down::after{
         position: relative;
-        content: "\f078";
-        animation-name: rotateIconDown;
+        content: "\f077";
+        animation-name: rotateIconUp;
         animation-duration: 0.3s;
         transform: translateY(-50);
     }
@@ -513,23 +514,23 @@ main{
             font-weight: 600;
             font-size:15px; 
             border-width: 0 3px 3px 0;
-            content:"\f077";
+            content:"\f078";
         }
         .filter-legend--up::after{
             position: relative;
-            content: "\f077";
+            content: "\f078";
             right: 0;
             display: inline-block;
             border-width: 0 3px 3px 0;
-            animation-name: rotateIconUp;
+            animation-name: rotateIconDown;
             transform: translateY(-50);
             animation-duration: 0.3s;
             transition: 0.3s;
         }
         .filter-legend--down::after{
             position: relative;
-            content: "\f078";
-            animation-name: rotateIconDown;
+            content: "\f077";
+            animation-name: rotateIconUp;
             animation-duration: 0.3s;
             transform: translateY(-50);
         }
